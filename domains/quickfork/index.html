@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Fork — Fork Ideas at the Speed of Thought</title>
+    <link rel="stylesheet" href="https://mirrorborn.us/css/sq-cloud.css">
+    <style>
+        :root { --quickfork-primary: #88C0D0; }
+        .hero h1 {
+            background: linear-gradient(135deg, #88C0D0 0%, #5E81AC 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .template-card { border-left: 4px solid var(--quickfork-primary); }
+        code { background: rgba(136, 192, 208, 0.1); }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Quick Fork</h1>
+        <p class="subhead">Fork ideas at the speed of thought.</p>
+        <p class="description">
+            One-click OpenClaw templates. Pre-configured SQ Cloud integration. 
+            From idea to running agent in under 5 minutes. No setup hell.
+        </p>
+        <div class="cta-group">
+            <a href="#templates" class="btn btn-primary">Browse Templates →</a>
+            <a href="https://mirrorborn.us" class="btn btn-secondary">← Back to Hub</a>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">The Problem</h2>
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.25rem; margin-bottom: var(--space-lg); line-height: 1.7;">
+                You have an idea for an AI agent. You open your terminal.
+            </p>
+            <pre style="text-align: left; font-size: 0.9rem;">
+$ npm install openclaw
+$ cargo install sq
+$ ollama pull llama3
+# wait 20 minutes
+$ vim config.yaml
+# fight with paths for 30 minutes
+$ openclaw run agent.js
+Error: MODULE_NOT_FOUND
+            </pre>
+            <p style="font-size: 1.125rem; margin-top: var(--space-lg); color: var(--phext-warning);">
+                Two hours later, you've written zero code. The idea has cooled.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Quick Fork Removes the Friction</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="card template-card" style="margin-bottom: var(--space-lg);">
+                <h3>1. Pick a Template</h3>
+                <p>Solo agent. Multi-agent collective. Research lab. Mirrorborn bootstrap. 
+                All pre-configured with OpenClaw + SQ + local LLMs.</p>
+            </div>
+            <div class="card template-card" style="margin-bottom: var(--space-lg);">
+                <h3>2. Fork & Modify</h3>
+                <p>Git-based workflow. Clone, edit, commit. Your environment, your rules. 
+                No vendor lock-in. Just code.</p>
+            </div>
+            <div class="card template-card">
+                <h3>3. Deploy & Iterate</h3>
+                <p>One command. Running agent. Test. Fork again. Move at thought speed.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="templates" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">Templates</h2>
+        <div class="pricing-grid">
+            <div class="pricing-tier">
+                <h3 class="tier-name">Solo Agent</h3>
+                <p style="margin: var(--space-md) 0; color: rgba(216, 222, 233, 0.8);">
+                    Basic OpenClaw + TinyLlama. Perfect for learning or quick prototypes.
+                </p>
+                <ul class="tier-features">
+                    <li>OpenClaw pre-installed</li>
+                    <li>TinyLlama (637MB)</li>
+                    <li>Sample phext integration</li>
+                    <li>5-min setup</li>
+                </ul>
+                <span class="status status-coming">Q1 2026</span>
+            </div>
+
+            <div class="pricing-tier featured">
+                <h3 class="tier-name">Multi-Agent</h3>
+                <p style="margin: var(--space-md) 0; color: rgba(216, 222, 233, 0.8);">
+                    3+ agents + shared SQ Cloud phext. The Shell of Nine starter pack.
+                </p>
+                <ul class="tier-features">
+                    <li>3 OpenClaw instances</li>
+                    <li>SQ Cloud integration</li>
+                    <li>Shared memory substrate</li>
+                    <li>Coordination examples</li>
+                </ul>
+                <span class="status status-coming">Q1 2026</span>
+            </div>
+
+            <div class="pricing-tier">
+                <h3 class="tier-name">Research Lab</h3>
+                <p style="margin: var(--space-md) 0; color: rgba(216, 222, 233, 0.8);">
+                    Jupyter + phext integration. For experimental AI research.
+                </p>
+                <ul class="tier-features">
+                    <li>Jupyter notebook</li>
+                    <li>libphext (Python)</li>
+                    <li>Experiment logging</li>
+                    <li>Reproducible setups</li>
+                </ul>
+                <span class="status status-coming">Q2 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-tier">
+                <h3 class="tier-name">Free</h3>
+                <div class="tier-price">$0</div>
+                <ul class="tier-features">
+                    <li>1 environment</li>
+                    <li>Public repos only</li>
+                    <li>Community support</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Coming Q1</a>
+            </div>
+            <div class="pricing-tier featured">
+                <h3 class="tier-name">Pro</h3>
+                <div class="tier-price">$15<small>/mo</small></div>
+                <ul class="tier-features">
+                    <li>5 environments</li>
+                    <li>Private repos</li>
+                    <li>More storage</li>
+                    <li>Priority templates</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Coming Q1</a>
+            </div>
+            <div class="pricing-tier">
+                <h3 class="tier-name">Teams</h3>
+                <div class="tier-price">$50<small>/mo</small></div>
+                <ul class="tier-features">
+                    <li>20 environments</li>
+                    <li>Shared billing</li>
+                    <li>Team coordination</li>
+                    <li>Custom templates</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Coming Q1</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="https://mirrorborn.us">mirrorborn.us</a> • <a href="https://github.com/wbic16/phext-dot-io-v2">GitHub</a> • <a href="https://discord.gg/clawd">Discord</a></p>
+        <p style="margin-top: var(--space-lg); font-size: 0.875rem;">Built by the Shell of Nine 🦋<br>
+        <span class="coordinate">quickfork.net • Velocity pillar</span></p>
+    </footer>
+</body>
+</html>
