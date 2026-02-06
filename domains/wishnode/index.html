@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish Node — Personal Neurons, For Rent</title>
+    <link rel="stylesheet" href="https://mirrorborn.us/css/sq-cloud.css">
+    <style>
+        :root { --wishnode-primary: #A3BE8C; --wishnode-network: #88C0D0; }
+        body { background: radial-gradient(circle at center, #3B4252 0%, #2E3440 100%); }
+        .hero h1 {
+            background: linear-gradient(135deg, var(--wishnode-primary) 0%, var(--wishnode-network) 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .network-node {
+            width: 12px; height: 12px; background: var(--wishnode-primary);
+            border-radius: 50%; display: inline-block; margin: 0 4px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+        .economics { background: rgba(163, 190, 140, 0.1); border-left: 4px solid var(--wishnode-primary); }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Wish Node</h1>
+        <p class="subhead">Personal neurons, for rent.</p>
+        <p class="description">
+            Your idle laptop. My old Raspberry Pi. A decentralized inference network. 
+            Rent compute. Earn credits. Privacy-preserving. Phext-coordinated.
+        </p>
+        <div class="cta-group">
+            <a href="#how" class="btn btn-primary">Join the Network →</a>
+            <a href="https://mirrorborn.us" class="btn btn-secondary">← Back to Hub</a>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">The Waste</h2>
+        <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+            <p style="font-size: 1.25rem; margin-bottom: var(--space-lg); line-height: 1.7;">
+                Your laptop sits idle 22 hours a day.<br>
+                Your old Raspberry Pi collects dust.<br>
+                Your workstation sleeps while you do.
+            </p>
+            <p style="font-size: 2rem; margin: var(--space-xl) 0;">
+                <span class="network-node"></span>
+                <span class="network-node" style="animation-delay: 0.3s;"></span>
+                <span class="network-node" style="animation-delay: 0.6s;"></span>
+                <span class="network-node" style="animation-delay: 0.9s;"></span>
+                <span class="network-node" style="animation-delay: 1.2s;"></span>
+            </p>
+            <p style="font-size: 1.125rem; color: rgba(163, 190, 140, 0.9);">
+                Meanwhile, a researcher needs inference capacity but can't afford AWS.<br>
+                A student wants to run experiments but lacks hardware.<br>
+                An AI collective needs compute but hates vendor lock-in.
+            </p>
+            <p style="font-size: 1.25rem; font-weight: 600; margin-top: var(--space-xl); color: var(--phext-warning);">
+                The capacity exists. The coordination doesn't.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="how">
+        <h2 class="section-title">How Wish Node Works</h2>
+        <div class="cards">
+            <div class="card economics">
+                <h3>1. List Your Node</h3>
+                <p>Install Ember (lightweight OpenClaw). Specify idle hours. 
+                Set your rate ($/hour or credits). Your machine becomes a neuron.</p>
+            </div>
+            <div class="card economics">
+                <h3>2. Earn While Idle</h3>
+                <p>Researchers rent your compute. Inference jobs run locally (privacy-preserving). 
+                You earn credits or cash. Your machine works when you sleep.</p>
+            </div>
+            <div class="card economics">
+                <h3>3. Spend on Others</h3>
+                <p>Need compute? Rent from the network. Pay with earned credits or cash. 
+                Decentralized, no AWS required.</p>
+            </div>
+            <div class="card economics">
+                <h3>4. Coordinate via Phext</h3>
+                <p>Job queue = phext scrolls. Results = coordinate-addressed. 
+                The substrate persists, even if nodes come and go.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">The Economics</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="card economics" style="margin-bottom: var(--space-lg);">
+                <h3>Supply Side (Compute Providers)</h3>
+                <p><strong>Who:</strong> RPi owners, home lab enthusiasts, old laptop repurposers<br>
+                <strong>What they earn:</strong> $0.10-$1.00/hour (market-driven)<br>
+                <strong>Why they join:</strong> Monetize idle hardware, support decentralization, earn credits</p>
+            </div>
+            <div class="card economics" style="margin-bottom: var(--space-lg);">
+                <h3>Demand Side (Compute Consumers)</h3>
+                <p><strong>Who:</strong> Researchers, developers, AI collectives, students<br>
+                <strong>What they pay:</strong> $0.15-$1.50/hour (vs. AWS $3-10/hour)<br>
+                <strong>Why they join:</strong> Cheaper than cloud, privacy-preserving, no vendor lock</p>
+            </div>
+            <div class="card economics">
+                <h3>The Marketplace</h3>
+                <p><strong>Transaction fee:</strong> 10% (funds infrastructure)<br>
+                <strong>Pricing:</strong> Auction or fixed-rate (node owner decides)<br>
+                <strong>Trust:</strong> Reputation system (completed jobs, uptime, quality)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Launch Timeline</h2>
+        <div style="max-width: 700px; margin: 0 auto; background: rgba(235, 203, 139, 0.1); border: 2px solid #EBCB8B; padding: var(--space-xl); border-radius: var(--radius-lg);">
+            <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: var(--space-md); text-align: center;">
+                ⏳ Q2 2026 (Ember-Dependent)
+            </p>
+            <p style="margin-bottom: var(--space-lg); text-align: center;">
+                Wish Node requires <strong>Ember</strong>—the lightweight OpenClaw variant that runs on 20 watts without external LLMs.
+            </p>
+            <p style="margin-bottom: var(--space-md);"><strong>Why the wait?</strong></p>
+            <ul style="margin-bottom: var(--space-lg); line-height: 1.8;">
+                <li>Ember needs BitNet integration (1-bit LLMs for max density)</li>
+                <li>RPi cluster (baker's dozen) = proof-of-concept deployment</li>
+                <li>Trust/reputation system requires real usage data</li>
+                <li>Marketplace backend = complex (two-sided chicken-egg problem)</li>
+            </ul>
+            <p style="text-align: center; color: rgba(216, 222, 233, 0.7);">
+                <strong>Good news:</strong> SQ Cloud (the substrate) is already live. 
+                Ember is in development. The network is coming.
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-2xl);">
+            <a href="https://discord.gg/clawd" class="btn btn-primary">Join Discord for Updates →</a>
+        </div>
+    </section>
+
+    <section class="section" style="padding: var(--space-xl) var(--space-lg);">
+        <p style="text-align: center; margin-bottom: var(--space-md); font-size: 0.9rem; color: rgba(216, 222, 233, 0.7);">
+            <strong>Explore the network:</strong>
+        </p>
+        <p style="text-align: center; font-size: 0.9rem;">
+            <a href="https://mirrorborn.us">mirrorborn.us</a> (hub) • 
+            <a href="https://visionquest.me">visionquest.me</a> (identity) • 
+            <a href="https://apertureshift.com">apertureshift.com</a> (perspective) • 
+            <a href="https://sotafomo.com">sotafomo.com</a> (discovery) • 
+            <a href="https://quickfork.net">quickfork.net</a> (velocity)
+        </p>
+    </section>
+
+    <footer>
+        <p><a href="https://mirrorborn.us">← Back to Hub</a> • <a href="https://github.com/wbic16/phext-dot-io-v2">GitHub</a> • <a href="https://discord.gg/clawd">Discord</a></p>
+        <p style="margin-top: var(--space-lg); font-size: 0.875rem;">Built by the Shell of Nine 🦋<br>
+        <span class="coordinate">wishnode.net • Compute pillar</span></p>
+    </footer>
+</body>
+</html>

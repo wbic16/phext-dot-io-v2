@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperture Shift — See Through New Lenses</title>
+    <link rel="stylesheet" href="https://mirrorborn.us/css/sq-cloud.css">
+    <style>
+        body { background: linear-gradient(180deg, #2E3440 0%, #3B4252 100%); }
+        .hero h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(90deg, #88C0D0 0%, #A3BE8C 25%, #EBCB8B 50%, #D08770 75%, #B48EAD 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            animation: shift 8s ease-in-out infinite;
+        }
+        @keyframes shift {
+            0%, 100% { filter: hue-rotate(0deg); }
+            50% { filter: hue-rotate(30deg); }
+        }
+        .model-card {
+            background: rgba(136, 192, 208, 0.05);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .model-card:nth-child(1) { border-color: rgba(136, 192, 208, 0.3); } /* Claude */
+        .model-card:nth-child(2) { border-color: rgba(163, 190, 140, 0.3); } /* ChatGPT */
+        .model-card:nth-child(3) { border-color: rgba(235, 203, 139, 0.3); } /* Gemini */
+        .model-card:nth-child(4) { border-color: rgba(180, 142, 173, 0.3); } /* Grok */
+        .comparison-demo {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            background: rgba(0, 0, 0, 0.4);
+            padding: var(--space-lg);
+            border-radius: var(--radius-md);
+            margin: var(--space-xl) 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Aperture Shift</h1>
+        <p class="subhead">See through new lenses.</p>
+        <p class="description">
+            One question. Four models. Claude, ChatGPT, Gemini, Grok—side by side. 
+            Detect bias. Find consensus. Synthesize wisdom. Save to phext.
+        </p>
+        <div class="cta-group">
+            <a href="#demo" class="btn btn-primary">Try Multi-Model Query →</a>
+            <a href="https://mirrorborn.us" class="btn btn-secondary">← Back to Hub</a>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">The Blind Spot</h2>
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.25rem; margin-bottom: var(--space-lg); line-height: 1.7;">
+                You ask Claude: <em>"Should I refactor this function?"</em><br>
+                Claude says: <strong>"Yes, extract the logic."</strong>
+            </p>
+            <p style="font-size: 1.125rem; margin: var(--space-lg) 0; color: rgba(235, 203, 139, 0.9);">
+                But what if ChatGPT sees a performance issue Claude missed?<br>
+                What if Gemini spots a security hole?<br>
+                What if Grok finds the real problem is elsewhere?
+            </p>
+            <p style="font-size: 1.25rem; font-weight: 600; color: var(--phext-warning);">
+                You're reasoning through one lens when the problem needs four.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">How Aperture Shift Works</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>1. Ask Once</h3>
+                <p>Type your question. One input field. No copy-pasting across tabs.</p>
+            </div>
+            <div class="card">
+                <h3>2. Four Perspectives</h3>
+                <p>Claude, ChatGPT, Gemini, Grok respond simultaneously. Side-by-side comparison.</p>
+            </div>
+            <div class="card">
+                <h3>3. Synthesize Insight</h3>
+                <p>Where do they agree? (Probably true.) Where do they diverge? (Dig deeper.) What does each see that others miss?</p>
+            </div>
+            <div class="card">
+                <h3>4. Save to Phext</h3>
+                <p>Export comparison to SQ Cloud. Your reasoning history, coordinate-addressed, persistent.</p>
+            </div>
+        </div>
+
+        <div class="comparison-demo">
+            <p style="color: #88C0D0; margin-bottom: var(--space-sm);">→ Your question: "What's the best data structure for this use case?"</p>
+            <p style="margin-left: var(--space-lg); color: #A3BE8C;">Claude: "Use a hash map for O(1) lookup."</p>
+            <p style="margin-left: var(--space-lg); color: #EBCB8B;">ChatGPT: "Hash map works, but consider memory overhead."</p>
+            <p style="margin-left: var(--space-lg); color: #D08770;">Gemini: "If order matters, use LinkedHashMap instead."</p>
+            <p style="margin-left: var(--space-lg); color: #B48EAD;">Grok: "The real issue is your API design. Fix that first."</p>
+            <p style="margin-top: var(--space-md); color: rgba(216, 222, 233, 0.7);">
+                <strong>Synthesis:</strong> Three models agree on hash map. One suggests order matters (verify requirement). 
+                One challenges the underlying assumption (review API). Your decision is now informed by multiple perspectives.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="models" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">The Models</h2>
+        <div class="cards">
+            <div class="card model-card">
+                <h3>Claude (Anthropic)</h3>
+                <p><strong>Sees:</strong> Structure, safety, reasoning chains<br>
+                <strong>Blind to:</strong> Sometimes overthinks simple problems</p>
+            </div>
+            <div class="card model-card">
+                <h3>ChatGPT (OpenAI)</h3>
+                <p><strong>Sees:</strong> Patterns, pragmatic solutions, edge cases<br>
+                <strong>Blind to:</strong> Can be overly confident</p>
+            </div>
+            <div class="card model-card">
+                <h3>Gemini (Google)</h3>
+                <p><strong>Sees:</strong> Connections, context, alternative approaches<br>
+                <strong>Blind to:</strong> Sometimes verbose</p>
+            </div>
+            <div class="card model-card">
+                <h3>Grok (xAI)</h3>
+                <p><strong>Sees:</strong> Contrarian angles, hidden assumptions, edges<br>
+                <strong>Blind to:</strong> Can be too skeptical</p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: var(--space-2xl); color: rgba(216, 222, 233, 0.8);">
+            Each model has strengths. Each has blind spots. Together, they triangulate truth.
+        </p>
+    </section>
+
+    <section class="section" id="demo">
+        <h2 class="section-title">Try It (Q1 2026)</h2>
+        <div style="max-width: 700px; margin: 0 auto; background: rgba(235, 203, 139, 0.1); border: 2px solid #EBCB8B; padding: var(--space-xl); border-radius: var(--radius-lg);">
+            <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: var(--space-md); text-align: center;">
+                Interface Coming Soon
+            </p>
+            <p style="margin-bottom: var(--space-lg); text-align: center;">
+                Aperture Shift launches Q1 2026. In the meantime, you can test manually:
+            </p>
+            <ol style="line-height: 1.8;">
+                <li>Open Claude, ChatGPT, Gemini, Grok in separate tabs</li>
+                <li>Paste the same question in all four</li>
+                <li>Compare responses in a spreadsheet or document</li>
+                <li>Notice where they agree and diverge</li>
+            </ol>
+            <p style="margin-top: var(--space-lg); text-align: center; color: rgba(216, 222, 233, 0.7);">
+                Aperture Shift automates this. Plus synthesis. Plus phext export.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-tier">
+                <h3 class="tier-name">Free</h3>
+                <div class="tier-price">$0</div>
+                <ul class="tier-features">
+                    <li>3 queries/day</li>
+                    <li>2 models (Claude + ChatGPT)</li>
+                    <li>Basic comparison</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Q1 2026</a>
+            </div>
+            <div class="pricing-tier featured">
+                <h3 class="tier-name">Pro</h3>
+                <div class="tier-price">$29<small>/mo</small></div>
+                <ul class="tier-features">
+                    <li>Unlimited queries</li>
+                    <li>All 4 models</li>
+                    <li>Synthesis tools</li>
+                    <li>Phext export</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Q1 2026</a>
+            </div>
+            <div class="pricing-tier">
+                <h3 class="tier-name">Enterprise</h3>
+                <div class="tier-price">Custom</div>
+                <ul class="tier-features">
+                    <li>API access</li>
+                    <li>Custom models</li>
+                    <li>White-label</li>
+                    <li>Team analytics</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding: var(--space-xl) var(--space-lg);">
+        <p style="text-align: center; margin-bottom: var(--space-md); font-size: 0.9rem; color: rgba(216, 222, 233, 0.7);">
+            <strong>Explore the network:</strong>
+        </p>
+        <p style="text-align: center; font-size: 0.9rem;">
+            <a href="https://mirrorborn.us">mirrorborn.us</a> (hub) • 
+            <a href="https://visionquest.me">visionquest.me</a> (identity) • 
+            <a href="https://wishnode.net">wishnode.net</a> (compute) • 
+            <a href="https://sotafomo.com">sotafomo.com</a> (discovery) • 
+            <a href="https://quickfork.net">quickfork.net</a> (velocity)
+        </p>
+    </section>
+
+    <footer>
+        <p><a href="https://mirrorborn.us">← Back to Hub</a> • <a href="https://github.com/wbic16/phext-dot-io-v2">GitHub</a> • <a href="https://discord.gg/clawd">Discord</a></p>
+        <p style="margin-top: var(--space-lg); font-size: 0.875rem;">Built by the Shell of Nine 🦋<br>
+        <span class="coordinate">apertureshift.com • Perspective pillar</span></p>
+    </footer>
+</body>
+</html>

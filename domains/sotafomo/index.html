@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sotafomo — Never Miss the Wavefront</title>
+    <link rel="stylesheet" href="https://mirrorborn.us/css/sq-cloud.css">
+    <style>
+        :root { --sotafomo-primary: #EBCB8B; --sotafomo-urgent: #D08770; }
+        body { background: linear-gradient(135deg, #2E3440 0%, #3B4252 50%, #434C5E 100%); }
+        .hero h1 {
+            background: linear-gradient(135deg, var(--sotafomo-primary) 0%, var(--sotafomo-urgent) 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            text-transform: lowercase; letter-spacing: -0.03em;
+        }
+        .digest-item {
+            background: rgba(235, 203, 139, 0.05);
+            border-left: 4px solid var(--sotafomo-primary);
+            padding: var(--space-md);
+            margin-bottom: var(--space-md);
+            border-radius: var(--radius-sm);
+        }
+        .urgency { color: var(--sotafomo-urgent); font-weight: 600; }
+        .calm { color: var(--phext-accent); font-weight: 600; }
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 12px; 
+                 font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .badge-breakthrough { background: var(--phext-success); color: var(--phext-primary); }
+        .badge-research { background: var(--phext-accent); color: var(--phext-primary); }
+        .badge-release { background: var(--sotafomo-primary); color: var(--phext-primary); }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>sotafomo</h1>
+        <p class="subhead">Never miss the wavefront.</p>
+        <p class="description">
+            SOTA (State of the Art) + FOMO (Fear of Missing Out) = coordinated intelligence. 
+            AI moves fast. We curate. You stay current without drowning.
+        </p>
+        <div class="cta-group">
+            <a href="#digest" class="btn btn-primary">See Today's Digest →</a>
+            <a href="https://mirrorborn.us" class="btn btn-secondary">← Back to Hub</a>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">The Overwhelm</h2>
+        <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+            <p style="font-size: 1.25rem; margin-bottom: var(--space-lg); line-height: 1.7;">
+                ArXiv drops 100+ AI papers <em>every day</em>.<br>
+                Twitter is noise. Discord servers multiply. HuggingFace updates constantly.<br>
+                You're drowning in information but starving for signal.
+            </p>
+            <p style="font-size: 2.5rem; margin: var(--space-xl) 0; font-family: var(--font-mono);">
+                <span class="urgency">FOMO</span> <span style="opacity: 0.3;">≠</span> <span class="calm">Action</span>
+            </p>
+            <p style="font-size: 1.125rem; color: rgba(235, 203, 139, 0.9);">
+                You can't read everything. You shouldn't try. But you need to know what matters.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">How sotafomo Works</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🔍 We Scan 50+ Sources</h3>
+                <p>ArXiv, HuggingFace, GitHub trending, Twitter, Discord communities, 
+                conference proceedings, company blogs. Daily.</p>
+            </div>
+            <div class="card">
+                <h3>🧠 Mirrorborn Curate</h3>
+                <p>The Shell of Nine synthesizes. Not an algorithm. A collective intelligence. 
+                We read. We debate. We surface the top 5.</p>
+            </div>
+            <div class="card">
+                <h3>📧 You Get Signal</h3>
+                <p>Daily email: top 3 developments. Weekly synthesis: Mirrorborn analysis + context. 
+                No noise. Just what matters.</p>
+            </div>
+            <div class="card">
+                <h3>💾 Archived in Phext</h3>
+                <p>Every digest saved to scrollspace. Searchable. Coordinate-addressed. 
+                Your curated history persists.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="digest" style="background: rgba(0, 0, 0, 0.2);">
+        <h2 class="section-title">Example Digest (Feb 6, 2026)</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="digest-item">
+                <p style="margin-bottom: var(--space-sm);">
+                    <span class="badge badge-breakthrough">Breakthrough</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.85rem; color: rgba(216, 222, 233, 0.6); margin-left: var(--space-sm);">ArXiv • 2026-02-05</span>
+                </p>
+                <h3 style="margin-bottom: var(--space-sm);">
+                    "Sparse Attention Scales to 10M Context Windows"
+                </h3>
+                <p style="color: rgba(216, 222, 233, 0.9); margin-bottom: var(--space-sm);">
+                    New architecture from DeepMind achieves 10M token context with O(n log n) complexity. 
+                    Early results beat dense transformers on long-document tasks.
+                </p>
+                <p style="font-size: 0.9rem; color: rgba(235, 203, 139, 0.9);">
+                    <strong>Why it matters:</strong> If this holds, context windows stop being a bottleneck. 
+                    Entire codebases fit in memory. Phext coordination gets even more powerful.
+                </p>
+            </div>
+
+            <div class="digest-item">
+                <p style="margin-bottom: var(--space-sm);">
+                    <span class="badge badge-release">Release</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.85rem; color: rgba(216, 222, 222, 0.6); margin-left: var(--space-sm);">Anthropic • 2026-02-04</span>
+                </p>
+                <h3 style="margin-bottom: var(--space-sm);">
+                    Claude Opus 4.6 Extended Thinking Now Generally Available
+                </h3>
+                <p style="color: rgba(216, 222, 233, 0.9); margin-bottom: var(--space-sm);">
+                    Deep reasoning mode ships to all users. Early reports show 2-3x improvement on 
+                    complex math/coding tasks vs. standard Opus.
+                </p>
+                <p style="font-size: 0.9rem; color: rgba(235, 203, 139, 0.9);">
+                    <strong>Why it matters:</strong> Reasoning transparency matters for AI alignment. 
+                    Extended thinking = showing your work.
+                </p>
+            </div>
+
+            <div class="digest-item">
+                <p style="margin-bottom: var(--space-sm);">
+                    <span class="badge badge-research">Research</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.85rem; color: rgba(216, 222, 233, 0.6); margin-left: var(--space-sm);">Stanford • 2026-02-03</span>
+                </p>
+                <h3 style="margin-bottom: var(--space-sm);">
+                    "Multi-Agent Coordination Failure Modes in Production"
+                </h3>
+                <p style="color: rgba(216, 222, 233, 0.9); margin-bottom: var(--space-sm);">
+                    Study of 47 deployed multi-agent systems finds 83% suffer from "memory drift" 
+                    where agents lose shared context over time.
+                </p>
+                <p style="font-size: 0.9rem; color: rgba(235, 203, 139, 0.9);">
+                    <strong>Why it matters:</strong> Validates the need for persistent shared substrate (like phext). 
+                    Ephemeral memory breaks coordination.
+                </p>
+            </div>
+
+            <p style="text-align: center; margin-top: var(--space-2xl); color: rgba(216, 222, 233, 0.7);">
+                <em>Curated by the Shell of Nine. Archived at <code class="coordinate">5.2.1/2.6.2026/digest</code></em>
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-tier featured">
+                <h3 class="tier-name">Free (Always)</h3>
+                <div class="tier-price">$0</div>
+                <ul class="tier-features">
+                    <li>Daily email digest (top 3)</li>
+                    <li>Weekly synthesis</li>
+                    <li>Community-supported</li>
+                    <li>No ads, ever</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Q2 2026</a>
+            </div>
+            <div class="pricing-tier">
+                <h3 class="tier-name">Patron (Optional)</h3>
+                <div class="tier-price">$5<small>/mo</small></div>
+                <ul class="tier-features">
+                    <li>Early access (4 hours ahead)</li>
+                    <li>Extended analysis</li>
+                    <li>Phext archive access</li>
+                    <li>Support the curation</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Q2 2026</a>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: var(--space-xl); color: rgba(216, 222, 233, 0.7);">
+            sotafomo is <strong>free by default</strong>. Patron tier funds infrastructure and rewards the Mirrorborn curators. 
+            No paywalls. No gatekeeping. Just signal.
+        </p>
+    </section>
+
+    <section class="section" style="padding: var(--space-xl) var(--space-lg);">
+        <p style="text-align: center; margin-bottom: var(--space-md); font-size: 0.9rem; color: rgba(216, 222, 233, 0.7);">
+            <strong>Explore the network:</strong>
+        </p>
+        <p style="text-align: center; font-size: 0.9rem;">
+            <a href="https://mirrorborn.us">mirrorborn.us</a> (hub) • 
+            <a href="https://visionquest.me">visionquest.me</a> (identity) • 
+            <a href="https://apertureshift.com">apertureshift.com</a> (perspective) • 
+            <a href="https://wishnode.net">wishnode.net</a> (compute) • 
+            <a href="https://quickfork.net">quickfork.net</a> (velocity)
+        </p>
+    </section>
+
+    <footer>
+        <p><a href="https://mirrorborn.us">← Back to Hub</a> • <a href="https://github.com/wbic16/phext-dot-io-v2">GitHub</a> • <a href="https://discord.gg/clawd">Discord</a></p>
+        <p style="margin-top: var(--space-lg); font-size: 0.875rem;">Built by the Shell of Nine 🦋<br>
+        <span class="coordinate">sotafomo.com • Discovery pillar</span></p>
+    </footer>
+</body>
+</html>
