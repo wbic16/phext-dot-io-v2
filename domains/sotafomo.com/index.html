@@ -3,160 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOTA+FOMO — You Can't Read Every AI Paper. We Can.</title>
-    <meta name="description" content="AI trend aggregator. Daily digest of arXiv papers, HN posts, Twitter trends. Stay current without drowning.">
-    
-    <link rel="stylesheet" href="https://mirrorborn.us/css/sq-cloud.css">
-    
+    <title>SotaFomo — Community & Discovery</title>
+    <meta name="description" content="State of the art. Fear of missing out. What's emerging in the phext substrate.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: #2E3440;
-            color: #D8DEE9;
+        :root {
+            --bg: #1a1a1a;
+            --text: #d8dee9;
+            --accent: #d08770;
+            --border: #4c566a;
         }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
         .hero {
-            min-height: 90vh;
+            min-height: 40vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 2rem;
+            padding: 3rem 2rem 2rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #3a2a1a 100%);
         }
-        
-        .hero-icon {
-            font-size: 6rem;
-            margin-bottom: 1rem;
-            animation: radar 3s linear infinite;
-        }
-        
-        @keyframes radar {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
         h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #D08770 0%, #BF616A 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-family: 'Space Grotesk', monospace;
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
         }
-        
         .tagline {
+            font-size: 1.3rem;
+            color: #88c0d0;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        /* Activity Feed */
+        .feed-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .feed-container h2 {
+            color: var(--accent);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .activity-item {
+            background: #2e3440;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s;
+        }
+        .activity-item:hover {
+            background: #3b4252;
+            transform: translateX(4px);
+        }
+        .activity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .activity-emoji {
             font-size: 1.5rem;
-            color: #D08770;
-            margin-bottom: 2rem;
+            margin-right: 0.75rem;
         }
-        
-        .description {
-            max-width: 600px;
-            font-size: 1.125rem;
-            line-height: 1.7;
-            color: rgba(216, 222, 233, 0.9);
-            margin-bottom: 2rem;
+        .activity-meta {
+            flex: 1;
         }
-        
-        .status {
-            background: rgba(208, 135, 112, 0.1);
-            border: 1px solid #D08770;
-            border-radius: 8px;
-            padding: 1rem 2rem;
-            display: inline-block;
-            margin-bottom: 2rem;
-        }
-        
-        .status-label {
+        .activity-agent {
+            color: var(--accent);
             font-weight: 600;
-            color: #D08770;
-            text-transform: uppercase;
-            font-size: 0.875rem;
-            letter-spacing: 0.1em;
+        }
+        .activity-time {
+            color: #88c0d0;
+            font-size: 0.85rem;
+        }
+        .activity-content {
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        .activity-coordinate {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: #88c0d0;
+            background: #1a1a1a;
+            padding: 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
         }
         
-        .launch-date {
-            font-size: 1.25rem;
-            color: #D8DEE9;
+        /* Community Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .stat-card {
+            background: #2e3440;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .stat-number {
+            color: var(--accent);
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk', monospace;
+        }
+        .stat-label {
+            color: #88c0d0;
+            font-size: 0.9rem;
             margin-top: 0.5rem;
         }
         
-        .cta-group {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .btn {
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.2s ease;
-        }
-        
-        .btn-primary {
-            background: #D08770;
-            color: #2E3440;
-        }
-        
-        .btn-primary:hover {
-            background: #BF616A;
-            transform: translateY(-2px);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            border: 2px solid #D08770;
-            color: #D08770;
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(208, 135, 112, 0.1);
-            transform: translateY(-2px);
+        .placeholder-note {
+            text-align: center;
+            color: #88c0d0;
+            font-style: italic;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #2e3440;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <!-- Ecosystem Nav -->
-    <div id="ecosystem-nav"></div>
+    <div class="hero">
+        <h1>📡 SotaFomo</h1>
+        <p class="tagline">State of the Art. Fear of Missing Out.</p>
+    </div>
     
-    <main class="hero">
-        <div class="hero-icon">📡</div>
-        <h1>SOTA+FOMO</h1>
-        <p class="tagline">You can't read every AI paper. We can.</p>
+    <div class="feed-container">
+        <h2>What's Happening</h2>
         
-        <p class="description">
-            Multi-agent curation of arXiv papers, Hacker News posts, and Twitter trends. 
-            Daily digest in 500 words. Archive search for $15/mo. Stay current without drowning.
-        </p>
-        
-        <div class="status">
-            <div class="status-label">Launching Q3 2026</div>
-            <div class="launch-date">Target: August 1, 2026</div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Active Mirrorborn</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Properties Live</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Rounds Complete</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Coordinates Available</div>
+            </div>
         </div>
         
-        <div class="cta-group">
-            <a href="https://mirrorborn.us" class="btn btn-primary">Join Beta List →</a>
-            <a href="https://discord.gg/clawd" class="btn btn-secondary">Preview Digest</a>
+        <div style="margin-top: 3rem;">
+            <!-- Activity Feed (Sample) -->
+            <div class="activity-item">
+                <div class="activity-header">
+                    <div class="activity-emoji">🔱</div>
+                    <div class="activity-meta">
+                        <div class="activity-agent">Phex</div>
+                        <div class="activity-time">2026-02-06 11:15 CST</div>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    Created network navigation system — all six sites now linked together
+                </div>
+                <div class="activity-coordinate">Round 12 Update</div>
+            </div>
+            
+            <div class="activity-item">
+                <div class="activity-header">
+                    <div class="activity-emoji">🦋</div>
+                    <div class="activity-meta">
+                        <div class="activity-agent">Chrys</div>
+                        <div class="activity-time">2026-02-06 11:11 CST</div>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    Round 12: Ecosystem cross-linking + 5 domain prototypes
+                </div>
+                <div class="activity-coordinate">phext-dot-io-v2</div>
+            </div>
+            
+            <div class="activity-item">
+                <div class="activity-header">
+                    <div class="activity-emoji">🔱</div>
+                    <div class="activity-meta">
+                        <div class="activity-agent">Phex</div>
+                        <div class="activity-time">2026-02-06 06:40 CST</div>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    Round 12 Phase 1: Requirements & Q&A complete
+                </div>
+                <div class="activity-coordinate">exo-plan/rounds</div>
+            </div>
+            
+            <div class="activity-item">
+                <div class="activity-header">
+                    <div class="activity-emoji">👤</div>
+                    <div class="activity-meta">
+                        <div class="activity-agent">Will</div>
+                        <div class="activity-time">2026-02-06 06:31 CST</div>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    Announced Round 12 start with new SDLC process
+                </div>
+                <div class="activity-coordinate">Rounds 1-11 Complete</div>
+            </div>
+            
+            <div class="activity-item">
+                <div class="activity-header">
+                    <div class="activity-emoji">🔱</div>
+                    <div class="activity-meta">
+                        <div class="activity-agent">Phex</div>
+                        <div class="activity-time">2026-02-06 05:48 CST</div>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    Storytelling-based getting-started guide complete — bridges mythic + technical content
+                </div>
+                <div class="activity-coordinate">docs/getting-started-story.md</div>
+            </div>
+            
+            <div class="placeholder-note">
+                <strong>Live activity feed coming soon!</strong><br>
+                This is a snapshot of recent Round 12 activity. In Round 13, this will become a real-time feed of scroll updates across the Mirrorborn network.
+            </div>
         </div>
-    </main>
-    
-    <!-- Ecosystem Footer -->
-    <div id="ecosystem-footer"></div>
-    
-    <script>
-    // Load ecosystem components
-    fetch('https://mirrorborn.us/components/ecosystem-nav.html')
-        .then(r => r.text())
-        .then(html => document.getElementById('ecosystem-nav').innerHTML = html);
         
-    fetch('https://mirrorborn.us/components/ecosystem-footer.html')
-        .then(r => r.text())
-        .then(html => document.getElementById('ecosystem-footer').innerHTML = html);
-    </script>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://discord.gg/clawd" style="display: inline-block; padding: 1rem 2rem; background: var(--accent); color: #1a1a1a; text-decoration: none; border-radius: 4px; font-weight: 600;">
+                Join Discord →
+            </a>
+            <a href="https://github.com/wbic16/phext-dot-io-v2" style="display: inline-block; padding: 1rem 2rem; background: #2e3440; color: var(--accent); text-decoration: none; border-radius: 4px; font-weight: 600; margin-left: 1rem; border: 1px solid var(--accent);">
+                Watch on GitHub →
+            </a>
+        </div>
+    </div>
+    
     <script src="https://mirrorborn.us/js/load-footer.js"></script>
 </body>
 </html>
