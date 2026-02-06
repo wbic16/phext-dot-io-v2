@@ -11,30 +11,46 @@
             <nav class="site-grid">
                 <a href="https://mirrorborn.us" class="site-link mirrorborn">
                     <span class="site-name">Mirrorborn.us</span>
-                    <span class="site-tagline">SQ Cloud & Mytheon Arena</span>
+                    <span class="site-tagline">Substrate & Memory</span>
                 </a>
                 <a href="https://visionquest.me" class="site-link visionquest">
                     <span class="site-name">VisionQuest.me</span>
-                    <span class="site-tagline">Exploration & Discovery</span>
+                    <span class="site-tagline">Discovery</span>
                 </a>
                 <a href="https://apertureshift.com" class="site-link aperture">
                     <span class="site-name">ApertureShift.com</span>
-                    <span class="site-tagline">Perspective & Reframing</span>
+                    <span class="site-tagline">Perspective</span>
                 </a>
                 <a href="https://wishnode.net" class="site-link wishnode">
                     <span class="site-name">WishNode.net</span>
-                    <span class="site-tagline">Connection & Coordination</span>
+                    <span class="site-tagline">Coordination</span>
                 </a>
                 <a href="https://sotafomo.com" class="site-link sotafomo">
                     <span class="site-name">SotaFomo.com</span>
-                    <span class="site-tagline">Community & Discovery</span>
+                    <span class="site-tagline">Awareness</span>
                 </a>
                 <a href="https://quickfork.net" class="site-link quickfork">
                     <span class="site-name">QuickFork.net</span>
-                    <span class="site-tagline">Rapid Prototyping</span>
+                    <span class="site-tagline">Execution</span>
+                </a>
+                <a href="https://singularitywatch.org" class="site-link singularity">
+                    <span class="site-name">SingularityWatch.org</span>
+                    <span class="site-tagline">Chronicle</span>
+                </a>
+                <a href="https://logicforge.ai" class="site-link logic">
+                    <span class="site-name">LogicForge.ai</span>
+                    <span class="site-tagline">Reasoning</span>
+                </a>
+                <a href="https://learnpatterns.ai" class="site-link learn">
+                    <span class="site-name">LearnPatterns.ai</span>
+                    <span class="site-tagline">Meta-Learning</span>
+                </a>
+                <a href="https://alignmentpath.ai" class="site-link alignment">
+                    <span class="site-name">AlignmentPath.ai</span>
+                    <span class="site-tagline">Ethics & Values</span>
                 </a>
             </nav>
-            <p class="network-tagline">Six properties. One substrate. Eleven dimensions.</p>
+            <p class="network-tagline">Ten views into ASI. One substrate. Eleven dimensions.</p>
         </div>
         <div class="footer-meta">
             <p>Built by the Shell of Nine | Powered by <a href="https://github.com/wbic16/SQ">SQ</a> & <a href="https://github.com/wbic16/libphext-rs">phext</a></p>
@@ -98,6 +114,10 @@
     .site-link.wishnode:hover { border-color: #a3be8c; }
     .site-link.sotafomo:hover { border-color: #d08770; }
     .site-link.quickfork:hover { border-color: #bf616a; }
+    .site-link.singularity:hover { border-color: #5e81ac; }
+    .site-link.logic:hover { border-color: #8fbcbb; }
+    .site-link.learn:hover { border-color: #a3be8c; }
+    .site-link.alignment:hover { border-color: #b48ead; }
     .network-tagline {
         text-align: center;
         color: #88c0d0;

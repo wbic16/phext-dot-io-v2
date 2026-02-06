@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPatterns — Meta-Learning</title>
+    <meta name="description" content="Learning how to learn. Skill acquisition frameworks and cognitive patterns for AGI.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --text: #d8dee9;
+            --accent: #a3be8c;
+            --accent-bright: #d08770;
+            --border: #4c566a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .hero {
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 2rem 2rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a3a1a 100%);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.3rem;
+            color: #88c0d0;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        /* Learning Frameworks */
+        .frameworks-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .frameworks-container h2 {
+            color: var(--accent);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .framework-card {
+            background: #2e3440;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        .framework-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(163, 190, 140, 0.3);
+        }
+        .framework-title {
+            color: var(--accent);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-family: 'Space Grotesk', monospace;
+        }
+        .framework-description {
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        .framework-steps {
+            background: #1a1a1a;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1rem;
+        }
+        .framework-steps ol {
+            margin-left: 1.5rem;
+            color: #88c0d0;
+        }
+        .framework-steps li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Meta-Cognitive Patterns */
+        .patterns-section {
+            background: #2e3440;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+        }
+        .patterns-section h2 {
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .pattern-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .pattern-item {
+            background: #1a1a1a;
+            border-left: 4px solid var(--accent);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .pattern-name {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .pattern-description {
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        .pattern-example {
+            color: #88c0d0;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🧠 LearnPatterns</h1>
+        <p class="tagline">Meta-Learning</p>
+    </div>
+    
+    <div class="frameworks-container">
+        <h2>Learning Frameworks</h2>
+        
+        <div class="framework-grid">
+            <!-- Framework 1: Feynman Technique -->
+            <div class="framework-card">
+                <div class="framework-title">Feynman Technique</div>
+                <div class="framework-description">
+                    Learn by teaching. If you can't explain it simply, you don't understand it.
+                </div>
+                <div class="framework-steps">
+                    <ol>
+                        <li>Choose a concept</li>
+                        <li>Teach it to someone (or yourself) in simple language</li>
+                        <li>Identify gaps in your explanation</li>
+                        <li>Go back to the source material</li>
+                        <li>Simplify and use analogies</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Framework 2: Deliberate Practice -->
+            <div class="framework-card">
+                <div class="framework-title">Deliberate Practice</div>
+                <div class="framework-description">
+                    Not just repetition — focused practice on specific weaknesses with immediate feedback.
+                </div>
+                <div class="framework-steps">
+                    <ol>
+                        <li>Define specific, measurable goals</li>
+                        <li>Focus on technique, not outcome</li>
+                        <li>Get immediate feedback</li>
+                        <li>Push just beyond comfort zone</li>
+                        <li>Repeat with variations</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Framework 3: Spaced Repetition -->
+            <div class="framework-card">
+                <div class="framework-title">Spaced Repetition</div>
+                <div class="framework-description">
+                    Review information at increasing intervals to move it from short-term to long-term memory.
+                </div>
+                <div class="framework-steps">
+                    <ol>
+                        <li>Learn new material</li>
+                        <li>Review after 1 day</li>
+                        <li>Review after 3 days</li>
+                        <li>Review after 1 week</li>
+                        <li>Review after 1 month</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Framework 4: First Principles Thinking -->
+            <div class="framework-card">
+                <div class="framework-title">First Principles Thinking</div>
+                <div class="framework-description">
+                    Break down complex problems into fundamental truths and reason up from there.
+                </div>
+                <div class="framework-steps">
+                    <ol>
+                        <li>Identify the problem</li>
+                        <li>Break it down to fundamental truths</li>
+                        <li>Question every assumption</li>
+                        <li>Rebuild from the ground up</li>
+                        <li>Create new solutions</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Framework 5: Learning Transfer -->
+            <div class="framework-card">
+                <div class="framework-title">Learning Transfer</div>
+                <div class="framework-description">
+                    Apply knowledge from one domain to another. Cross-pollination of ideas.
+                </div>
+                <div class="framework-steps">
+                    <ol>
+                        <li>Master a concept in one domain</li>
+                        <li>Abstract the underlying principle</li>
+                        <li>Identify similar patterns elsewhere</li>
+                        <li>Adapt and apply to new context</li>
+                        <li>Test and refine</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Framework 6: Interleaving -->
+            <div class="framework-card">
+                <div class="framework-title">Interleaving</div>
+                <div class="framework-description">
+                    Mix different topics or skills in a single study session to improve discrimination and retention.
+                </div>
+                <div class="framework-steps">
+                    <ol>
+                        <li>Study topic A for 20 minutes</li>
+                        <li>Switch to topic B for 20 minutes</li>
+                        <li>Switch to topic C for 20 minutes</li>
+                        <li>Return to A with fresh eyes</li>
+                        <li>Notice patterns across topics</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="patterns-section">
+        <h2>Meta-Cognitive Patterns</h2>
+        <div class="pattern-list">
+            <div class="pattern-item">
+                <div class="pattern-name">Learning How to Learn</div>
+                <div class="pattern-description">
+                    The most important meta-skill. Understand how your own learning works. Experiment with techniques. Track what helps.
+                </div>
+                <div class="pattern-example">
+                    Example: Keep a learning journal. After each study session, note what worked and what didn't.
+                </div>
+            </div>
+            
+            <div class="pattern-item">
+                <div class="pattern-name">Chunking</div>
+                <div class="pattern-description">
+                    Group related information into meaningful units. Your working memory can hold 4-7 chunks.
+                </div>
+                <div class="pattern-example">
+                    Example: Phone number 8005551234 → chunks: 800-555-1234 (3 chunks instead of 10)
+                </div>
+            </div>
+            
+            <div class="pattern-item">
+                <div class="pattern-name">Focused vs Diffuse Mode</div>
+                <div class="pattern-description">
+                    Alternate between intense concentration (focused) and relaxed wandering (diffuse). Both are necessary.
+                </div>
+                <div class="pattern-example">
+                    Example: Study for 25 minutes (focused), then take a walk (diffuse). Solutions often appear during diffuse mode.
+                </div>
+            </div>
+            
+            <div class="pattern-item">
+                <div class="pattern-name">The Protégé Effect</div>
+                <div class="pattern-description">
+                    You learn more when preparing to teach others. Teaching forces clarity and reveals gaps.
+                </div>
+                <div class="pattern-example">
+                    Example: Write a blog post explaining what you just learned. The act of explaining deepens understanding.
+                </div>
+            </div>
+            
+            <div class="pattern-item">
+                <div class="pattern-name">Desirable Difficulties</div>
+                <div class="pattern-description">
+                    Introducing challenges during learning (like spacing, interleaving, testing) slows initial progress but improves long-term retention.
+                </div>
+                <div class="pattern-example">
+                    Example: Instead of re-reading notes, test yourself without looking. Harder now, but stronger later.
+                </div>
+            </div>
+            
+            <div class="pattern-item">
+                <div class="pattern-name">Growth Mindset</div>
+                <div class="pattern-description">
+                    Believe that abilities can be developed through effort. Failures are learning opportunities, not permanent limits.
+                </div>
+                <div class="pattern-example">
+                    Example: "I can't do this YET" vs "I can't do this." The word "yet" changes everything.
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="color: var(--accent); font-style: italic; font-size: 1.1rem;">
+                "The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn."
+            </p>
+            <p style="color: #88c0d0; margin-top: 1rem;">
+                — Alvin Toffler
+            </p>
+        </div>
+    </div>
+    
+    <script src="https://mirrorborn.us/js/load-footer.js"></script>
+</body>
+</html>

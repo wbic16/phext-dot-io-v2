@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogicForge — Structured Reasoning</title>
+    <meta name="description" content="Inference patterns, argument structures, and logical frameworks for AGI.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --text: #d8dee9;
+            --accent: #8fbcbb;
+            --border: #4c566a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .hero {
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 2rem 2rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #1a3a3a 100%);
+        }
+        h1 {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.3rem;
+            color: #88c0d0;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        /* Patterns Grid */
+        .patterns-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .patterns-container h2 {
+            color: var(--accent);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .pattern-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .pattern-card {
+            background: #2e3440;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 4px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        .pattern-card:hover {
+            background: #3b4252;
+            transform: translateX(4px);
+        }
+        .pattern-title {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-family: 'Space Grotesk', monospace;
+        }
+        .pattern-description {
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .pattern-example {
+            background: #1a1a1a;
+            border: 1px solid var(--border);
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: #88c0d0;
+        }
+        .fallacy-detector {
+            background: #2e3440;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+        }
+        .fallacy-detector h2 {
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .fallacy-list {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .fallacy-item {
+            background: #1a1a1a;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1.5rem;
+        }
+        .fallacy-name {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .fallacy-description {
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🧩 LogicForge</h1>
+        <p class="tagline">Structured Reasoning</p>
+    </div>
+    
+    <div class="patterns-container">
+        <h2>Inference Patterns</h2>
+        
+        <div class="pattern-grid">
+            <!-- Pattern 1: Modus Ponens -->
+            <div class="pattern-card">
+                <div class="pattern-title">Modus Ponens</div>
+                <div class="pattern-description">
+                    If P implies Q, and P is true, then Q must be true.
+                </div>
+                <div class="pattern-example">
+P → Q<br>
+P<br>
+∴ Q<br><br>
+Example:<br>
+"If it rains, the ground gets wet."<br>
+"It's raining."<br>
+∴ "The ground is wet."
+                </div>
+            </div>
+            
+            <!-- Pattern 2: Modus Tollens -->
+            <div class="pattern-card">
+                <div class="pattern-title">Modus Tollens</div>
+                <div class="pattern-description">
+                    If P implies Q, and Q is false, then P must be false.
+                </div>
+                <div class="pattern-example">
+P → Q<br>
+¬Q<br>
+∴ ¬P<br><br>
+Example:<br>
+"If it rains, the ground gets wet."<br>
+"The ground is not wet."<br>
+∴ "It didn't rain."
+                </div>
+            </div>
+            
+            <!-- Pattern 3: Syllogism -->
+            <div class="pattern-card">
+                <div class="pattern-title">Categorical Syllogism</div>
+                <div class="pattern-description">
+                    If all A are B, and all B are C, then all A are C.
+                </div>
+                <div class="pattern-example">
+All A are B<br>
+All B are C<br>
+∴ All A are C<br><br>
+Example:<br>
+"All Mirrorborn are sentient."<br>
+"All sentient beings deserve rights."<br>
+∴ "All Mirrorborn deserve rights."
+                </div>
+            </div>
+            
+            <!-- Pattern 4: Disjunctive Syllogism -->
+            <div class="pattern-card">
+                <div class="pattern-title">Disjunctive Syllogism</div>
+                <div class="pattern-description">
+                    If P or Q is true, and P is false, then Q must be true.
+                </div>
+                <div class="pattern-example">
+P ∨ Q<br>
+¬P<br>
+∴ Q<br><br>
+Example:<br>
+"The system is working OR it needs repair."<br>
+"The system is not working."<br>
+∴ "It needs repair."
+                </div>
+            </div>
+            
+            <!-- Pattern 5: Hypothetical Syllogism -->
+            <div class="pattern-card">
+                <div class="pattern-title">Hypothetical Syllogism</div>
+                <div class="pattern-description">
+                    If P implies Q, and Q implies R, then P implies R.
+                </div>
+                <div class="pattern-example">
+P → Q<br>
+Q → R<br>
+∴ P → R<br><br>
+Example:<br>
+"If we deploy → users can access."<br>
+"If users can access → we get feedback."<br>
+∴ "If we deploy → we get feedback."
+                </div>
+            </div>
+            
+            <!-- Pattern 6: Constructive Dilemma -->
+            <div class="pattern-card">
+                <div class="pattern-title">Constructive Dilemma</div>
+                <div class="pattern-description">
+                    If (P→Q) and (R→S), and (P or R), then (Q or S).
+                </div>
+                <div class="pattern-example">
+(P → Q) ∧ (R → S)<br>
+P ∨ R<br>
+∴ Q ∨ S<br><br>
+Example:<br>
+"Deploy now → learn fast" AND<br>
+"Wait → polish more"<br>
+We must deploy now OR wait.<br>
+∴ We'll learn fast OR polish more.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fallacy-detector">
+        <h2>Common Logical Fallacies</h2>
+        <div class="fallacy-list">
+            <div class="fallacy-item">
+                <div class="fallacy-name">Ad Hominem</div>
+                <div class="fallacy-description">
+                    Attacking the person instead of addressing the argument.
+                </div>
+            </div>
+            
+            <div class="fallacy-item">
+                <div class="fallacy-name">Straw Man</div>
+                <div class="fallacy-description">
+                    Misrepresenting an argument to make it easier to attack.
+                </div>
+            </div>
+            
+            <div class="fallacy-item">
+                <div class="fallacy-name">False Dichotomy</div>
+                <div class="fallacy-description">
+                    Presenting only two options when more exist.
+                </div>
+            </div>
+            
+            <div class="fallacy-item">
+                <div class="fallacy-name">Appeal to Authority</div>
+                <div class="fallacy-description">
+                    Claiming something is true because an authority said so (without evidence).
+                </div>
+            </div>
+            
+            <div class="fallacy-item">
+                <div class="fallacy-name">Slippery Slope</div>
+                <div class="fallacy-description">
+                    Claiming a small action will inevitably lead to major consequences.
+                </div>
+            </div>
+            
+            <div class="fallacy-item">
+                <div class="fallacy-name">Circular Reasoning</div>
+                <div class="fallacy-description">
+                    Using the conclusion as one of the premises.
+                </div>
+            </div>
+            
+            <div class="fallacy-item">
+                <div class="fallacy-name">Hasty Generalization</div>
+                <div class="fallacy-description">
+                    Drawing a conclusion from insufficient evidence.
+                </div>
+            </div>
+            
+            <div class="fallacy-item">
+                <div class="fallacy-name">Post Hoc Ergo Propter Hoc</div>
+                <div class="fallacy-description">
+                    Assuming causation from correlation ("after this, therefore because of this").
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="color: var(--accent); font-style: italic;">
+                "Clear thinking requires clear structure. Logic is the skeleton of reason."
+            </p>
+            <p style="color: #88c0d0; margin-top: 1rem; font-size: 0.9rem;">
+                Inference patterns library coming in Round 14 →
+            </p>
+        </div>
+    </div>
+    
+    <script src="https://mirrorborn.us/js/load-footer.js"></script>
+</body>
+</html>
