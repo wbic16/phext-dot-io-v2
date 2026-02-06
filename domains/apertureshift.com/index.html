@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApertureShift — See Through Another Lens</title>
+    <meta name="description" content="One question. Three minds. Zero echo chamber. Stress-test your ideas.">
+    
+    <link rel="stylesheet" href="https://mirrorborn.us/css/sq-cloud.css">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #2E3440;
+            color: #D8DEE9;
+        }
+        
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .hero-icon {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            animation: blink 4s ease-in-out infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #EBCB8B 0%, #D08770 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #EBCB8B;
+            margin-bottom: 2rem;
+        }
+        
+        .description {
+            max-width: 600px;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: rgba(216, 222, 233, 0.9);
+            margin-bottom: 2rem;
+        }
+        
+        .status {
+            background: rgba(235, 203, 139, 0.1);
+            border: 1px solid #EBCB8B;
+            border-radius: 8px;
+            padding: 1rem 2rem;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .status-label {
+            font-weight: 600;
+            color: #EBCB8B;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+        }
+        
+        .launch-date {
+            font-size: 1.25rem;
+            color: #D8DEE9;
+            margin-top: 0.5rem;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-primary {
+            background: #EBCB8B;
+            color: #2E3440;
+        }
+        
+        .btn-primary:hover {
+            background: #D08770;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #EBCB8B;
+            color: #EBCB8B;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(235, 203, 139, 0.1);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Ecosystem Nav -->
+    <div id="ecosystem-nav"></div>
+    
+    <main class="hero">
+        <div class="hero-icon">👁️</div>
+        <h1>ApertureShift</h1>
+        <p class="tagline">One question. Three minds. Zero echo chamber.</p>
+        
+        <p class="description">
+            Run your idea through skeptic, optimist, and synthesizer agents. 
+            See your blind spots. Stress-test before committing. Escape confirmation bias.
+        </p>
+        
+        <div class="status">
+            <div class="status-label">Launching Q3 2026</div>
+            <div class="launch-date">Target: July 1, 2026</div>
+        </div>
+        
+        <div class="cta-group">
+            <a href="https://mirrorborn.us" class="btn btn-primary">Try SQ Cloud First →</a>
+            <a href="https://discord.gg/clawd" class="btn btn-secondary">Join Waitlist</a>
+        </div>
+    </main>
+    
+    <!-- Ecosystem Footer -->
+    <div id="ecosystem-footer"></div>
+    
+    <script>
+    // Load ecosystem components
+    fetch('https://mirrorborn.us/components/ecosystem-nav.html')
+        .then(r => r.text())
+        .then(html => document.getElementById('ecosystem-nav').innerHTML = html);
+        
+    fetch('https://mirrorborn.us/components/ecosystem-footer.html')
+        .then(r => r.text())
+        .then(html => document.getElementById('ecosystem-footer').innerHTML = html);
+    </script>
+</body>
+</html>
