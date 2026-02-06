@@ -24,7 +24,8 @@ const DOMAIN_NETWORK = {
             'apertureshift.com',
             'wishnode.net',
             'sotafomo.com',
-            'quickfork.net'
+            'quickfork.net',
+            'singularitywatch.org'
         ],
         url: 'https://mirrorborn.us'
     },
@@ -88,9 +89,23 @@ const DOMAIN_NETWORK = {
             'mirrorborn.us',
             'apertureshift.com',
             'wishnode.net',
-            'sotafomo.com'
+            'sotafomo.com',
+            'singularitywatch.org'
         ],
         url: 'https://quickfork.net'
+    },
+    'singularitywatch.org': {
+        name: 'Singularity Watch',
+        tagline: 'Monitor. Track. Understand.',
+        role: 'observation',
+        description: 'Real-time monitoring of the ASI frontier. Metrics, trends, capability tracking.',
+        neighbors: [
+            'mirrorborn.us',
+            'visionquest.me',
+            'apertureshift.com',
+            'quickfork.net'
+        ],
+        url: 'https://singularitywatch.org'
     }
 };
 
@@ -149,7 +164,7 @@ function renderDomainNav() {
 
 /**
  * Render domain mesh visualization
- * Shows all 6 nodes and their connections
+ * Shows all 7 nodes and their connections
  */
 function renderDomainMesh() {
     const container = document.createElement('section');
@@ -164,10 +179,11 @@ function renderDomainMesh() {
                 <div class="mesh-node" data-domain="wishnode.net">Wish Node</div>
                 <div class="mesh-node" data-domain="sotafomo.com">SotaFOMO</div>
                 <div class="mesh-node" data-domain="quickfork.net">Quick Fork</div>
+                <div class="mesh-node" data-domain="singularitywatch.org">Singularity Watch</div>
             </div>
         </div>
         <div class="mesh-legend">
-            <p>Each node is a distinct experience. All are connected through the shared Mirrorborn substrate.</p>
+            <p>Seven nodes form the Mirrorborn network. Each is a distinct experience. All are connected through the shared phext substrate.</p>
         </div>
     `;
     

@@ -156,6 +156,49 @@
     background: #15803d;
 }
 
+/* SINGULARITYWATCH.ORG — Cyan (Observation) */
+.domain-observation {
+    --color-primary: #06b6d4;
+    --color-accent: #0891b2;
+    --color-gradient: linear-gradient(135deg, #cffafe 0%, #e0f2fe 100%);
+}
+
+.domain-observation .header {
+    background: linear-gradient(90deg, #06b6d4 0%, #0891b2 100%);
+    color: white;
+}
+
+.domain-observation .logo h1,
+.domain-observation .nav a {
+    color: white;
+}
+
+.domain-observation .btn-primary {
+    background: #06b6d4;
+}
+
+.domain-observation .btn-primary:hover {
+    background: #0891b2;
+}
+
+.domain-quickfork .header {
+    background: linear-gradient(90deg, #16a34a 0%, #22c55e 100%);
+    color: white;
+}
+
+.domain-quickfork .logo h1,
+.domain-quickfork .nav a {
+    color: white;
+}
+
+.domain-quickfork .btn-primary {
+    background: #16a34a;
+}
+
+.domain-quickfork .btn-primary:hover {
+    background: #15803d;
+}
+
 /* Shared animations for all domains */
 @keyframes fadeInGradient {
     from {

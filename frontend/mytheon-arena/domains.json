@@ -70,5 +70,17 @@
     "focus": "Deploy tools, rapid iteration, hackable infrastructure",
     "hero_image": "quickfork-deploy.svg",
     "cta": "Start Building"
+  },
+  "singularitywatch.org": {
+    "name": "Singularity Watch",
+    "tagline": "Monitor. Track. Understand.",
+    "role": "observation",
+    "theme": "cyan",
+    "color_primary": "#06b6d4",
+    "color_accent": "#0891b2",
+    "hero": "Real-time monitoring of the ASI frontier.",
+    "focus": "Metrics, monitoring, trend analysis, AI capability tracking",
+    "hero_image": "singularitywatch-monitor.svg",
+    "cta": "Watch the Signal"
   }
 }

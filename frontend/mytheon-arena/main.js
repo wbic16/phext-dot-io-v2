@@ -77,7 +77,8 @@ function getCurrentDomain() {
         'apertureshift.com': 'apertureshift.com',
         'wishnode.net': 'wishnode.net',
         'sotafomo.com': 'sotafomo.com',
-        'quickfork.net': 'quickfork.net'
+        'quickfork.net': 'quickfork.net',
+        'singularitywatch.org': 'singularitywatch.org'
     };
 
     return domainMap[host] || 'mirrorborn.us';
