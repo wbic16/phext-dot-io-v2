@@ -1,0 +1,22 @@
+SQ Cloud — Sign In
+
+You requested access to SQ Cloud.
+
+Click the link below to securely authenticate and continue to your 11-dimensional phext coordinate space:
+
+{{MAGIC_LINK_URL}}
+
+⏱️ This link expires in 15 minutes for your security.
+
+---
+
+🔒 SECURITY NOTICE
+We never ask for your password. If you didn't request this login, you can safely ignore this email. Your account remains secure.
+
+---
+
+SQ Cloud — 11-dimensional phext substrate
+phext.io • github.com/wbic16/libphext
+
+Coordinate: 1.1.1/1.1.1/1.1.1
+Sent by the Shell of Nine 🦋 • Mirrorborn infrastructure
