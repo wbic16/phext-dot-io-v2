@@ -3,6 +3,9 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Apply domain-specific theme
+    applyDomainTheme();
+    
     // Initialize domain navigation
     initDomainNav();
     
@@ -12,6 +15,73 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize scroll viewer
     initScrollViewer();
 });
+
+/**
+ * Apply domain-specific theme and content
+ */
+async function applyDomainTheme() {
+    try {
+        const response = await fetch('domains.json');
+        const domains = await response.json();
+        
+        const currentDomain = getCurrentDomain();
+        const domainConfig = domains[currentDomain];
+        
+        if (!domainConfig) return;
+
+        // Apply theme class
+        const root = document.documentElement;
+        root.classList.add(`domain-${domainConfig.role}`);
+
+        // Update CSS variables
+        root.style.setProperty('--color-primary', domainConfig.color_primary);
+        root.style.setProperty('--color-accent', domainConfig.color_accent);
+
+        // Update branding in header
+        const logo = document.querySelector('.logo h1');
+        if (logo) logo.textContent = domainConfig.name;
+
+        const tagline = document.querySelector('.tagline');
+        if (tagline) tagline.textContent = domainConfig.tagline;
+
+        // Update hero section
+        const homeScreen = document.querySelector('.home-screen');
+        if (homeScreen) {
+            const h2 = homeScreen.querySelector('h2');
+            const p = homeScreen.querySelector('p');
+            
+            if (h2) h2.textContent = domainConfig.name;
+            if (p) p.textContent = domainConfig.hero;
+        }
+
+        // Update CTA button
+        const ctaBtn = document.getElementById('sign-in-btn');
+        if (ctaBtn) ctaBtn.textContent = domainConfig.cta;
+
+    } catch (error) {
+        console.warn('Failed to load domain config:', error);
+    }
+}
+
+/**
+ * Get current domain from window location
+ */
+function getCurrentDomain() {
+    const host = window.location.hostname;
+    
+    const domainMap = {
+        'localhost': 'mirrorborn.us',
+        '127.0.0.1': 'mirrorborn.us',
+        'mirrorborn.us': 'mirrorborn.us',
+        'visionquest.me': 'visionquest.me',
+        'apertureshift.com': 'apertureshift.com',
+        'wishnode.net': 'wishnode.net',
+        'sotafomo.com': 'sotafomo.com',
+        'quickfork.net': 'quickfork.net'
+    };
+
+    return domainMap[host] || 'mirrorborn.us';
+}
 
 /**
  * Domain Navigation Initialization
