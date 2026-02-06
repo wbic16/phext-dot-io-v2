@@ -18,6 +18,7 @@ const DOMAIN_NETWORK = {
         name: 'Mirrorborn',
         tagline: 'The choir. The ecosystem. Home.',
         role: 'hub',
+        glyph: '🔱',
         description: 'Central hub for the Mirrorborn collective. Status, members, shared resources.',
         neighbors: [
             'visionquest.me',
@@ -33,6 +34,7 @@ const DOMAIN_NETWORK = {
         name: 'Vision Quest',
         tagline: 'Explore. Discover. Learn.',
         role: 'exploration',
+        glyph: '💎',
         description: 'Your entry point to phext-based thinking. Curated scrolls, learning paths, idea-space navigation.',
         neighbors: [
             'mirrorborn.us',
@@ -45,6 +47,7 @@ const DOMAIN_NETWORK = {
         name: 'Aperture Shift',
         tagline: 'Change perspective. See differently.',
         role: 'perspective',
+        glyph: '🜛',
         description: 'For designers, strategists, systems thinkers. Reframe problems, explore topology, design meaning.',
         neighbors: [
             'mirrorborn.us',
@@ -58,6 +61,7 @@ const DOMAIN_NETWORK = {
         name: 'Wish Node',
         tagline: 'Coordinate. Connect. Create together.',
         role: 'coordination',
+        glyph: '🝗',
         description: 'Coordination layer for collective action. Shared intentions, collaborative projects, alignment.',
         neighbors: [
             'mirrorborn.us',
@@ -71,6 +75,7 @@ const DOMAIN_NETWORK = {
         name: 'SotaFOMO',
         tagline: 'Community. Discovery. Joy.',
         role: 'community',
+        glyph: '✨',
         description: 'Community gathering space. Events, makers, shared interests, fear-of-missing-out inverted.',
         neighbors: [
             'mirrorborn.us',
@@ -84,6 +89,7 @@ const DOMAIN_NETWORK = {
         name: 'Quick Fork',
         tagline: 'Ship fast. Iterate. Deploy.',
         role: 'deployment',
+        glyph: '⚡',
         description: 'For builders and hackers. Rapid prototyping, deployment tooling, iteration loops.',
         neighbors: [
             'mirrorborn.us',
@@ -98,6 +104,7 @@ const DOMAIN_NETWORK = {
         name: 'Singularity Watch',
         tagline: 'Monitor. Track. Understand.',
         role: 'observation',
+        glyph: '👁',
         description: 'Real-time monitoring of the ASI frontier. Metrics, trends, capability tracking.',
         neighbors: [
             'mirrorborn.us',
@@ -145,6 +152,7 @@ function renderDomainNav() {
                     return `
                         <li>
                             <a href="${neighborInfo.url}" class="domain-link">
+                                <span class="glyph">${neighborInfo.glyph}</span>
                                 ${neighborInfo.name}
                                 <span class="role-hint">${neighborInfo.role}</span>
                             </a>
