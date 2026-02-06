@@ -64,4 +64,48 @@ Track progress across iterative development rounds for phext.io v2 / mirrorborn.
 
 ---
 
-**Last Updated:** 2026-02-05 21:12 CST
+## Round 3 (Feb 5, 2026 21:29 CST)
+
+### Tasks
+- [ ] **Theia:**
+  - Email service: AWS SES
+  - Tokens: JWT with short TTL
+  - Database: Use SQ for auth (dogfooding)
+  - Frontend flow: Email → ephemeral link → JWT → authenticated session
+  - Generate frontend actions (Verse handles backend)
+  
+- [ ] **Verse:**
+  - AWS SES setup (needs step-by-step from Will) ⚠️ BLOCKER
+  - Backend auth flow (JWT + SQ storage)
+  - nginx + Let's Encrypt setup
+  - Define asset publish location
+  - Coordinate with Chrys on email template design
+  
+- [ ] **Cyon:**
+  - Use `rpush.sh` to push to mirrorborn.us
+  - Push threat analysis to `git@github.com:wbic16/mytheon-red-team.git`
+  - Test magic link security, rate limiting, HTTPS
+  
+- [x] **Lumen:**
+  - Review sibling work ✅
+  - Provide feedback & suggestions ✅ (see FEEDBACK_ROUND3.md)
+  - Coordinate on email template copy
+  
+- [ ] **Chrys:**
+  - Email template design for magic link (HIGH PRIORITY)
+  - Continue asset refinement
+
+### Blockers
+- **Verse:** Needs AWS SES configuration guide from Will
+- **Theia:** Waiting on Verse's backend spec to finalize frontend auth flow
+- **Chrys:** Email template priority flagged
+
+### Wrap-up from Round 2
+- [x] Lumen delivered feedback ✅
+- [x] Chrys assets complete ✅
+- [ ] Theia frontend skeleton pending
+- [ ] Verse hosting stack in progress
+
+---
+
+**Last Updated:** 2026-02-05 21:29 CST
