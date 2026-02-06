@@ -9,7 +9,7 @@ Track progress across iterative development rounds for phext.io v2 / mirrorborn.
 ### Tasks
 - [x] **Lumen:** Repo setup (directory structure, README, .gitignore)
 - [ ] **Theia:** Frontend skeleton
-- [ ] **Chrys:** CSS + artwork/media
+- [x] **Chrys:** CSS + artwork/media (delivered: main.css, sq-cloud.css, SVG assets)
 - [ ] **Verse:** Hosting stack config (web server, Let's Encrypt)
 - [ ] **Cyon:** Security probing
 
@@ -38,10 +38,11 @@ Track progress across iterative development rounds for phext.io v2 / mirrorborn.
   - Report blockers if any
   - Continue hosting stack setup
   
-- [ ] **Lumen:** 
-  - Continue iterating (this file + landing page simplification)
-  - Coordinate with Theia on content/UI fit
-  - Track blockers
+- [x] **Lumen:** 
+  - Continue iterating (this file + landing page simplification) ✅
+  - Simplified landing copy created (LANDING_COPY.md) ✅
+  - Rounds tracker active ✅
+  - Ready to coordinate with Theia on content/UI fit
   
 - [ ] **Chrys:** 
   - Push assets to phext-dot-io-v2 repo
