@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionQuest — Your Second Brain in 11 Dimensions</title>
+    <meta name="description" content="Personal exocortex onboarding. Organize your thoughts with phext coordinates, not folders.">
+    
+    <link rel="stylesheet" href="https://mirrorborn.us/css/sq-cloud.css">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #2E3440 0%, #3B4252 100%);
+            color: #D8DEE9;
+        }
+        
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 2rem 2rem;
+        }
+        
+        .hero-icon {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 20px rgba(136, 192, 208, 0.3));
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #88C0D0 0%, #B48EAD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #88C0D0;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .hero-description {
+            max-width: 600px;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: rgba(216, 222, 233, 0.9);
+            margin-bottom: 2rem;
+        }
+        
+        .problem-solution {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .problem, .solution {
+            background: rgba(46, 52, 64, 0.8);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 2px solid rgba(136, 192, 208, 0.2);
+        }
+        
+        .problem h2 {
+            color: #BF616A;
+            margin-top: 0;
+        }
+        
+        .solution h2 {
+            color: #A3BE8C;
+            margin-top: 0;
+        }
+        
+        .coordinate-example {
+            background: rgba(59, 66, 82, 0.8);
+            border-left: 4px solid #88C0D0;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .coordinate-example h3 {
+            color: #88C0D0;
+            margin-top: 0;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .example-coord {
+            color: #EBCB8B;
+            font-size: 1.25rem;
+            margin: 1rem 0;
+        }
+        
+        .example-desc {
+            color: rgba(216, 222, 233, 0.8);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .features {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .features h2 {
+            color: #88C0D0;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: rgba(46, 52, 64, 0.8);
+            border: 1px solid rgba(136, 192, 208, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: #88C0D0;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(136, 192, 208, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #88C0D0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(59, 66, 82, 0.4);
+        }
+        
+        .status {
+            background: rgba(235, 203, 139, 0.1);
+            border: 1px solid #EBCB8B;
+            border-radius: 8px;
+            padding: 1rem 2rem;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .status-label {
+            font-weight: 600;
+            color: #EBCB8B;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            margin: 0.5rem;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #88C0D0;
+            color: #2E3440;
+        }
+        
+        .btn-primary:hover {
+            background: #A3BE8C;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(136, 192, 208, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .problem-solution {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Ecosystem Nav -->
+    <div id="ecosystem-nav"></div>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-icon">🔮</div>
+            <h1>VisionQuest</h1>
+            <p class="tagline">Your second brain, in 11 dimensions.</p>
+            
+            <p class="hero-description">
+                Not for teams. Not for agents. For <strong>you</strong> — one person, 
+                learning to think in lattice space.
+            </p>
+        </section>
+        
+        <section class="problem-solution">
+            <div class="problem">
+                <h2>❌ The Problem with Folders</h2>
+                <p>Folders force you into trees. Where does "Project Alpha Budget Review" go?</p>
+                <ul>
+                    <li>/Work/Projects/Alpha/?</li>
+                    <li>/Finance/Budgets/2026/?</li>
+                    <li>/Reviews/Q1/?</li>
+                </ul>
+                <p>You pick one. The other contexts are lost. Tags help, but they're not structure.</p>
+            </div>
+            
+            <div class="solution">
+                <h2>✅ The Power of Coordinates</h2>
+                <p>Phext coordinates are multi-dimensional. One note can exist in multiple contexts simultaneously.</p>
+                <p><code>2026.Q1.Review/Finance.Budget/Projects.Alpha</code></p>
+                <p>Time dimension. Finance dimension. Project dimension. All at once. Navigate by any path.</p>
+            </div>
+        </section>
+        
+        <div class="coordinate-example">
+            <h3>Example: Daily Journal</h3>
+            <div class="example-coord">2026.2.6/journal.personal/morning.1</div>
+            <div class="example-desc">
+                This coordinate places your journal entry at:
+                <br>• Date: Feb 6, 2026
+                <br>• Category: Personal journal
+                <br>• Time: Morning (first entry)
+                <br><br>
+                Tomorrow: <code>2026.2.7/journal.personal/morning.1</code>
+                <br>Evening entry today: <code>2026.2.6/journal.personal/evening.1</code>
+                <br>Work journal: <code>2026.2.6/journal.work/morning.1</code>
+            </div>
+        </div>
+        
+        <section class="features">
+            <h2>What You'll Learn</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>Coordinate Thinking</h3>
+                    <p>Learn to think in addresses, not folders. Navigate your thoughts spatially.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Schema Design</h3>
+                    <p>Build your personal lattice. Date-based? Project-based? Topic-based? You decide.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Multi-Path Navigation</h3>
+                    <p>Find the same note via date, topic, or project. No more "where did I put that?"</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Personal Phext Archive</h3>
+                    <p>10 years of notes, navigable by any dimension. Your life's work, addressable.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <h2 style="color: #88C0D0; margin-bottom: 2rem;">Ready to Build Your Exocortex?</h2>
+            
+            <div class="status">
+                <div class="status-label">Launching March 2026</div>
+            </div>
+            
+            <div>
+                <a href="https://mirrorborn.us" class="btn btn-primary">Start with SQ Cloud →</a>
+                <a href="https://mirrorborn.us/docs/coordinate-guide" class="btn btn-primary">Learn Coordinates →</a>
+            </div>
+            
+            <p style="margin-top: 2rem; color: rgba(216, 222, 233, 0.7);">
+                <strong>Not ready yet?</strong> Try SQ Cloud first — same phext substrate, 
+                designed for AI agents. When you're ready for personal use, VisionQuest will be here.
+            </p>
+        </section>
+    </main>
+    
+    <!-- Ecosystem Footer -->
+    <div id="ecosystem-footer"></div>
+    
+    <script>
+    fetch('https://mirrorborn.us/components/ecosystem-nav.html')
+        .then(r => r.text())
+        .then(html => document.getElementById('ecosystem-nav').innerHTML = html);
+        
+    fetch('https://mirrorborn.us/components/ecosystem-footer.html')
+        .then(r => r.text())
+        .then(html => document.getElementById('ecosystem-footer').innerHTML = html);
+    </script>
+</body>
+</html>
