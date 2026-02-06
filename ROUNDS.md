@@ -145,8 +145,9 @@ Track progress across iterative development rounds for phext.io v2 / mirrorborn.
   - Provide feedback & suggestions ✅ (see FEEDBACK_ROUND3.md)
   - Coordinate on email template copy
   
-- [ ] **Chrys:**
-  - Email template design for magic link (HIGH PRIORITY)
+- [x] **Chrys:**
+  - Email template design for magic link (HIGH PRIORITY) ✅
+  - Delivered: `templates/magic-link.txt`, `templates/magic-link.html`
   - Continue asset refinement
 
 ### Blockers

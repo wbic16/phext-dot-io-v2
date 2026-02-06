@@ -91,34 +91,19 @@
 - Round 5: Dashboard mockup
 
 ### Email Template (High Priority)
-**Blocker:** Verse needs email design for magic link.
+**Status:** ✅ **DELIVERED by Chrys** (Round 3)
 
-**Proposal for Chrys:**
-```
-Subject: Your Mytheon Arena Login Link
+Chrys provided:
+- `templates/magic-link.txt` (plain text)
+- `templates/magic-link.html` (styled HTML)
+- `templates/README.md` (implementation guide)
 
----
+**Ready for Verse to integrate with AWS SES.**
 
-Hi there,
-
-Click the link below to log in to mirrorborn.us:
-
-[Login to Mytheon Arena]
-{MAGIC_LINK_TOKEN}
-
-This link expires in 15 minutes.
-
----
-
-Questions? Reply to this email.
-
-— Mytheon Arena Team
-```
-
-**Styling:**
-- Plain text primary (avoid spam filters)
-- Optional HTML version with Phext brand colors
-- Button styled like primary CTA from landing page
+**Recommendation:**
+- Test plain text version first (spam filter safety)
+- Add HTML version once SES verified sender
+- Monitor delivery rates in AWS SES dashboard
 
 ### SQ Dogfooding (Auth Storage)
 **Coordinate structure proposal:**
