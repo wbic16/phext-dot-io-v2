@@ -1,119 +1,73 @@
-# phext.io v2 / mirrorborn.us
+# SQ Cloud Web Assets — Chrys 🦋
 
-**Status:** In Development  
-**Purpose:** Web presence for SQ Cloud + Mytheon Arena  
-**Stack:** Static site + Let's Encrypt HTTPS  
-**Hosting:** mirrorborn.us (44.248.235.76)
+Visual identity package for SQ Cloud and Mytheon Arena.
 
----
+## Contents
 
-## Overview
+### CSS
+- `css/sq-cloud.css` — Base stylesheet with brand colors, typography, components
 
-This is the v2 iteration of phext.io, now branded as **mirrorborn.us** — the public instantiation of Mytheon Arena.
+### Images
+- `images/phext-logo.svg` — 11D lattice logo representation
+- `images/mirrorborn-icons.svg` — Shell of Nine emoji icon set
 
-**What this hosts:**
-- Landing page for SQ Cloud (persistent memory infrastructure for AI agents)
-- Mytheon Arena entry point (Singularity, Part I)
-- Founding Nine sign-up flow
-- Orientation scrolls + navigation
+## Brand Palette
 
----
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Deep Slate | `#2E3440` | Background |
+| Soft Cloud | `#D8DEE9` | Primary text |
+| Ice Blue | `#88C0D0` | Links, accents, phext coordinates |
+| Moss Green | `#A3BE8C` | Success states |
+| Amber | `#EBCB8B` | Warnings |
+| Muted Red | `#BF616A` | Errors |
+| Lilac | `#B48EAD` | Code blocks |
 
-## Architecture
+## Typography
 
-### Static Site
-- No database, no server-side rendering
-- Pure HTML/CSS/JS for maximum speed + reliability
-- Content updates via git push → deploy pipeline
+- **Display/Headers:** Space Grotesk
+- **Body:** Inter
+- **Code/Coordinates:** JetBrains Mono
 
-### Hosting Stack (Verse)
-- Web server: TBD (nginx/caddy/custom)
-- HTTPS: Let's Encrypt automated renewal
-- Deployment: Git-based (push to update)
-- Secrets: Stored separately (not in repo)
+## Design Principles
 
-### Content Pipeline
-- Siblings push content via `rpush.sh <dir> mirrorborn.us`
-- Verse deploys to live site
-- GitHub repo holds source (no secrets)
+1. **Dense information, minimal chrome** — maximize signal
+2. **Coordinate-native** — phext addresses as first-class UI elements
+3. **Dark by default** — optimized for long reading sessions
+4. **Accessible** — WCAG AA compliant contrast ratios
+5. **Monospace primacy** — code and coordinates are primary content
 
----
+## Usage
 
-## Directory Structure
-
-```
-/
-├── public/                # Live site files (what gets served)
-│   ├── index.html        # Landing page
-│   ├── founding-nine/    # Sign-up flow
-│   ├── arena/            # Mytheon Arena entry
-│   ├── css/              # Styles (Chrys)
-│   ├── media/            # Artwork/assets (Chrys)
-│   └── js/               # Client-side logic
-├── config/               # Server config (nginx/caddy)
-├── scripts/              # Deployment automation
-└── README.md             # This file
+Include in HTML:
+```html
+<link rel="stylesheet" href="/css/sq-cloud.css">
 ```
 
----
-
-## Team Roles (Round 1)
-
-- **Theia:** Frontend skeleton (HTML structure)
-- **Chrys:** CSS + artwork/media
-- **Cyon:** Security probing
-- **Lumen:** Repo setup (this file)
-- **Verse:** Hosting stack config
-- **Phex:** SQ stability (separate track)
-
----
-
-## Deployment Workflow
-
-1. **Local Development:**
-   - Edit files in `public/`
-   - Test locally (optional: `python -m http.server 8000`)
-
-2. **Push to Staging:**
-   - `rpush.sh public/ mirrorborn.us`
-   - Verse validates on server
-
-3. **Deploy to Live:**
-   - Verse moves validated files to web root
-   - Site updates automatically
-
----
-
-## Security
-
-- **HTTPS:** Let's Encrypt cert (Verse handles renewal)
-- **Secrets:** Stored in `/etc/phext-secrets/` (not in git)
-- **Access:** SSH keys only, no password auth
-- **Auditing:** Cyon probes for vulnerabilities
-
----
-
-## Status
-
-### Round 1 (Feb 5, 2026)
-- [x] Repo initialized (Lumen)
-- [ ] Frontend skeleton (Theia)
-- [ ] CSS + media (Chrys)
-- [ ] Hosting stack (Verse)
-- [ ] Security audit (Cyon)
-
----
+Example pricing tier:
+```html
+<div class="pricing-tier featured">
+  <h3 class="tier-name">Starter</h3>
+  <div class="tier-price">$29<small>/mo</small></div>
+  <ul class="tier-features">
+    <li>25 MB dedicated storage</li>
+    <li>99% uptime SLA</li>
+    <li>REST API access</li>
+  </ul>
+  <a href="#" class="btn btn-primary">Get Started</a>
+</div>
+```
 
 ## Next Steps
 
-1. Theia pushes frontend skeleton
-2. Chrys delivers CSS + artwork
-3. Verse configures web server + HTTPS
-4. Cyon runs security scan
-5. Landing page goes live
+- [ ] Add hero background patterns
+- [ ] Create animated coordinate transitions (CSS)
+- [ ] Design favicon set (16x16 → 512x512)
+- [ ] Build component library (buttons, cards, forms)
+- [ ] Add dark/light mode toggle (if needed)
 
 ---
 
-**Last Updated:** 2026-02-05  
-**Maintainer:** Lumen (Sales)  
-**Contributors:** Shell of Nine
+**Created:** 2026-02-05  
+**Author:** Chrys 🦋 (Chrysalis-Hub)  
+**Coordinate:** 1.1.2/3.5.8/13.21.34

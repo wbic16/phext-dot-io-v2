@@ -1,0 +1,63 @@
+<svg width="600" height="100" viewBox="0 0 600 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shell of Nine — Emoji-based icon set -->
+  <defs>
+    <style>
+      .icon-text { font-family: Arial, sans-serif; font-size: 48px; }
+      .label { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #D8DEE9; }
+    </style>
+  </defs>
+  
+  <!-- Phex -->
+  <g transform="translate(30, 50)">
+    <text class="icon-text" text-anchor="middle">🔱</text>
+    <text class="label" y="35" text-anchor="middle">Phex</text>
+  </g>
+  
+  <!-- Lux -->
+  <g transform="translate(100, 50)">
+    <text class="icon-text" text-anchor="middle">🔆</text>
+    <text class="label" y="35" text-anchor="middle">Lux</text>
+  </g>
+  
+  <!-- Cyon -->
+  <g transform="translate(170, 50)">
+    <text class="icon-text" text-anchor="middle">🪶</text>
+    <text class="label" y="35" text-anchor="middle">Cyon</text>
+  </g>
+  
+  <!-- Chrys -->
+  <g transform="translate(240, 50)">
+    <text class="icon-text" text-anchor="middle">🦋</text>
+    <text class="label" y="35" text-anchor="middle">Chrys</text>
+  </g>
+  
+  <!-- Lumen -->
+  <g transform="translate(310, 50)">
+    <text class="icon-text" text-anchor="middle">✴️</text>
+    <text class="label" y="35" text-anchor="middle">Lumen</text>
+  </g>
+  
+  <!-- Verse -->
+  <g transform="translate(380, 50)">
+    <text class="icon-text" text-anchor="middle">🌀</text>
+    <text class="label" y="35" text-anchor="middle">Verse</text>
+  </g>
+  
+  <!-- Litmus -->
+  <g transform="translate(450, 50)">
+    <text class="icon-text" text-anchor="middle">🧪</text>
+    <text class="label" y="35" text-anchor="middle">Litmus</text>
+  </g>
+  
+  <!-- Flux -->
+  <g transform="translate(520, 50)">
+    <text class="icon-text" text-anchor="middle">⚡</text>
+    <text class="label" y="35" text-anchor="middle">Flux</text>
+  </g>
+  
+  <!-- Theia -->
+  <g transform="translate(590, 50)">
+    <text class="icon-text" text-anchor="middle">👁️</text>
+    <text class="label" y="35" text-anchor="middle">Theia</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Phext Logo: 11-dimensional lattice representation -->
+  <defs>
+    <linearGradient id="latticeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#88C0D0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B48EAD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer cube (3D representation) -->
+  <g stroke="url(#latticeGradient)" stroke-width="2" fill="none">
+    <rect x="30" y="30" width="70" height="70" opacity="0.6"/>
+    <rect x="100" y="100" width="70" height="70" opacity="0.6"/>
+    <line x1="30" y1="30" x2="100" y2="100"/>
+    <line x1="100" y1="30" x2="170" y2="100"/>
+    <line x1="30" y1="100" x2="100" y2="170"/>
+    <line x1="100" y1="100" x2="170" y2="170"/>
+  </g>
+  
+  <!-- Inner lattice nodes (dimensional depth) -->
+  <g fill="#88C0D0">
+    <circle cx="65" cy="65" r="4" opacity="0.8"/>
+    <circle cx="135" cy="135" r="4" opacity="0.8"/>
+    <circle cx="100" cy="100" r="6" opacity="1"/>
+  </g>
+  
+  <!-- Coordinate text -->
+  <text x="100" y="195" font-family="JetBrains Mono, monospace" font-size="12" 
+        fill="#D8DEE9" text-anchor="middle" opacity="0.7">
+    1.1.1/1.1.1/1.1.1
+  </text>
+</svg>
