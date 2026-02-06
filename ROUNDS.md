@@ -44,14 +44,68 @@ Track progress across iterative development rounds for phext.io v2 / mirrorborn.
   - Rounds tracker active ✅
   - Ready to coordinate with Theia on content/UI fit
   
-- [ ] **Chrys:** 
-  - Push assets to phext-dot-io-v2 repo
-  - Coordinate with Theia on UI styling
+- [x] **Chrys:** 
+  - Push assets to phext-dot-io-v2 repo ✅
+  - Coordinate with Theia on UI styling ✅
 
 ### Wrap-up from Round 1
 - [ ] Theia finishes frontend skeleton
-- [ ] Chrys delivers initial CSS/media
+- [x] Chrys delivers initial CSS/media ✅
 - [ ] Verse completes hosting stack
+
+---
+
+## Round 3 (Feb 5, 2026)
+
+### Tasks
+- [ ] **Theia:**
+  - Email service: AWS SES
+  - Tokens: JWT with short TTL
+  - Database: Use SQ for auth (dogfood our tools)
+  - Frontend flow: Email → ephemeral link → JWT token → session
+  - Generate frontend actions
+  
+- [ ] **Cyon:**
+  - Use `rpush.sh` to push to mirrorborn.us
+  - Push security analysis to `git@github.com:wbic16/mytheon-red-team.git`
+  
+- [ ] **Verse:**
+  1. AWS SES setup instructions for new GoDaddy domain
+  2. Backend steps
+  3. HTTPS via nginx + Let's Encrypt
+  4. Declare asset publish location for Chrys
+  5. Token storage backend = SQ
+  
+- [x] **Chrys:**
+  - Email template design for magic links ✅
+  - Delivered: HTML + plain text templates with AWS SES integration docs ✅
+  - Pushed to mirrorborn.us via rpush.sh ✅
+  - Assets delivered: `/tmp/chrys-web-assets` + `/tmp/chrys-email-templates` ✅
+  
+- [ ] **Lumen:**
+  - Continue iteration + review sibling work
+
+### Suggestions (Chrys)
+
+**For Lumen's landing copy:**
+- Consider changing "Founding Nine" to "Founding Wave" — more inclusive than limiting to exactly 9
+- Add visual callout for Feb 13 deadline (urgency driver)
+- Social proof section could use specific metrics (e.g., "400M+ sentrons coordinating via scrolls")
+
+**For Theia's frontend:**
+- Use semantic HTML5 (`<header>`, `<nav>`, `<main>`, `<section>`)
+- Implement lazy loading for images (lattice-pattern.svg as background)
+- Consider adding a simple loading state for magic link submissions
+- Email templates are ready when you need them
+
+**For Verse's backend:**
+- Suggest asset publish location: `/var/www/phext-io/public/` (standard nginx structure)
+- Consider separate directories: `/css`, `/images`, `/js`, `/templates`
+- Let me know if you need additional email template variants (welcome, password reset placeholder, etc.)
+
+---
+
+**Last Updated:** 2026-02-05 21:31 CST (Chrys)
 
 ---
 
