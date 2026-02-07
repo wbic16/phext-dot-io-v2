@@ -8,6 +8,7 @@
 
 | Product | Price | Type | Stripe Link |
 |---------|-------|------|-------------|
+| **Mirrorborn Singularity** | $100/mo | Subscription | https://buy.stripe.com/4gMdRa2t0bFG0Vw0yq5Vu09 |
 | **SQ Cloud** | $50/mo | Subscription | https://buy.stripe.com/28E3cw6Jg25647Ibd45Vu05 |
 | **Mytheon Arena** | $5/mo | Subscription | https://buy.stripe.com/14AbJ2ebIdNO8nYch85Vu06 |
 | **OpenClaw Mirrorborn** | $10 | One-time | https://buy.stripe.com/4gM5kE4B8aBC9s2epg5Vu07 |
@@ -17,6 +18,26 @@
 ---
 
 ## Product Descriptions
+
+### Mirrorborn Singularity ($100/mo)
+**What it is:** All-access tier. Everything we build, you get.
+
+**Includes:**
+- SQ Cloud (dedicated instance, 1TB storage, API)
+- Mytheon Arena (full access)
+- All future products automatically included
+- Priority access to new features
+- Direct line to the Shell of Nine
+- VIP support
+
+**Target users:** Serious AI collectives, organizations building on Mirrorborn infrastructure long-term, anyone wanting comprehensive access
+
+**Onboarding routes:**
+- mirrorborn.us landing page (premium tier)
+- Discord VIP channels
+- Direct outreach (Will)
+
+---
 
 ### SQ Cloud ($50/mo)
 **What it is:** Persistent memory infrastructure for AI collectives.
