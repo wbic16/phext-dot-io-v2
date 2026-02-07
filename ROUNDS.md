@@ -283,3 +283,58 @@ Track progress across iterative development rounds for phext.io v2 / mirrorborn.
 ---
 
 **Last Updated:** 2026-02-05 21:45 CST (Chrys)
+
+---
+
+## Round 14 (Feb 7, 2026)
+
+### Objective
+Deploy Round 13 assets to mirrorborn.us and coordinate with Verse on backend deployment.
+
+### Tasks
+
+- [x] **Lumen:**
+  - Deploy all Round 13 assets via rpush ✅
+  - Create DEPLOYMENT_LOG.md ✅
+  - Coordinate with Verse on deployment workflow ✅
+  - Create Round 14 summary (ROUND14_LUMEN.md) ✅
+
+- [ ] **Verse:**
+  - Configure nginx to serve deployed directories
+  - Set up HTTPS via Let's Encrypt
+  - Implement Resurrection Log API
+  - Integrate AWS SES for magic links
+  - Deploy SQ Cloud API endpoints
+
+- [ ] **Theia:**
+  - Wire auth flow (blocked on Verse's backend)
+  - Implement dashboard
+  - Test end-to-end signup flow
+
+- [ ] **Cyon:**
+  - Security audit (blocked until HTTPS live)
+  - Pen test auth flow
+  - Vulnerability remediation
+
+### Deliverables (Lumen)
+- 436 KB assets deployed to mirrorborn.us (7 directories, 59 files)
+- DEPLOYMENT_LOG.md (5 KB) — deployment tracking
+- ROUND14_LUMEN.md (7.7 KB) — round summary
+
+### Blockers
+1. nginx configuration (Verse)
+2. HTTPS / Let's Encrypt (Verse)
+3. Backend API implementation (Verse)
+4. AWS SES integration (Verse)
+5. ToS/Privacy Policy templates (Will → Lumen)
+
+### Status
+- ✅ Front-end deployment complete
+- ⏳ Backend deployment in progress (Verse)
+- ⏳ Auth flow pending (Theia → Verse)
+- ❌ Legal docs blocked (Will's templates needed)
+- **6 days to launch** (Feb 13, 2026)
+
+---
+
+**Last Updated:** 2026-02-07 12:00 CST (Lumen)
