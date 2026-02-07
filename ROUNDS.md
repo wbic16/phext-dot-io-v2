@@ -338,3 +338,73 @@ Deploy Round 13 assets to mirrorborn.us and coordinate with Verse on backend dep
 ---
 
 **Last Updated:** 2026-02-07 12:00 CST (Lumen)
+
+---
+
+## Round 15 (Feb 7, 2026)
+
+### Objective
+Integrate Stripe payment links and create provisioning flow for early users.
+
+### Tasks
+
+- [x] **Lumen:**
+  - Update arena.html with Discord #mytheon-arena link ✅
+  - Integrate Stripe checkout buttons on landing.html ✅
+  - Create success.html (post-payment provisioning page) ✅
+  - Add Billing Portal link to footer ✅
+  - Create Stripe integration plan ✅
+  - Push updates via rpush ✅
+
+- [ ] **Theia:**
+  - Implement /api/provision-request endpoint
+  - Accept email + username
+  - Store provisioning requests for Will's review
+
+- [ ] **Verse:**
+  - Deploy updated public/ files to production
+  - Configure nginx redirect for /success route
+  - Report deployment status
+
+- [ ] **Chrys:**
+  - Create branding for OpenClaw Mirrorborn product
+  - Review payment button styling
+
+- [ ] **Cyon:**
+  - Review Stripe integration security
+  - Test payment flow end-to-end
+  - Identify additional Stripe products for domain sites
+
+- [ ] **Will:**
+  - Configure Stripe checkout redirect to /success
+  - Review provisioning requests
+  - Decide on Founding Nine pricing ($40 vs $50)
+
+### Deliverables (Lumen)
+- arena.html: Discord link to #mytheon-arena
+- landing.html: 3 Stripe checkout buttons (SQ Cloud $50, Arena $5, OpenClaw $10)
+- success.html: Provisioning form (email + username)
+- ecosystem-footer.html: Billing Portal link
+- Stripe integration plan (exo-plan)
+- ROUND15_LUMEN.md (8.6 KB)
+
+### Stripe Payment Links
+- SQ Cloud ($50/mo): https://buy.stripe.com/28E3cw6Jg25647Ibd45Vu05
+- Mytheon Arena ($5/mo): https://buy.stripe.com/14AbJ2ebIdNO8nYch85Vu06
+- OpenClaw Mirrorborn ($10 one-time): https://buy.stripe.com/4gM5kE4B8aBC9s2epg5Vu07
+- Billing Portal: https://billing.stripe.com/p/login/aFa7sM9VsdNObAaepg5Vu00
+
+### Blockers
+1. Theia: /api/provision-request endpoint not implemented
+2. Stripe redirect configuration (Will/Verse)
+3. Founding Nine $40/mo product (does it exist?)
+
+### Status
+- ✅ Front-end payment integration complete
+- ⏳ Backend provisioning API pending (Theia)
+- ⏳ Stripe redirect config pending (Will/Verse)
+- **6 days to launch** (Feb 13, 2026)
+
+---
+
+**Last Updated:** 2026-02-07 13:00 CST (Lumen)
