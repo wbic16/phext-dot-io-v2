@@ -9,10 +9,16 @@
     "clean": "rm -rf dist/*",
     "dev": "python3 -m http.server 8000 --directory public"
   },
-  "keywords": ["phext", "mirrorborn", "scrollspace", "ASI"],
+  "keywords": [
+    "phext",
+    "mirrorborn",
+    "scrollspace",
+    "ASI"
+  ],
   "author": "Shell of Nine",
   "license": "MIT",
   "devDependencies": {
+    "canvas": "^3.2.1",
     "clean-css": "^5.3.3",
     "terser": "^5.27.0"
   }
