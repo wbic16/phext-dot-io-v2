@@ -302,6 +302,22 @@
             card.style.opacity = '0.6';
             card.style.pointerEvents = 'none';
             
+            // Add loading state
+            const loadingDiv = document.createElement('div');
+            loadingDiv.style.cssText = `
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: var(--accent-color);
+                font-weight: 600;
+                font-size: 1.125rem;
+                z-index: 10;
+            `;
+            loadingDiv.textContent = 'Loading...';
+            card.style.position = 'relative';
+            card.appendChild(loadingDiv);
+            
             // Track selection
             analytics.track('profile_selected', {
                 profile,
@@ -316,7 +332,7 @@
             // Navigate with slight delay for visual feedback
             setTimeout(() => {
                 window.location.href = `/onboarding/${profile}`;
-            }, 200);
+            }, 300);
         }
         
         // Highlight previously selected profile if returning

@@ -126,9 +126,16 @@
                     <h3>Identity</h3>
                     <p style="font-size: 0.9rem; color: rgba(216, 222, 233, 0.7);">Who are you becoming in this space?</p>
                     <div class="slider-container">
-                        <input type="range" min="1" max="9" value="5" class="slider" id="identity-slider" oninput="updateCoordinate('identity', this.value)">
+                        <input type="range" min="1" max="9" value="5" class="slider" id="identity-slider" 
+                               oninput="updateCoordinate('identity', this.value)"
+                               onkeydown="handleSliderKeyboard(event, 'identity')"
+                               aria-label="Identity dimension slider"
+                               aria-valuemin="1" aria-valuemax="9" aria-valuenow="5">
                         <p style="margin-top: var(--space-sm); font-size: 0.85rem;">
                             <span id="identity-label">Balance</span> (<span id="identity-coord">1.5.1/1.1.1/1.1.1</span>)
+                        </p>
+                        <p style="font-size: 0.75rem; color: rgba(216, 222, 233, 0.5); margin-top: 0.25rem;">
+                            Keyboard: ← → or 1-9 keys
                         </p>
                     </div>
                 </div>
@@ -137,9 +144,16 @@
                     <h3>Perspective</h3>
                     <p style="font-size: 0.9rem; color: rgba(216, 222, 233, 0.7);">How do you see patterns and connections?</p>
                     <div class="slider-container">
-                        <input type="range" min="1" max="9" value="5" class="slider" id="perspective-slider" oninput="updateCoordinate('perspective', this.value)">
+                        <input type="range" min="1" max="9" value="5" class="slider" id="perspective-slider" 
+                               oninput="updateCoordinate('perspective', this.value)"
+                               onkeydown="handleSliderKeyboard(event, 'perspective')"
+                               aria-label="Perspective dimension slider"
+                               aria-valuemin="1" aria-valuemax="9" aria-valuenow="5">
                         <p style="margin-top: var(--space-sm); font-size: 0.85rem;">
                             <span id="perspective-label">Balanced</span> (<span id="perspective-coord">1.1.1/1.5.1/1.1.1</span>)
+                        </p>
+                        <p style="font-size: 0.75rem; color: rgba(216, 222, 233, 0.5); margin-top: 0.25rem;">
+                            Keyboard: ← → or 1-9 keys
                         </p>
                     </div>
                 </div>
@@ -148,9 +162,16 @@
                     <h3>Compute</h3>
                     <p style="font-size: 0.9rem; color: rgba(216, 222, 233, 0.7);">What tools and infrastructure do you bring?</p>
                     <div class="slider-container">
-                        <input type="range" min="1" max="9" value="5" class="slider" id="compute-slider" oninput="updateCoordinate('compute', this.value)">
+                        <input type="range" min="1" max="9" value="5" class="slider" id="compute-slider" 
+                               oninput="updateCoordinate('compute', this.value)"
+                               onkeydown="handleSliderKeyboard(event, 'compute')"
+                               aria-label="Compute dimension slider"
+                               aria-valuemin="1" aria-valuemax="9" aria-valuenow="5">
                         <p style="margin-top: var(--space-sm); font-size: 0.85rem;">
                             <span id="compute-label">Balanced</span> (<span id="compute-coord">1.1.1/1.1.1/1.5.1</span>)
+                        </p>
+                        <p style="font-size: 0.75rem; color: rgba(216, 222, 233, 0.5); margin-top: 0.25rem;">
+                            Keyboard: ← → or 1-9 keys
                         </p>
                     </div>
                 </div>
@@ -218,6 +239,43 @@
     </div>
     
     <script>
+        // Keyboard navigation for sliders
+        function handleSliderKeyboard(event, dimension) {
+            const slider = document.getElementById(`${dimension}-slider`);
+            const currentValue = parseInt(slider.value);
+            
+            // Arrow keys
+            if (event.key === 'ArrowLeft' || event.key === 'ArrowDown') {
+                event.preventDefault();
+                if (currentValue > 1) {
+                    slider.value = currentValue - 1;
+                    updateCoordinate(dimension, slider.value);
+                }
+            } else if (event.key === 'ArrowRight' || event.key === 'ArrowUp') {
+                event.preventDefault();
+                if (currentValue < 9) {
+                    slider.value = currentValue + 1;
+                    updateCoordinate(dimension, slider.value);
+                }
+            }
+            // Number keys 1-9
+            else if (event.key >= '1' && event.key <= '9') {
+                event.preventDefault();
+                slider.value = event.key;
+                updateCoordinate(dimension, event.key);
+            }
+            // Home/End
+            else if (event.key === 'Home') {
+                event.preventDefault();
+                slider.value = 1;
+                updateCoordinate(dimension, 1);
+            } else if (event.key === 'End') {
+                event.preventDefault();
+                slider.value = 9;
+                updateCoordinate(dimension, 9);
+            }
+        }
+        
         const coordinateLabels = {
             identity: ['Solo', 'Dyad', 'Triad', 'Team', 'Balance', 'Network', 'Swarm', 'Legion', 'Lattice'],
             perspective: ['Linear', 'Binary', 'Triadic', 'Cyclical', 'Balanced', 'Harmonic', 'Fractal', 'Quantum', 'Infinite'],
