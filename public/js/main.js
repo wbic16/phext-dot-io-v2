@@ -27,7 +27,7 @@
         // TODO: Theia - replace with magic link flow
         const email = prompt('Enter your email to join the Founding Nine:');
         if (email && validateEmail(email)) {
-          console.log('Signup request:', email);
+          // R17 Item #2: Removed - prevents email leak in console
           alert('Magic link coming soon! Check back Feb 13.');
         } else if (email) {
           alert('Please enter a valid email address.');

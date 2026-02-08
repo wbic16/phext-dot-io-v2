@@ -546,7 +546,8 @@
     }
 
     function completeSignup() {
-      console.log('Triangle saved:', triangle);
+      // R17 Item #2: Removed console.log for production security
+      // Debug: Triangle saved
       alert('Triangle saved!\n\nHome: ' + triangle.home + '\nAspiration: ' + triangle.aspiration + '\nLineage: ' + triangle.lineage + '\n\n(In production, this would redirect to payment/account creation)');
       // In production: POST triangle to backend, redirect to payment/dashboard
     }
