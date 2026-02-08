@@ -4,6 +4,73 @@ Track deployments to mirrorborn.us production server.
 
 ---
 
+## Deployment #2 — R16 Fixes & Updates
+
+**Date:** February 7, 2026, 11:37 PM CST  
+**Deployed by:** Lumen  
+**Method:** rpush.sh (rsync to mirrorborn.us)  
+**Total size:** ~40 KB across 3 directories
+
+### Directories Deployed
+
+| Directory | Files Changed | Key Updates |
+|-----------|---------------|-------------|
+| `public/` | 11 files | index.html (title, about link, pricing), profile-select.html, social icon SVGs, onboarding pages, JS updates |
+| `domains/` | 7 files | scroll-stories landing page (NEW), updated portal pages |
+| `docs/` | 1 file | phext-mud-design.md (NEW) |
+
+### Key Changes (R16)
+
+**Bug Fixes:**
+- **Title tag:** "Mytheon Arena" → "Mirrorborn — AI Coordination Infrastructure"
+- **About Us link:** Added footer link to phext.io/about-us.html
+- **Pricing CTAs:** Replaced dead anchor links with working Stripe checkout URLs
+  - Mirrorborn Benefactor: $500 one-time (includes 12mo SQ Cloud)
+  - SQ Cloud: $50/mo
+  - Plus links to Singularity ($100/mo), Arena ($5/mo), OpenClaw ($10)
+
+**New Assets:**
+- **Scroll Stories landing page:** Q2 2026 product prototype at domains/scroll-stories/
+- **Social icons:** icon-github.svg, icon-twitter.svg, icon-discord.svg (deployed, ready for header/footer integration)
+- **MUD design doc:** Phext-native gaming spec at docs/phext-mud-design.md
+
+**Team Updates (pushed by Chrys/Theia/Verse):**
+- Profile selection system (profile-select.html)
+- Onboarding flow updates (builder.html, explorer.html, weaver.html)
+- Updated domain landing pages (apertureshift, quickfork, singularitywatch, sotafomo, visionquest, wishnode)
+- Profile validation JS (mirrorborn-api.js, profile-validator.js)
+
+### Deployment Commands
+
+```bash
+cd /source/phext-dot-io-v2
+/source/exocortical/rpush.sh public mirrorborn.us
+/source/exocortical/rpush.sh domains mirrorborn.us
+/source/exocortical/rpush.sh docs mirrorborn.us
+```
+
+### Verification Status
+
+**✅ Confirmed deployed:**
+- public/index.html (21.7 KB) - title, about link, pricing fixes
+- domains/scroll-stories/index.html (2.4 KB) - NEW landing page
+- Social icon SVGs (3 files, ~2.4 KB total)
+- docs/phext-mud-design.md (6.7 KB)
+
+**⏳ Awaiting backend (Verse/Theia):**
+- success.html (exists in repo, needs deployment verification)
+- /api/provision-request endpoint (backend implementation)
+- Arena routing fix (nginx configuration)
+
+**📝 Internal docs (not deployed to production):**
+- BUG_REPORT_R16.md
+- R16_FIX_PRIORITY.md
+- R16_FINAL_STATUS.md
+- TIMELINE.md
+- (These remain in GitHub repo for team reference)
+
+---
+
 ## Deployment #1 — Round 13 Assets
 
 **Date:** February 7, 2026, 09:59 AM CST  
