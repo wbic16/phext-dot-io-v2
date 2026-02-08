@@ -6,6 +6,18 @@
     <title>Choose Your Path — Mirrorborn</title>
     <meta name="description" content="How do you want to engage with the lattice? Explorer, Builder, or Weaver.">
     
+    <!-- Open Graph -->
+    <meta property="og:title" content="Choose Your Path — Mirrorborn">
+    <meta property="og:description" content="Explorer, Builder, or Weaver. Choose your coordination role in the lattice.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mirrorborn.us/profile-select.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Choose Your Path — Mirrorborn">
+    <meta name="twitter:description" content="Explorer, Builder, or Weaver. Choose your coordination role in the lattice.">
+    <meta name="twitter:creator" content="@wbic16">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -257,15 +269,54 @@
     </div>
     
     <script>
+        // Analytics tracking
+        const analytics = {
+            track: (event, properties) => {
+                const data = {
+                    event,
+                    properties: {
+                        ...properties,
+                        timestamp: new Date().toISOString(),
+                        userAgent: navigator.userAgent,
+                        referrer: document.referrer
+                    }
+                };
+                
+                // Store locally for now (will send to backend when API ready)
+                const events = JSON.parse(localStorage.getItem('analyticsEvents') || '[]');
+                events.push(data);
+                localStorage.setItem('analyticsEvents', JSON.stringify(events.slice(-100))); // Keep last 100
+                
+                console.log('Analytics:', data);
+            }
+        };
+        
+        // Track page view
+        analytics.track('profile_select_view', {
+            previousProfile: localStorage.getItem('selectedProfile')
+        });
+        
         function selectProfile(profile) {
-            // Store selection in localStorage
+            // Visual feedback
+            const card = document.querySelector(`[data-profile="${profile}"]`);
+            card.style.opacity = '0.6';
+            card.style.pointerEvents = 'none';
+            
+            // Track selection
+            analytics.track('profile_selected', {
+                profile,
+                previousProfile: localStorage.getItem('selectedProfile'),
+                selectionTime: performance.now()
+            });
+            
+            // Store selection
             localStorage.setItem('selectedProfile', profile);
+            localStorage.setItem('profileSelectedAt', new Date().toISOString());
             
-            // Track analytics (placeholder for future integration)
-            console.log('Profile selected:', profile);
-            
-            // Navigate to profile-specific onboarding
-            window.location.href = `/onboarding/${profile}`;
+            // Navigate with slight delay for visual feedback
+            setTimeout(() => {
+                window.location.href = `/onboarding/${profile}`;
+            }, 200);
         }
         
         // Highlight previously selected profile if returning
@@ -274,8 +325,36 @@
             const card = document.querySelector(`[data-profile="${previousProfile}"]`);
             if (card) {
                 card.style.borderColor = getComputedStyle(card).getPropertyValue('--accent-color');
+                card.style.opacity = '0.9';
+                
+                // Add "Returning" badge
+                const badge = document.createElement('div');
+                badge.style.cssText = `
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    background: var(--accent-color);
+                    color: #0A0E17;
+                    padding: 0.25rem 0.75rem;
+                    border-radius: 12px;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                `;
+                badge.textContent = 'Previously Selected';
+                card.style.position = 'relative';
+                card.appendChild(badge);
             }
         }
+        
+        // Error handling for navigation failures
+        window.addEventListener('error', (e) => {
+            analytics.track('error', {
+                message: e.message,
+                filename: e.filename,
+                lineno: e.lineno,
+                colno: e.colno
+            });
+        });
     </script>
 </body>
 </html>
