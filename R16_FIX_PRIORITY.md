@@ -115,7 +115,7 @@
 | Task | Owner | Status | ETA |
 |------|-------|--------|-----|
 | Deploy success.html | Verse | ⏳ Pending | 5 min |
-| Fix pricing/CTAs | Lumen | 🔄 In Progress | 10 min |
+| Fix pricing/CTAs | Lumen | ✅ DONE | — |
 | Provision endpoint | Theia | ⏳ Pending | 30 min (or defer) |
 | Social links | Chrys | ⏳ Pending | 10 min |
 | Title tags | Lumen | ✅ DONE | — |
