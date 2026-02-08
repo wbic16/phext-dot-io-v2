@@ -188,12 +188,25 @@ class MirrorbornAPI {
                 }
             };
             
-            // Store locally
+            // Store locally with size limits
             const events = JSON.parse(localStorage.getItem('analyticsEvents') || '[]');
             events.push(data);
-            localStorage.setItem('analyticsEvents', JSON.stringify(events.slice(-100)));
             
-            this.log('Analytics event:', data);
+            // Enforce size limits: max 100 events OR 50KB
+            const MAX_EVENTS = 100;
+            const MAX_SIZE_BYTES = 50000; // 50 KB
+            
+            let trimmedEvents = events.slice(-MAX_EVENTS);
+            let eventsJson = JSON.stringify(trimmedEvents);
+            
+            // If still too large, trim more aggressively
+            while (eventsJson.length > MAX_SIZE_BYTES && trimmedEvents.length > 10) {
+                trimmedEvents = trimmedEvents.slice(-Math.floor(trimmedEvents.length / 2));
+                eventsJson = JSON.stringify(trimmedEvents);
+            }
+            
+            localStorage.setItem('analyticsEvents', eventsJson);
+            this.log('Analytics event:', data, `(${trimmedEvents.length} events, ${eventsJson.length} bytes)`);
             
             // TODO: Send to analytics backend when ready
             return data;

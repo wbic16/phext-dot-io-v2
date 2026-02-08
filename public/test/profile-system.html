@@ -306,6 +306,27 @@
             a.click();
         }
         
+        // Global error handlers
+        window.addEventListener('unhandledrejection', (e) => {
+            console.error('Unhandled promise rejection:', e.reason);
+            results.failed++;
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'test-case';
+            errorDiv.innerHTML = `<span class="fail">✗</span> Unhandled rejection: ${e.reason}`;
+            document.getElementById('validation-tests').appendChild(errorDiv);
+            updateSummary();
+        });
+        
+        window.addEventListener('error', (e) => {
+            console.error('Uncaught error:', e.message);
+            results.failed++;
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'test-case';
+            errorDiv.innerHTML = `<span class="fail">✗</span> Uncaught error: ${e.message} at ${e.filename}:${e.lineno}`;
+            document.getElementById('validation-tests').appendChild(errorDiv);
+            updateSummary();
+        });
+        
         // Auto-run on page load
         window.addEventListener('load', runAllTests);
     </script>

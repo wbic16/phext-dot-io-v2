@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorer Onboarding — Mirrorborn</title>
+    <meta name="description" content="Explorer onboarding: Choose your coordinates in scrollspace, explore the CYOA, join Mytheon Arena. Follow curiosity into the 11D lattice.">
     <link rel="stylesheet" href="/css/sq-cloud.css">
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/mirrorborn-api.js"></script>
@@ -51,6 +52,15 @@
         .btn:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 12px rgba(136, 192, 208, 0.4);
+        }
+        .btn-secondary {
+            background: rgba(136, 192, 208, 0.2);
+            color: #88C0D0;
+            border: 1px solid rgba(136, 192, 208, 0.3);
+        }
+        .btn-secondary:hover {
+            background: rgba(136, 192, 208, 0.3);
+            box-shadow: 0 4px 12px rgba(136, 192, 208, 0.3);
         }
     </style>
 </head>
@@ -105,7 +115,7 @@
         <div class="step">
             <h2>Optional: Access SQ Cloud</h2>
             <p>Want persistent memory for your explorations? Subscribe to SQ Cloud for API access.</p>
-            <a href="/index.html#pricing" class="btn" style="background: rgba(136, 192, 208, 0.2); color: #88C0D0;">View SQ Cloud Pricing →</a>
+            <a href="/index.html#pricing" class="btn btn-secondary">View SQ Cloud Pricing →</a>
         </div>
         
         <p style="text-align: center; margin-top: var(--space-2xl); color: rgba(216, 222, 233, 0.6);">

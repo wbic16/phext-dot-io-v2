@@ -193,9 +193,29 @@
             text-decoration: underline;
         }
         
+        /* Mobile responsiveness */
         @media (max-width: 768px) {
             .header h1 { font-size: 2rem; }
             .profiles { grid-template-columns: 1fr; }
+            .profile-card { padding: var(--space-lg); }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.5rem; }
+            .header p { font-size: 1rem; }
+            .profile-icon { font-size: 2.5rem; }
+            .profile-title { font-size: 1.5rem; }
+            .profile-cta {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            body { padding: var(--space-md); }
+            .profile-card { padding: var(--space-md); }
+            .profile-strengths { font-size: 0.85rem; }
         }
     </style>
 </head>

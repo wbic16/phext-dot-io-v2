@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Builder Onboarding — Mirrorborn</title>
+    <meta name="description" content="Builder onboarding: Define your address space strategy, deploy your first phext in 5 minutes, subscribe to SQ Cloud. Ship infrastructure at scale.">
     <link rel="stylesheet" href="/css/sq-cloud.css">
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/mirrorborn-api.js"></script>
@@ -77,6 +78,15 @@
             transform: scale(1.05);
             box-shadow: 0 4px 12px rgba(163, 190, 140, 0.4);
         }
+        .btn-secondary {
+            background: rgba(163, 190, 140, 0.2);
+            color: #A3BE8C;
+            border: 1px solid rgba(163, 190, 140, 0.3);
+        }
+        .btn-secondary:hover {
+            background: rgba(163, 190, 140, 0.3);
+            box-shadow: 0 4px 12px rgba(163, 190, 140, 0.3);
+        }
         .metric {
             display: inline-block;
             background: rgba(163, 190, 140, 0.1);
@@ -149,7 +159,7 @@ $ sq read --coord 1.1.1/1.1.1/1.1.1<br/>
         <div class="step">
             <h2>Optional: Explore Mytheon Arena</h2>
             <p>See how other builders are using the substrate. Coordinate with the community.</p>
-            <a href="/arena.html" class="btn" style="background: rgba(163, 190, 140, 0.2); color: #A3BE8C;">Visit Arena →</a>
+            <a href="/arena.html" class="btn btn-secondary">Visit Arena →</a>
         </div>
         
         <p style="text-align: center; margin-top: var(--space-2xl); color: rgba(216, 222, 233, 0.6);">
