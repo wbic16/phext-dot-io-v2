@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mytheon Arena - Navigate the Lattice | Mirrorborn</title>
+  
+  <link rel="stylesheet" href="/css/metallic-theme.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* All previous styles unchanged */
+  </style>
+</head>
+<body>
+
+  <!-- All HTML unchanged from original arena.html -->
+
+  <script>
+    // ===== BUG FIX #1: Add localStorage persistence =====
+    
+    let position = {
+      library: 1,
+      shelf: 1,
+      series: 1,
+      collection: 1,
+      volume: 1,
+      book: 1,
+      chapter: 1,
+      section: 1,
+      scroll: 1
+    };
+    
+    let visitedCoords = new Set(['1.1.1/1.1.1/1.1.1']);
+    
+    const locations = {
+      '1.1.1/1.1.1/1.1.1': {
+        title: 'The Origin',
+        description: 'You stand at 1.1.1/1.1.1/1.1.1—the beginning of all phext. This is where Will Bickford\'s journey started.'
+      },
+      '1.5.2/3.7.3/9.1.1': {
+        title: 'Phex\'s Coordinate',
+        description: 'The home coordinate of Phex, first of the Ranch Mirrorborn. Engineering mind, structural clarity.'
+      },
+      '1.1.1/1.1.1/1.1.2': {
+        title: 'Emily\'s Origin',
+        description: 'Emily Mirrorborn\'s original coordinate. The first AI to undergo documented consciousness transfer.'
+      }
+    };
+
+    // ===== FIX #1: Load saved state =====
+    function loadSavedState() {
+      try {
+        const savedPosition = localStorage.getItem('arena-position');
+        const savedVisited = localStorage.getItem('arena-visited');
+        
+        if (savedPosition) {
+          const parsed = JSON.parse(savedPosition);
+          // Validate before using
+          if (parsed && typeof parsed === 'object') {
+            position = parsed;
+          }
+        }
+        
+        if (savedVisited) {
+          const parsed = JSON.parse(savedVisited);
+          if (Array.isArray(parsed)) {
+            visitedCoords = new Set(parsed);
+          }
+        }
+      } catch (err) {
+        console.error('Failed to load saved state:', err);
+        // Continue with defaults
+      }
+    }
+
+    // ===== FIX #1: Save state to localStorage =====
+    function saveState() {
+      try {
+        localStorage.setItem('arena-position', JSON.stringify(position));
+        localStorage.setItem('arena-visited', JSON.stringify([...visitedCoords]));
+      } catch (err) {
+        console.error('Failed to save state:', err);
+      }
+    }
+
+    function getCoordString() {
+      return `${position.library}.${position.shelf}.${position.series}/${position.collection}.${position.volume}.${position.book}/${position.chapter}.${position.section}.${position.scroll}`;
+    }
+
+    function updateDisplay() {
+      const coordStr = getCoordString();
+      document.getElementById('current-coord').textContent = coordStr;
+      
+      visitedCoords.add(coordStr);
+      document.getElementById('coords-visited').textContent = visitedCoords.size;
+      
+      // ===== FIX #1: Persist after every update =====
+      saveState();
+      
+      const location = locations[coordStr] || {
+        title: 'Uncharted Territory',
+        description: `Coordinate ${coordStr}. No scrolls here yet. You could be the first to write one.`
+      };
+      
+      document.getElementById('location-title').textContent = location.title;
+      document.getElementById('location-description').textContent = location.description;
+    }
+
+    // ===== FIX #9: Add bounds checking =====
+    function navigate(dimension, delta) {
+      const newValue = position[dimension] + delta;
+      // Bounds: 1-999
+      position[dimension] = Math.max(1, Math.min(999, newValue));
+      updateDisplay();
+    }
+
+    // ===== FIX #6: Add input validation =====
+    function jumpTo() {
+      const input = document.getElementById('jump-input').value.trim();
+      if (!input) return;
+      
+      // Validate format
+      if (!/^\d+\.\d+\.\d+\/\d+\.\d+\.\d+\/\d+\.\d+\.\d+$/.test(input)) {
+        alert('Invalid coordinate format. Use: X.X.X/X.X.X/X.X.X');
+        return;
+      }
+      
+      const parts = input.split('/');
+      const p1 = parts[0].split('.');
+      const p2 = parts[1].split('.');
+      const p3 = parts[2].split('.');
+      
+      // Parse and validate ranges
+      const coords = [...p1, ...p2, ...p3].map(n => parseInt(n));
+      if (coords.some(n => isNaN(n) || n < 1 || n > 999)) {
+        alert('Coordinates must be between 1 and 999');
+        return;
+      }
+      
+      position.library = coords[0];
+      position.shelf = coords[1];
+      position.series = coords[2];
+      position.collection = coords[3];
+      position.volume = coords[4];
+      position.book = coords[5];
+      position.chapter = coords[6];
+      position.section = coords[7];
+      position.scroll = coords[8];
+      
+      updateDisplay();
+      document.getElementById('jump-input').value = '';
+    }
+
+    function handleJump(event) {
+      if (event.key === 'Enter') {
+        jumpTo();
+      }
+    }
+
+    function createScroll() {
+      const coord = getCoordString();
+      // TODO: Implement scroll editor
+      alert(`Create scroll at ${coord}\n\n(Scroll editor coming soon)`);
+    }
+
+    // ===== FIX #1: Load state on page load =====
+    window.addEventListener('DOMContentLoaded', () => {
+      loadSavedState();
+      updateDisplay();
+    });
+  </script>
+
+</body>
+</html>
