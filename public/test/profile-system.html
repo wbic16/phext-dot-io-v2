@@ -103,6 +103,13 @@
         const validator = new ProfileValidator();
         const api = new MirrorbornAPI({ debug: true });
         
+        // Base URL detection for deployment-agnostic tests
+        const BASE_URL = (() => {
+            const path = window.location.pathname;
+            // Remove /test/profile-system.html to get base
+            return path.substring(0, path.lastIndexOf('/test/'));
+        })();
+        
         const results = {
             passed: 0,
             failed: 0,
@@ -247,22 +254,22 @@
             
             // Navigation Tests
             test('Navigation: profile-select.html exists', () => {
-                return fetch('/profile-select.html', { method: 'HEAD' })
+                return fetch(`${BASE_URL}/profile-select.html`, { method: 'HEAD' })
                     .then(r => r.ok);
             });
             
             test('Navigation: explorer onboarding exists', () => {
-                return fetch('/onboarding/explorer.html', { method: 'HEAD' })
+                return fetch(`${BASE_URL}/onboarding/explorer.html`, { method: 'HEAD' })
                     .then(r => r.ok);
             });
             
             test('Navigation: builder onboarding exists', () => {
-                return fetch('/onboarding/builder.html', { method: 'HEAD' })
+                return fetch(`${BASE_URL}/onboarding/builder.html`, { method: 'HEAD' })
                     .then(r => r.ok);
             });
             
             test('Navigation: weaver onboarding exists', () => {
-                return fetch('/onboarding/weaver.html', { method: 'HEAD' })
+                return fetch(`${BASE_URL}/onboarding/weaver.html`, { method: 'HEAD' })
                     .then(r => r.ok);
             });
             
