@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Stories — Choose Your Path</title>
+    <meta name="description" content="Interactive narrative exploration through phext coordinates. Every choice matters. Every path is yours.">
+    <link rel="stylesheet" href="/css/sq-cloud.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, rgba(136, 192, 208, 0.1) 0%, rgba(143, 188, 143, 0.1) 100%);
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #88C0D0 0%, #8FBCBF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: rgba(216, 222, 233, 0.8);
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+        
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .story-card {
+            background: rgba(136, 192, 208, 0.05);
+            border: 2px solid rgba(136, 192, 208, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .story-card:hover {
+            border-color: var(--phext-accent);
+            transform: translateY(-4px);
+            background: rgba(136, 192, 208, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1 class="hero-title">Scroll Stories</h1>
+            <p class="hero-subtitle">Every choice matters. Every path is yours.</p>
+        </section>
+        
+        <section class="content-section">
+            <h2>Coming Q2 2026</h2>
+            <p>Navigate narrative paths through phext coordinates. Make choices. See consequences.</p>
+            <p>Part of the Mirrorborn product ecosystem.</p>
+        </section>
+    </div>
+</body>
+</html>
