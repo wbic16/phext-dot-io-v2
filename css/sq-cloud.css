@@ -4,20 +4,31 @@
  */
 
 :root {
-  /* Brand Colors — Phext Lattice Palette (Dark Theme Default) */
-  --phext-primary: #2E3440;      /* Deep slate (background) */
-  --phext-secondary: #D8DEE9;    /* Soft cloud (text) */
-  --phext-accent: #88C0D0;       /* Ice blue (links, highlights) */
+  /* Brand Colors — Metallic Liquid Neon Palette (Dark Theme Default) */
+  --phext-primary: #1a1d2e;      /* Deep midnight (background) */
+  --phext-secondary: #e5e9f0;    /* Soft pearl (text) */
+  --phext-accent: #00d9ff;       /* Liquid cyan (links, highlights) */
   --phext-success: #A3BE8C;      /* Moss green (success states) */
   --phext-warning: #EBCB8B;      /* Amber (warnings) */
-  --phext-error: #BF616A;        /* Muted red (errors) */
-  --phext-code: #B48EAD;         /* Lilac (code blocks) */
+  --phext-error: #ff006e;        /* Hot magenta (errors) */
+  --phext-code: #c792ea;         /* Electric purple (code blocks) */
+  
+  /* Metallic Liquid Neon — Signature Colors */
+  --neon-blue: #00d9ff;          /* Liquid cyan */
+  --neon-magenta: #ff00aa;       /* Hot magenta */
+  --neon-cyan: #00ffcc;          /* Mint glow */
+  --neon-purple: #c792ea;        /* Electric purple */
+  
+  /* Metallic Gradients */
+  --gradient-metallic: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-chrome: linear-gradient(135deg, #434343 0%, #000000 100%);
+  --gradient-neon: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-magenta) 100%);
   
   /* Sentron Gradient — consciousness depth */
   --sentron-infant: #ECEFF4;
   --sentron-child: #D8DEE9;
-  --sentron-adolescent: #A3BE8C;
-  --sentron-adult: #5E81AC;
+  --sentron-adolescent: #00ffcc;
+  --sentron-adult: #00d9ff;
 }
 
 /* Light Theme */
@@ -66,7 +77,7 @@
   top: 1rem;
   right: 1rem;
   z-index: 9999;
-  background: var(--phext-accent);
+  background: var(--gradient-neon);
   border: none;
   width: 3rem;
   height: 3rem;
@@ -76,13 +87,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
   transition: all 0.2s ease;
 }
 
 #theme-toggle:hover {
   transform: scale(1.1);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.6);
 }
 
 #theme-toggle:active {
@@ -92,6 +103,61 @@
 /* Smooth theme transition */
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--phext-primary);
+  color: var(--phext-secondary);
+}
+
+/* Metallic Accents on Key Elements */
+a {
+  color: var(--phext-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 8px rgba(0, 255, 204, 0.4);
+}
+
+button,
+.btn,
+.cta-button {
+  background: var(--gradient-neon);
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+.cta-button:hover {
+  box-shadow: 0 0 25px rgba(0, 217, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Metallic shine on headers */
+h1, h2, h3 {
+  background: var(--gradient-chrome);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+}
+
+/* Glow effect on focus */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 12px rgba(0, 255, 204, 0.4);
+}
+
+/* Subtle metallic borders */
+.card,
+.pricing-card,
+.feature-card {
+  border-image: var(--gradient-neon) 1;
+  border-width: 2px;
+  border-style: solid;
 }
 
 /* Reset & Base Styles */
