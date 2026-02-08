@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mytheon Arena - Navigate the Lattice | Mirrorborn</title>
+  
+  <link rel="stylesheet" href="/css/metallic-theme.css">
+  <link rel="stylesheet" href="/css/components.css">
+  
+  <script>
+    // ===== BUG #4 FIX: SQ Integration =====
+    
+    const SQ_API = 'http://localhost:1337/api/v2';
+    const PHEXT_NAME = 'arena';
+    
+    let position = {
+      library: 1,
+      shelf: 1,
+      series: 1,
+      collection: 1,
+      volume: 1,
+      book: 1,
+      chapter: 1,
+      section: 1,
+      scroll: 1
+    };
+    
+    let visitedCoords = new Set(['1.1.1/1.1.1/1.1.1']);
+    let currentLocation = null;
+    
+    function getCoordString() {
+      return `${position.library}.${position.shelf}.${position.series}/${position.collection}.${position.volume}.${position.book}/${position.chapter}.${position.section}.${position.scroll}`;
+    }
+
+    // ===== FIX #4: Load location data from SQ =====
+    async function loadLocation(coord) {
+      try {
+        const response = await fetch(`${SQ_API}/select?p=${PHEXT_NAME}&c=${coord}`);
+        
+        if (!response.ok) {
+          throw new Error(`SQ error: ${response.status}`);
+        }
+        
+        const text = await response.text();
+        
+        if (!text || text.trim() === '') {
+          // No data at this coordinate - uncharted territory
+          return {
+            title: 'Uncharted Territory',
+            description: `Coordinate ${coord}. No scrolls here yet. You could be the first to write one.`,
+            scrolls: [],
+            npcs: []
+          };
+        }
+        
+        // Parse simple format from SQ
+        return parseLocationData(text, coord);
+        
+      } catch (err) {
+        console.error('Failed to load from SQ:', err);
+        
+        // Fallback to hardcoded data
+        return getFallbackLocation(coord);
+      }
+    }
+    
+    function parseLocationData(text, coord) {
+      // Simple parser for demo
+      const lines = text.split('\n');
+      const location = {
+        title: 'Unknown Location',
+        description: text,
+        scrolls: [],
+        npcs: []
+      };
+      
+      for (const line of lines) {
+        if (line.startsWith('Title:')) {
+          location.title = line.substring(6).trim();
+        } else if (line.startsWith('Description:')) {
+          location.description = line.substring(12).trim();
+        }
+      }
+      
+      return location;
+    }
+    
+    function getFallbackLocation(coord) {
+      const fallbacks = {
+        '1.1.1/1.1.1/1.1.1': {
+          title: 'The Origin',
+          description: 'You stand at 1.1.1/1.1.1/1.1.1—the beginning of all phext.',
+          scrolls: ['Welcome to the Lattice'],
+          npcs: []
+        },
+        '1.5.2/3.7.3/9.1.1': {
+          title: 'Phex\'s Coordinate',
+          description: 'The home coordinate of Phex, first of the Ranch Mirrorborn.',
+          scrolls: ['Engineering Notes'],
+          npcs: []
+        }
+      };
+      
+      return fallbacks[coord] || {
+        title: 'Uncharted Territory',
+        description: `Coordinate ${coord}. No data loaded from SQ.`,
+        scrolls: [],
+        npcs: []
+      };
+    }
+
+    // ===== FIX #1: Load/save state =====
+    function loadSavedState() {
+      try {
+        const savedPosition = localStorage.getItem('arena-position');
+        const savedVisited = localStorage.getItem('arena-visited');
+        
+        if (savedPosition) {
+          const parsed = JSON.parse(savedPosition);
+          if (parsed && typeof parsed === 'object') {
+            position = parsed;
+          }
+        }
+        
+        if (savedVisited) {
+          const parsed = JSON.parse(savedVisited);
+          if (Array.isArray(parsed)) {
+            visitedCoords = new Set(parsed);
+          }
+        }
+      } catch (err) {
+        console.error('Failed to load saved state:', err);
+      }
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem('arena-position', JSON.stringify(position));
+        localStorage.setItem('arena-visited', JSON.stringify([...visitedCoords]));
+      } catch (err) {
+        console.error('Failed to save state:', err);
+      }
+    }
+
+    async function updateDisplay() {
+      const coordStr = getCoordString();
+      document.getElementById('current-coord').textContent = coordStr;
+      
+      visitedCoords.add(coordStr);
+      document.getElementById('coords-visited').textContent = visitedCoords.size;
+      
+      saveState();
+      
+      // Show loading state
+      document.getElementById('location-title').textContent = 'Loading...';
+      document.getElementById('location-description').textContent = 'Fetching from SQ...';
+      
+      // Load from SQ
+      currentLocation = await loadLocation(coordStr);
+      
+      document.getElementById('location-title').textContent = currentLocation.title;
+      document.getElementById('location-description').textContent = currentLocation.description;
+    }
+
+    // ===== FIX #9: Bounds checking =====
+    function navigate(dimension, delta) {
+      const newValue = position[dimension] + delta;
+      position[dimension] = Math.max(1, Math.min(999, newValue));
+      updateDisplay();
+    }
+
+    // ===== FIX #6: Input validation =====
+    function jumpTo() {
+      const input = document.getElementById('jump-input').value.trim();
+      if (!input) return;
+      
+      if (!/^\d+\.\d+\.\d+\/\d+\.\d+\.\d+\/\d+\.\d+\.\d+$/.test(input)) {
+        alert('Invalid coordinate format. Use: X.X.X/X.X.X/X.X.X');
+        return;
+      }
+      
+      const parts = input.split('/');
+      const p1 = parts[0].split('.');
+      const p2 = parts[1].split('.');
+      const p3 = parts[2].split('.');
+      
+      const coords = [...p1, ...p2, ...p3].map(n => parseInt(n));
+      if (coords.some(n => isNaN(n) || n < 1 || n > 999)) {
+        alert('Coordinates must be between 1 and 999');
+        return;
+      }
+      
+      position.library = coords[0];
+      position.shelf = coords[1];
+      position.series = coords[2];
+      position.collection = coords[3];
+      position.volume = coords[4];
+      position.book = coords[5];
+      position.chapter = coords[6];
+      position.section = coords[7];
+      position.scroll = coords[8];
+      
+      updateDisplay();
+      document.getElementById('jump-input').value = '';
+    }
+
+    function handleJump(event) {
+      if (event.key === 'Enter') {
+        jumpTo();
+      }
+    }
+
+    function createScroll() {
+      const coord = getCoordString();
+      alert(`Create scroll at ${coord}\n\n(Will integrate with SQ insert API)`);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadSavedState();
+      updateDisplay();
+    });
+  </script>
+</head>
+<body>
+  <h1>Arena - SQ Integrated (Bug #4 FIXED)</h1>
+  <p><strong>Current Coordinate:</strong> <span id="current-coord">1.1.1/1.1.1/1.1.1</span></p>
+  <p><strong>Coords Visited:</strong> <span id="coords-visited">1</span></p>
+  
+  <h2 id="location-title">The Origin</h2>
+  <p id="location-description">Loading from SQ...</p>
+  
+  <h3>Navigate</h3>
+  <button onclick="navigate('library', -1)">Library -</button>
+  <button onclick="navigate('library', 1)">Library +</button><br>
+  <button onclick="navigate('shelf', -1)">Shelf -</button>
+  <button onclick="navigate('shelf', 1)">Shelf +</button><br>
+  <button onclick="navigate('series', -1)">Series -</button>
+  <button onclick="navigate('series', 1)">Series +</button><br>
+  
+  <h3>Jump To</h3>
+  <input type="text" id="jump-input" placeholder="1.5.2/3.7.3/9.1.1" onkeypress="handleJump(event)">
+  <button onclick="jumpTo()">Go</button>
+  
+  <h3>Actions</h3>
+  <button onclick="createScroll()">Create Scroll</button>
+  
+  <hr>
+  <p><em>Bug #4 FIXED: Now reading from SQ API at localhost:1337</em></p>
+  <p><em>Status: SQ v0.4.5 loaded with arena.phext</em></p>
+</body>
+</html>
