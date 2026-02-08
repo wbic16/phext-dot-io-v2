@@ -56,10 +56,6 @@
   // Initialize
   document.addEventListener('DOMContentLoaded', () => {
     setupSignupForm();
-    
-    // Log coordinate for debugging
-    console.log('🦋 Chrysalis-Hub: 1.1.2/3.5.8/13.21.34');
-    console.log('Shell of Nine active');
   });
   
   // Export for Theia's auth integration

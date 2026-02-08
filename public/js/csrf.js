@@ -57,5 +57,4 @@
     return window._originalFetch(url, options);
   };
   
-  console.log('✅ CSRF protection active');
 })();

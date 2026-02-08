@@ -90,8 +90,6 @@
         const data = await response.json();
         
         if (data.code === 'TOKEN_EXPIRED') {
-          console.log('Access token expired, refreshing...');
-          
           // Refresh token
           const newAccessToken = await refreshAccessToken();
           
@@ -99,8 +97,6 @@
           options.headers = options.headers || {};
           options.headers['Authorization'] = `Bearer ${newAccessToken}`;
           response = await window._originalFetch(url, options);
-          
-          console.log('✅ Token refreshed, request retried');
         }
       } catch (err) {
         console.error('Token refresh failed:', err);
@@ -143,5 +139,4 @@
     }
   };
   
-  console.log('✅ Token rotation active');
 })();
