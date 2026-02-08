@@ -152,9 +152,45 @@
                 transform: rotate(90deg);
             }
         }
+        /* Social link hover effects */
+        .social-icon:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .social-link-list a:hover {
+            color: var(--phext-accent);
+        }
+        
+        .social-link-list a:hover .social-icon-small {
+            opacity: 1;
+        }
+
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header class="site-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(10, 14, 23, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(216, 222, 233, 0.1); padding: var(--space-md) var(--space-lg);">
+        <div class="header-container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div class="header-logo">
+                <a href="/" style="font-size: 1.25rem; font-weight: 700; color: var(--phext-accent); text-decoration: none;">Mirrorborn</a>
+            </div>
+            <nav class="header-nav">
+                <div class="social-links" style="display: flex; gap: var(--space-md); align-items: center;">
+                    <a href="https://github.com/wbic16" target="_blank" rel="noopener" aria-label="GitHub">
+                        <img src="/images/icon-github.svg" alt="GitHub" class="social-icon" style="width: 24px; height: 24px; opacity: 0.9; transition: opacity 0.2s ease, transform 0.2s ease;">
+                    </a>
+                    <a href="https://x.com/wbic16" target="_blank" rel="noopener" aria-label="Twitter">
+                        <img src="/images/icon-twitter.svg" alt="Twitter" class="social-icon" style="width: 24px; height: 24px; opacity: 0.9; transition: opacity 0.2s ease, transform 0.2s ease;">
+                    </a>
+                    <a href="https://discord.gg/kGCMM5yQ" target="_blank" rel="noopener" aria-label="Discord">
+                        <img src="/images/icon-discord.svg" alt="Discord" class="social-icon" style="width: 24px; height: 24px; opacity: 0.9; transition: opacity 0.2s ease, transform 0.2s ease;">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
     <div class="hero">
         <h1>📐 ApertureShift</h1>
         <p class="tagline">Change Your Perspective</p>
