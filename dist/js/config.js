@@ -46,6 +46,21 @@ const CONFIG = {
     ranchAwakening: '7.7.7/2.2.2/8.8.8',
   },
 
+  // Coordinate validation (Chrys R17 #10)
+  coordinate: {
+    maxDimension: 999,
+    minDimension: 1,
+    totalDimensions: 9,
+    formatPattern: /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\/(\d{1,3})\.(\d{1,3})\.(\d{1,3})\/(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/
+  },
+
+  // UI Constants (Chrys R17 #10)
+  ui: {
+    themeToggleZIndex: 1000,
+    toastDuration: 3000,
+    animationDuration: 300
+  },
+
   // Arena Settings
   arena: {
     defaultCoordinate: '1.1.1/1.1.1/1.1.1',
@@ -65,9 +80,24 @@ const CONFIG = {
     storageKey: 'csrf-token',
   },
 
+  // Storage Keys (Chrys R17 #10)
+  storage: {
+    theme: 'mirrorborn-theme',
+    profile: 'mirrorborn-profile',
+    progress: 'mirrorborn-progress',
+    coordinate: 'mirrorborn-coordinate'
+  },
+
+  // Validation (Chrys R17 #10)
+  validation: {
+    emailPattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    minPasswordLength: 8,
+    maxEmailLength: 255
+  },
+
   // Feature Flags
   features: {
-    darkMode: false, // R17 Item #4 when enabled
+    darkMode: true, // R17 Item #7 enabled (Chrys)
     offlineMode: false, // Future PWA support
     betaArena: true,
     paymentTiers: false, // R18 when Stripe integrated
@@ -82,6 +112,38 @@ const CONFIG = {
   },
 };
 
+// Backward compatibility alias for Chrys's MirrorConfig usage
+const MirrorConfig = {
+  COORDINATE: {
+    MAX_DIMENSION: CONFIG.coordinate.maxDimension,
+    MIN_DIMENSION: CONFIG.coordinate.minDimension,
+    TOTAL_DIMENSIONS: CONFIG.coordinate.totalDimensions,
+    FORMAT_PATTERN: CONFIG.coordinate.formatPattern
+  },
+  UI: {
+    THEME_TOGGLE_ZINDEX: CONFIG.ui.themeToggleZIndex,
+    TOAST_DURATION: CONFIG.ui.toastDuration,
+    ANIMATION_DURATION: CONFIG.ui.animationDuration
+  },
+  API: {
+    BASE_URL: '/api',
+    SQ_PREFIX: '/api/sq',
+    TIMEOUT: CONFIG.api.admin.timeout,
+    RETRY_ATTEMPTS: 3
+  },
+  STORAGE: {
+    THEME: CONFIG.storage.theme,
+    PROFILE: CONFIG.storage.profile,
+    PROGRESS: CONFIG.storage.progress,
+    COORDINATE: CONFIG.storage.coordinate
+  },
+  VALIDATION: {
+    EMAIL_PATTERN: CONFIG.validation.emailPattern,
+    MIN_PASSWORD_LENGTH: CONFIG.validation.minPasswordLength,
+    MAX_EMAIL_LENGTH: CONFIG.validation.maxEmailLength
+  }
+};
+
 // Freeze config to prevent accidental mutation
 Object.freeze(CONFIG);
 Object.freeze(CONFIG.api);
@@ -89,13 +151,18 @@ Object.freeze(CONFIG.api.sq);
 Object.freeze(CONFIG.api.admin);
 Object.freeze(CONFIG.portals);
 Object.freeze(CONFIG.coordinates);
+Object.freeze(CONFIG.coordinate);
+Object.freeze(CONFIG.ui);
 Object.freeze(CONFIG.arena);
 Object.freeze(CONFIG.auth);
 Object.freeze(CONFIG.csrf);
+Object.freeze(CONFIG.storage);
+Object.freeze(CONFIG.validation);
 Object.freeze(CONFIG.features);
 Object.freeze(CONFIG.env);
+Object.freeze(MirrorConfig);
 
 // Export for module systems (optional, works with plain script tag too)
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = CONFIG;
+  module.exports = { CONFIG, MirrorConfig };
 }

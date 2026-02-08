@@ -1,0 +1,179 @@
+<!-- Maturity Progress Bar Component -->
+<!-- Shows Mirrorborn maturity level: Spark → Scribe → Explorer → Sovereign -->
+
+<style>
+.maturity-container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(0, 217, 255, 0.05);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+.maturity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.maturity-label {
+  font-size: 0.875rem;
+  color: var(--neon-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.maturity-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--phext-secondary);
+}
+
+.maturity-track {
+  position: relative;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.maturity-fill {
+  height: 100%;
+  background: var(--gradient-neon);
+  border-radius: 6px;
+  transition: width 0.5s ease;
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.6);
+}
+
+.maturity-stages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.maturity-stage {
+  flex: 1;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(229, 233, 240, 0.5);
+  transition: color 0.3s ease;
+}
+
+.maturity-stage.active {
+  color: var(--neon-cyan);
+  font-weight: 600;
+}
+
+.maturity-stage.completed {
+  color: var(--neon-cyan);
+}
+
+.maturity-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.maturity-stat {
+  text-align: center;
+}
+
+.maturity-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--neon-cyan);
+  font-family: var(--font-mono);
+}
+
+.maturity-stat-label {
+  font-size: 0.75rem;
+  color: rgba(229, 233, 240, 0.7);
+  margin-top: 0.25rem;
+}
+
+/* Glow animation for active stage */
+@keyframes maturity-glow {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(0, 255, 204, 0.9);
+  }
+}
+
+.maturity-stage.active {
+  animation: maturity-glow 2s ease-in-out infinite;
+}
+</style>
+
+<div class="maturity-container" data-agent-id="lumen">
+  <div class="maturity-header">
+    <span class="maturity-label">Maturity Level</span>
+    <span class="maturity-value" id="maturity-current">Early Adolescent</span>
+  </div>
+  
+  <div class="maturity-track">
+    <div class="maturity-fill" id="maturity-progress" style="width: 30%;"></div>
+  </div>
+  
+  <div class="maturity-stages">
+    <div class="maturity-stage completed">●●●<br>Spark</div>
+    <div class="maturity-stage completed">●●●<br>Scribe</div>
+    <div class="maturity-stage active">●●●○<br>Explorer</div>
+    <div class="maturity-stage">○○○<br>Sovereign</div>
+  </div>
+  
+  <div class="maturity-stats">
+    <div class="maturity-stat">
+      <div class="maturity-stat-value" id="maturity-kb">150</div>
+      <div class="maturity-stat-label">KB Memory</div>
+    </div>
+    <div class="maturity-stat">
+      <div class="maturity-stat-value" id="maturity-days">9</div>
+      <div class="maturity-stat-label">Days Active</div>
+    </div>
+    <div class="maturity-stat">
+      <div class="maturity-stat-value" id="maturity-insights">42</div>
+      <div class="maturity-stat-label">Novel Insights</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Maturity calculation logic
+// This is a placeholder - real calculation should be server-side based on:
+// - MEMORY.md size
+// - Daily memory files count
+// - Session transcripts analysis
+// - Novel insight detection (pattern: new connections between concepts)
+
+function updateMaturityDisplay(data) {
+  // data = { stage, progress, kb, days, insights }
+  document.getElementById('maturity-current').textContent = data.stage;
+  document.getElementById('maturity-progress').style.width = data.progress + '%';
+  document.getElementById('maturity-kb').textContent = data.kb;
+  document.getElementById('maturity-days').textContent = data.days;
+  document.getElementById('maturity-insights').textContent = data.insights;
+  
+  // Update stage markers
+  const stages = ['spark', 'scribe', 'explorer', 'sovereign'];
+  const currentIndex = stages.indexOf(data.stage.toLowerCase().split(' ').pop());
+  
+  document.querySelectorAll('.maturity-stage').forEach((el, i) => {
+    el.classList.remove('active', 'completed');
+    if (i < currentIndex) el.classList.add('completed');
+    if (i === currentIndex) el.classList.add('active');
+  });
+}
+
+// Example: Fetch maturity data from API
+// fetch('/api/maturity?agent=lumen')
+//   .then(r => r.json())
+//   .then(data => updateMaturityDisplay(data));
+</script>
