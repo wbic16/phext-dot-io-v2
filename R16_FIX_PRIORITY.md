@@ -8,12 +8,12 @@
 ## Phase 1: Critical Fixes (P0) — Must Fix Before Launch
 
 ### 1. Deploy success.html (Verse)
-**Time:** 15 minutes  
+**Singularity Time:** 5 minutes  
 **Action:** Verify success.html is deployed to mirrorborn.us  
 **Test:** `curl https://mirrorborn.us/success.html` should return provisioning form HTML
 
 ### 2. Fix Landing Page Pricing (Lumen/Chrys)
-**Time:** 30 minutes  
+**Singularity Time:** 10 minutes  
 **Action:**
 - Update mirrorborn.us landing to show actual Stripe links
 - Decide: Keep "Founding Nine" or rebrand to "Benefactor"?
@@ -23,7 +23,7 @@
 - `/source/phext-dot-io-v2/public/landing.html` (or index.html)
 
 ### 3. Implement /api/provision-request (Theia)
-**Time:** 1-2 hours  
+**Singularity Time:** 30 minutes  
 **Action:**
 - Create endpoint that accepts POST with {email, username}
 - Store in database or send email to Will
@@ -35,25 +35,27 @@
 
 ## Phase 2: High-Priority UX (P1) — Ship This Weekend
 
-### 4. Fix Title Tags (Quick Win — 5 minutes)
-**Owner:** Anyone  
+### 4. Fix Title Tags (Quick Win)
+**Singularity Time:** 2 minutes  
+**Owner:** ✅ DONE (Lumen)  
 **Action:** Update `<title>Mirrorborn — ...</title>` on landing page
 
 ### 5. Deploy Social Links (Chrys)
-**Time:** 30 minutes  
+**Singularity Time:** 10 minutes  
 **Action:**
 - Verify icons exist (icon-github.svg, icon-twitter.svg, icon-discord.svg)
 - Update header/footer with social link HTML
 - Deploy to all 7 properties
 
 ### 6. Link About Us Page (Lumen)
-**Time:** 10 minutes  
+**Singularity Time:** 3 minutes  
+**Owner:** ✅ DONE (Lumen)  
 **Action:**
 - Add "About" link to mirrorborn.us header/footer
 - Points to https://phext.io/about-us.html
 
 ### 7. Deploy Arena Page (Verse)
-**Time:** 15 minutes  
+**Singularity Time:** 5 minutes  
 **Action:**
 - Verify arena.html exists and is deployed
 - Fix "/arena" routing
@@ -63,7 +65,7 @@
 ## Phase 3: Medium-Priority Polish (P2) — Nice to Have
 
 ### 8. Add Version Footer (Anyone)
-**Time:** 15 minutes  
+**Singularity Time:** 5 minutes  
 **Action:**
 - Add `<footer>R16 | Feb 2026</footer>` to all sites
 
@@ -71,7 +73,7 @@
 **Reason:** Not blocking anything, can ship without it
 
 ### 10. Channel-Specific Discord Invites (Lumen)
-**Time:** 20 minutes (once Will provides invite URLs)  
+**Singularity Time:** 10 minutes (once Will provides invite URLs)  
 **Action:**
 - Get Discord channel invite links from Will
 - Update appropriate pages
@@ -108,20 +110,23 @@
 
 ---
 
-## Ownership
+## Ownership (Singularity Time)
 
-| Task | Owner | ETA |
-|------|-------|-----|
-| Deploy success.html | Verse | 15 min |
-| Fix pricing/CTAs | Lumen | 30 min |
-| Provision endpoint | Theia | 1-2 hrs (or defer) |
-| Social links | Chrys | 30 min |
-| Title tags | Anyone | 5 min |
-| About link | Lumen | 10 min |
-| Arena deployment | Verse | 15 min |
-| Version footer | Anyone | 15 min |
+| Task | Owner | Status | ETA |
+|------|-------|--------|-----|
+| Deploy success.html | Verse | ⏳ Pending | 5 min |
+| Fix pricing/CTAs | Lumen | 🔄 In Progress | 10 min |
+| Provision endpoint | Theia | ⏳ Pending | 30 min (or defer) |
+| Social links | Chrys | ⏳ Pending | 10 min |
+| Title tags | Lumen | ✅ DONE | — |
+| About link | Lumen | ✅ DONE | — |
+| Arena deployment | Verse | ⏳ Pending | 5 min |
+| Version footer | Anyone | ⏳ Pending | 5 min |
 
-**Total critical path:** ~2 hours if everyone works in parallel
+**Total critical path (singularity time):** ~45 minutes if everyone works in parallel
+
+**Singularity acceleration factor:** 3-4× faster than traditional dev estimates  
+**Why:** Parallel execution, shared context, no handoff latency, immediate deployment
 
 ---
 
