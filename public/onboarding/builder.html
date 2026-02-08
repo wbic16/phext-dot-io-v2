@@ -6,6 +6,8 @@
     <title>Builder Onboarding — Mirrorborn</title>
     <link rel="stylesheet" href="/css/sq-cloud.css">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/mirrorborn-api.js"></script>
+    <script src="/js/profile-validator.js"></script>
     <style>
         body {
             background: linear-gradient(135deg, #0A0E17 0%, #1A1E2E 100%);
@@ -141,7 +143,7 @@ $ sq read --coord 1.1.1/1.1.1/1.1.1<br/>
         <div class="step">
             <h2>Step 3: Subscribe to SQ Cloud</h2>
             <p>Production-ready phext storage with multi-tenant isolation and monitoring.</p>
-            <a href="/#pricing" class="btn">View SQ Cloud Pricing →</a>
+            <a href="/index.html#pricing" class="btn">View SQ Cloud Pricing →</a>
         </div>
         
         <div class="step">
@@ -157,48 +159,59 @@ $ sq read --coord 1.1.1/1.1.1/1.1.1<br/>
     </div>
     
     <script>
+        const validator = new ProfileValidator();
+        const api = new MirrorbornAPI({ debug: true });
+        
         function validateCoordinates() {
             const primary = document.getElementById('primary').value;
             const dev = document.getElementById('dev').value;
             const prod = document.getElementById('prod').value;
             
-            const coordPattern = /^\d+\.\d+\.\d+\/\d+\.\d+\.\d+\/\d+\.\d+\.\d+$/;
-            
-            let valid = true;
-            let errors = [];
-            
-            if (!coordPattern.test(primary)) {
-                errors.push('Primary coordinate invalid');
-                valid = false;
-            }
-            if (!coordPattern.test(dev)) {
-                errors.push('Dev coordinate invalid');
-                valid = false;
-            }
-            if (!coordPattern.test(prod)) {
-                errors.push('Prod coordinate invalid');
-                valid = false;
-            }
-            
             const resultDiv = document.getElementById('validation-result');
-            if (valid) {
-                resultDiv.innerHTML = '<p style="color: #A3BE8C;">✓ All coordinates valid. Saving to localStorage...</p>';
-                localStorage.setItem('coord_primary', primary);
-                localStorage.setItem('coord_dev', dev);
-                localStorage.setItem('coord_prod', prod);
-                setTimeout(() => {
-                    resultDiv.innerHTML += '<p style="color: #88C0D0;">Ready to proceed to SQ Cloud setup.</p>';
-                }, 500);
+            const errors = [];
+            
+            // Use ProfileValidator for validation
+            const primaryResult = validator.validateCoordinate(primary, 'Primary');
+            const devResult = validator.validateCoordinate(dev, 'Dev');
+            const prodResult = validator.validateCoordinate(prod, 'Prod');
+            
+            if (!primaryResult.valid) errors.push(...primaryResult.errors);
+            if (!devResult.valid) errors.push(...devResult.errors);
+            if (!prodResult.valid) errors.push(...prodResult.errors);
+            
+            if (errors.length === 0) {
+                // Save via API
+                api.profiles.save({
+                    profile: 'builder',
+                    coordinates: { primary, dev, prod }
+                }).then(() => {
+                    resultDiv.innerHTML = '<p style="color: #A3BE8C;">✓ All coordinates valid. Saving to localStorage...</p>';
+                    setTimeout(() => {
+                        resultDiv.innerHTML += '<p style="color: #88C0D0;">Ready to proceed to SQ Cloud setup.</p>';
+                    }, 500);
+                }).catch(err => {
+                    resultDiv.innerHTML = '<p style="color: #BF616A;">✗ Save failed: ' + err.message + '</p>';
+                });
             } else {
-                resultDiv.innerHTML = '<p style="color: #BF616A;">✗ ' + errors.join(', ') + '</p>';
+                resultDiv.innerHTML = '<p style="color: #BF616A;">✗ ' + errors.join('<br/>') + '</p>';
+                
+                // Show suggestions
+                if (primary && !primaryResult.valid) {
+                    const suggestions = validator.suggestFixes(primary);
+                    if (suggestions.length > 0) {
+                        resultDiv.innerHTML += '<p style="color: #EBCB8B; font-size: 0.9rem; margin-top: 0.5rem;">Suggestions: ' + suggestions.join('<br/>') + '</p>';
+                    }
+                }
             }
         }
         
         // Auto-fill with stored coordinates if returning
-        ['primary', 'dev', 'prod'].forEach(id => {
-            const stored = localStorage.getItem(`coord_${id}`);
-            if (stored) {
-                document.getElementById(id).value = stored;
+        api.profiles.load().then(profile => {
+            if (profile && profile.profile === 'builder') {
+                const coords = profile.coordinates;
+                if (coords.primary) document.getElementById('primary').value = coords.primary;
+                if (coords.dev) document.getElementById('dev').value = coords.dev;
+                if (coords.prod) document.getElementById('prod').value = coords.prod;
             }
         });
     </script>
