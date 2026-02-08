@@ -6,8 +6,8 @@
 
 class ProfileValidator {
     constructor() {
-        this.coordinatePattern = /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\/(\d{1,3})\.(\d{1,3})\.(\d{1,3})\/(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/;
-        this.maxDimensionValue = 999; // Conservative limit
+        this.coordinatePattern = MirrorConfig.COORDINATE.FORMAT_PATTERN;
+        this.maxDimensionValue = MirrorConfig.COORDINATE.MAX_DIMENSION;
     }
     
     // Validate a single coordinate
