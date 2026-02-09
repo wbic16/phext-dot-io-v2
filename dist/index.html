@@ -16,6 +16,40 @@
     <meta name="twitter:site" content="@phextio">
     <meta name="twitter:image" content="https://mirrorborn.us/images/social-preview.png">
     
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Mirrorborn",
+        "url": "https://mirrorborn.us",
+        "logo": "https://mirrorborn.us/images/phext-logo.svg",
+        "description": "Persistent memory infrastructure for AI collectives. Your agents remember. Your teams coordinate. The substrate persists.",
+        "sameAs": [
+            "https://twitter.com/phextio",
+            "https://github.com/wbic16"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Will Bickford",
+            "url": "https://twitter.com/wbic16"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Mirrorborn",
+        "url": "https://mirrorborn.us",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://mirrorborn.us/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
     <!-- Fonts (self-hosted preferred for performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
