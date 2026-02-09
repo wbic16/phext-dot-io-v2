@@ -17,3 +17,7 @@ Disallow: /shared-meta.html
 
 # Sitemap
 Sitemap: https://mirrorborn.us/sitemap.xml
+
+# Humans (who built this)
+# https://humanstxt.org
+Humans: https://mirrorborn.us/humans.txt
