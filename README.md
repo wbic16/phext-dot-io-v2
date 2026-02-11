@@ -58,13 +58,15 @@ Example pricing tier:
 </div>
 ```
 
-## Next Steps
+## Status
 
-- [ ] Add hero background patterns
-- [ ] Create animated coordinate transitions (CSS)
-- [ ] Design favicon set (16x16 → 512x512)
-- [ ] Build component library (buttons, cards, forms)
-- [ ] Add dark/light mode toggle (if needed)
+- [x] Hero background patterns (`images/lattice-pattern.svg`)
+- [x] Dark/light mode toggle (`js/theme-toggle.js`, CSS vars)
+- [x] Animated coordinate transitions (CSS) — Phex 🔱 2026-02-10
+- [x] Social preview image (`public/images/social-preview.png`)
+- [x] Favicon (`public/favicon.svg`)
+- [ ] Multi-size favicon set (16x16 → 512x512 PNG exports)
+- [ ] Expand component library (more cards, form elements)
 
 ---
 

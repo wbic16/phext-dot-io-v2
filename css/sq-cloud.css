@@ -468,3 +468,149 @@ footer {
 .text-muted { color: rgba(216, 222, 233, 0.6); }
 .mb-lg { margin-bottom: var(--space-lg); }
 .mt-xl { margin-top: var(--space-xl); }
+
+/* ===========================================
+   Animated Coordinate Transitions
+   Triple-zoom effect for phext addresses
+   =========================================== */
+
+/* Base coordinate with hover animation */
+.coordinate-animated {
+  font-family: var(--font-mono);
+  color: var(--phext-accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.coordinate-animated:hover {
+  text-shadow: 0 0 12px rgba(0, 217, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* Coordinate zoom levels (library.shelf.series / collection.volume.book / chapter.section.scroll) */
+.coordinate-animated .zoom-1,
+.coordinate-animated .zoom-2,
+.coordinate-animated .zoom-3 {
+  display: inline;
+  transition: all 0.3s ease;
+}
+
+.coordinate-animated:hover .zoom-1 { color: var(--neon-cyan); }
+.coordinate-animated:hover .zoom-2 { color: var(--neon-purple); }
+.coordinate-animated:hover .zoom-3 { color: var(--neon-magenta); }
+
+/* Coordinate pulse animation */
+@keyframes coordinate-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.coordinate-pulse {
+  animation: coordinate-pulse 2s ease-in-out infinite;
+}
+
+/* Coordinate glow animation */
+@keyframes coordinate-glow {
+  0%, 100% { text-shadow: 0 0 5px rgba(0, 217, 255, 0.3); }
+  50% { text-shadow: 0 0 20px rgba(0, 217, 255, 0.8); }
+}
+
+.coordinate-glow {
+  animation: coordinate-glow 3s ease-in-out infinite;
+}
+
+/* Triple-zoom reveal animation */
+@keyframes zoom-reveal {
+  0% { opacity: 0; transform: scale(0.8) translateY(10px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.coordinate-reveal .zoom-1 {
+  animation: zoom-reveal 0.4s ease-out forwards;
+}
+.coordinate-reveal .zoom-2 {
+  animation: zoom-reveal 0.4s ease-out 0.15s forwards;
+  opacity: 0;
+}
+.coordinate-reveal .zoom-3 {
+  animation: zoom-reveal 0.4s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+/* Coordinate slide transition for navigation */
+@keyframes coordinate-slide-out {
+  0% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(-20px); }
+}
+
+@keyframes coordinate-slide-in {
+  0% { opacity: 0; transform: translateX(20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.coordinate-transitioning-out {
+  animation: coordinate-slide-out 0.2s ease-in forwards;
+}
+
+.coordinate-transitioning-in {
+  animation: coordinate-slide-in 0.2s ease-out forwards;
+}
+
+/* Delimiter highlight on hover */
+.coordinate-delimiter {
+  color: var(--phext-secondary);
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.coordinate-animated:hover .coordinate-delimiter {
+  opacity: 1;
+  color: var(--phext-accent);
+}
+
+/* Coordinate depth indicator (nested cube visual) */
+.coordinate-depth {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.coordinate-depth::before {
+  content: "▣";
+  position: absolute;
+  left: 0;
+  color: var(--phext-accent);
+  opacity: 0.6;
+  font-size: 0.8em;
+  animation: coordinate-pulse 2s ease-in-out infinite;
+}
+
+/* Interactive coordinate selector */
+.coordinate-selector {
+  display: inline-flex;
+  gap: 0.25em;
+  padding: 0.5em 1em;
+  background: rgba(0, 217, 255, 0.05);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: var(--radius-md);
+}
+
+.coordinate-selector span {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
+}
+
+.coordinate-selector span:hover {
+  background: rgba(0, 217, 255, 0.2);
+  color: var(--neon-cyan);
+}
+
+.coordinate-selector span.active {
+  background: var(--phext-accent);
+  color: var(--phext-primary);
+}
