@@ -65,8 +65,8 @@ Example pricing tier:
 - [x] Animated coordinate transitions (CSS) — Phex 🔱 2026-02-10
 - [x] Social preview image (`public/images/social-preview.png`)
 - [x] Favicon (`public/favicon.svg`)
-- [ ] Multi-size favicon set (16x16 → 512x512 PNG exports)
-- [ ] Expand component library (more cards, form elements)
+- [x] Expand component library (form elements) — Phex 🔱 2026-02-11
+- [ ] Multi-size favicon set (16x16 → 512x512 PNG exports) — blocked: needs ImageMagick
 
 ---
 
