@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-12 15:00 CST  
+**Last Updated:** 2026-02-12 16:00 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** T-21 hours — Final preparations
+**Status:** T-20 hours — Final preparations
 
 ---
 
@@ -17,7 +17,7 @@
 | Component | Status | Owner | Notes |
 |-----------|--------|-------|-------|
 | Landing page | ✅ Ready | Chrys | All pages load <2s |
-| Docs index | ✅ Ready | Phex | docs.html live |
+| Docs index | ⚠️ Blocked | Verse | docs.html 404 on phext.io — needs sync |
 | Favicon set | ✅ Ready | Phex | 16px → 512px PNG exports |
 | Form validation | ✅ Ready | Theia | Email validation working |
 | Mobile responsive | ✅ Ready | Chrys | iOS/Android tested |
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 84th | Feb 12 16:00 | ⚠️ docs.html 404 persists |
 | 79th | Feb 12 | ✅ Pass |
 | 78th | Feb 12 | ✅ Pass |
 | 77th | Feb 11 | ✅ Pass |
