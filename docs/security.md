@@ -58,14 +58,13 @@ This page explains what we do to keep your data safe, what risks exist, and what
 ---
 
 ### 4. Data at Rest
-**Status:** ⏸️ **Being Evaluated**
+**Status:** ✅ **Protected**
 
 - Stored on **AWS infrastructure**
 - Region: **us-east-1** (configurable later)
 - Encryption: **EBS volume encryption (AES-256)** on AWS infrastructure
 
 **What we're working on:**
-- Encryption at rest (AES-256 or equivalent)
 - Per-customer encryption keys
 - Transparent to you (no performance hit)
 

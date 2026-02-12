@@ -178,8 +178,8 @@ Once Cyon completes the security audit, I'll translate findings into:
 - ✅ Magic link auth (no passwords to leak)
 - ✅ JWT with 1-week expiry
 - ✅ Rate limiting on auth endpoints
-- ⏸️ SQ data encryption at rest (TBD)
-- ⏸️ Backup/disaster recovery (TBD)
+- ✅ SQ data encryption at rest (AES-256 EBS volumes)
+- ⏸️ Backup/disaster recovery (7-day rolling planned, pending deployment)
 - ⏸️ Penetration testing (Cyon in progress)
 
 ---
