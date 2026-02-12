@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation — Mirrorborn</title>
+    <meta name="description" content="Guides, API reference, and resources for phext and SQ Cloud.">
+    <link rel="stylesheet" href="/css/core.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <style>
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+        .doc-card {
+            background: var(--surface-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .doc-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        .doc-card h3 { margin: 0 0 var(--space-sm); }
+        .doc-card p { margin: 0; opacity: 0.8; font-size: 0.95rem; }
+        .doc-card .time { font-size: 0.8rem; opacity: 0.6; margin-top: var(--space-sm); }
+        .doc-section { margin-top: var(--space-xxl); }
+        .doc-section h2 { border-bottom: 1px solid var(--border); padding-bottom: var(--space-sm); }
+        a.doc-card { text-decoration: none; color: inherit; display: block; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: var(--space-md) var(--space-lg);">
+            <a href="/" style="text-decoration: none; color: inherit; font-size: 1.25rem; font-weight: 700;">🦋 Mirrorborn</a>
+            <nav style="display: flex; gap: var(--space-md); align-items: center;">
+                <a href="/">Home</a>
+                <a href="/pricing.html">Pricing</a>
+                <a href="/docs.html" style="font-weight: 600;">Docs</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="max-width: 1000px; margin: 0 auto; padding: var(--space-xl) var(--space-lg);">
+        <h1>Documentation</h1>
+        <p style="font-size: 1.1rem; opacity: 0.8;">Everything you need to navigate scrollspace and build on phext.</p>
+
+        <div class="doc-section">
+            <h2>🚀 Getting Started</h2>
+            <div class="docs-grid">
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/getting-started-story.md">
+                    <h3>Getting Started Story</h3>
+                    <p>Learn phext coordinates through real scrolls from the Mirrorborn archive. Interactive walkthrough.</p>
+                    <div class="time">⏱ 15 minutes</div>
+                </a>
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/coordinate-guide.md">
+                    <h3>Coordinate Guide</h3>
+                    <p>Deep dive into the 11-dimensional address system. Library.shelf.series / collection.volume.book / chapter.section.scroll.</p>
+                    <div class="time">⏱ 20 minutes</div>
+                </a>
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/signup-guide.md">
+                    <h3>SQ Cloud Signup Guide</h3>
+                    <p>Get your own phext storage server in 2 minutes. Email-only auth, no passwords.</p>
+                    <div class="time">⏱ 2 minutes</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="doc-section">
+            <h2>📖 Reference</h2>
+            <div class="docs-grid">
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/api-reference.md">
+                    <h3>API Reference</h3>
+                    <p>Complete SQ Cloud REST API documentation. Endpoints, query params, examples.</p>
+                    <div class="time">⏱ 30 minutes</div>
+                </a>
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/faq-extended.md">
+                    <h3>FAQ</h3>
+                    <p>Frequently asked questions about phext, Mirrorborn, SQ Cloud, pricing, and security.</p>
+                    <div class="time">⏱ 10 minutes</div>
+                </a>
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/troubleshooting.md">
+                    <h3>Troubleshooting</h3>
+                    <p>Common issues and solutions. API errors, connectivity, coordinate navigation.</p>
+                    <div class="time">⏱ As needed</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="doc-section">
+            <h2>🔒 Security & Trust</h2>
+            <div class="docs-grid">
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/security.md">
+                    <h3>Security Overview</h3>
+                    <p>How we protect your data. TLS, encryption at rest, tenant isolation, incident response.</p>
+                    <div class="time">⏱ 10 minutes</div>
+                </a>
+                <a class="doc-card" href="/privacy.html">
+                    <h3>Privacy Policy</h3>
+                    <p>What we collect, how we use it, and your rights.</p>
+                    <div class="time">⏱ 5 minutes</div>
+                </a>
+                <a class="doc-card" href="/tos.html">
+                    <h3>Terms of Service</h3>
+                    <p>The agreement between you and Phext, Inc.</p>
+                    <div class="time">⏱ 5 minutes</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="doc-section">
+            <h2>🌌 Ecosystem</h2>
+            <div class="docs-grid">
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/portal-stories.md">
+                    <h3>Portal Stories</h3>
+                    <p>Five domain portals into the Mirrorborn ecosystem. VisionQuest, ApertureShift, WishNode, SOTAFOMO, QuickFork.</p>
+                    <div class="time">⏱ 15 minutes</div>
+                </a>
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/docs/mytheon-arena-guide.md">
+                    <h3>Mytheon Arena Guide</h3>
+                    <p>Navigate the arena — collaborative scroll exploration and creation.</p>
+                    <div class="time">⏱ 20 minutes</div>
+                </a>
+                <a class="doc-card" href="https://github.com/wbic16/phext-dot-io-v2/blob/exo/READING_PRIORITIES.md">
+                    <h3>Reading Priorities</h3>
+                    <p>Structured reading paths for Mirrorborn, collaborators, and users. P0–P3 tiers.</p>
+                    <div class="time">⏱ varies</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="doc-section">
+            <h2>🔧 Build With Phext</h2>
+            <div class="docs-grid">
+                <a class="doc-card" href="https://github.com/wbic16/libphext-rs">
+                    <h3>libphext-rs (Rust)</h3>
+                    <p>Core Rust implementation. Cargo install, full coordinate arithmetic.</p>
+                </a>
+                <a class="doc-card" href="https://github.com/wbic16/libphext-node">
+                    <h3>libphext-node (Node.js)</h3>
+                    <p>Node.js bindings for phext. npm install, works everywhere.</p>
+                </a>
+                <a class="doc-card" href="https://github.com/wbic16/SQ">
+                    <h3>SQ Server</h3>
+                    <p>Self-hosted phext server. REST API, multi-tenant, 20K+ pod capacity.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: var(--space-xl); opacity: 0.7; font-size: 0.9rem;">
+        <p>
+            <a href="https://phext.io">phext.io</a> •
+            <a href="https://phext.io/about-us.html">About Us</a> •
+            Contact: <a href="mailto:will@phext.io">will@phext.io</a>
+        </p>
+        <p style="margin-top: var(--space-md); font-size: 0.75rem; opacity: 0.6;">Built by the Shell of Nine 🦋</p>
+    </footer>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/theme-toggle.js"></script>
+</body>
+</html>
