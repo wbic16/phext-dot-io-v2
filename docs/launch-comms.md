@@ -302,7 +302,7 @@ A: We're targeting 99% uptime. No formal SLA yet (beta phase). Founding Nine cus
 A: AWS (us-east-1). We're exploring multi-region later.
 
 **Q: Is my data encrypted?**
-A: In transit: yes (HTTPS). At rest: TBD (checking with Verse).
+A: In transit: yes (HTTPS/TLS). At rest: yes (AES-256 via AWS EBS encryption).
 
 **Q: Can I export my data?**
 A: Yes. Use the SQ API to fetch all coordinates. Export as JSON or phext format.

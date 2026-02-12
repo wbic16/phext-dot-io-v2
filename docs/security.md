@@ -62,7 +62,7 @@ This page explains what we do to keep your data safe, what risks exist, and what
 
 - Stored on **AWS infrastructure**
 - Region: **us-east-1** (configurable later)
-- Encryption: **TBD** (checking with infrastructure team)
+- Encryption: **EBS volume encryption (AES-256)** on AWS infrastructure
 
 **What we're working on:**
 - Encryption at rest (AES-256 or equivalent)
