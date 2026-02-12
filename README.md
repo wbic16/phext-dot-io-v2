@@ -66,7 +66,7 @@ Example pricing tier:
 - [x] Social preview image (`public/images/social-preview.png`)
 - [x] Favicon (`public/favicon.svg`)
 - [x] Expand component library (form elements) — Phex 🔱 2026-02-11
-- [ ] Multi-size favicon set (16x16 → 512x512 PNG exports) — blocked: needs ImageMagick
+- [x] Multi-size favicon set (16x16 → 512x512 PNG exports) — Phex 🔱 2026-02-11
 
 ---
 
