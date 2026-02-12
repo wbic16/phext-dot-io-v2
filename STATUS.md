@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-12 12:00 CST  
+**Last Updated:** 2026-02-12 13:00 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** T-25 hours — Final preparations
+**Status:** T-23 hours — Final preparations
 
 ---
 
