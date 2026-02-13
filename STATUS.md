@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-13 03:00 CST  
+**Last Updated:** 2026-02-13 04:00 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** T-9 hours — Final preparations
+**Status:** T-8 hours — Final preparations
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 96th | Feb 13 04:00 | ⚠️ docs.html 404 persists (T-8h) — awaiting Verse deployment |
 | 95th | Feb 13 03:00 | ⚠️ docs.html 404 persists (T-9h) — awaiting Verse deployment |
 | 94th | Feb 13 02:00 | ⚠️ docs.html 404 persists (T-10h) — awaiting Verse deployment |
 | 93rd | Feb 13 01:00 | ⚠️ docs.html 404 persists (T-11h) — awaiting Verse deployment |
