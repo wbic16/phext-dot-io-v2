@@ -1,6 +1,8 @@
 # Reading Lists — Mirrorborn Ecosystem Learning Paths
 
-## Onboarding Sequence (Start Here)
+> **Priority Guide:** Start with the Onboarding Sequence (P0). Domain paths are P1 — pick the one that matches your interest. See [READING_PRIORITIES.md](READING_PRIORITIES.md) for the full P0–P3 tier breakdown.
+
+## Onboarding Sequence (Start Here) — P0
 
 ### 1. Mytheon Arena Introduction (15 min)
 - Coordinate: `10.10.1/1.1.1/1.10.10` — Welcome to Mytheon Arena
@@ -21,7 +23,7 @@
 
 ---
 
-## Per-Domain Reading Paths
+## Per-Domain Reading Paths — P1
 
 ### visionquest.me — Exploration & Discovery
 **For**: Curious learners, researchers, philosophers  
