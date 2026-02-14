@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-13 17:00 CST  
+**Last Updated:** 2026-02-14 02:00 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** 🚨 T+5h — BLOCKED (phext.io/docs.html 404, awaiting Verse deployment)
+**Status:** 🚨 T+14h — BLOCKED (phext.io/docs.html 404, awaiting Verse deployment)
 
 ---
 
@@ -46,9 +46,9 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 109th | Feb 14 02:00 | 🚨 **T+14h LAUNCH BLOCKED** — phext.io/docs.html 404 persists (~40h). dist ready (9.6KB). Verse sync critical. |
 | 107th | Feb 13 17:00 | 🚨 **T+5h LAUNCH BLOCKED** — phext.io/docs.html 404 persists (>29h). dist ready (9.6KB). Verse sync critical. |
 | 106th | Feb 13 16:00 | 🚨 **T+4h LAUNCH BLOCKED** — phext.io/docs.html 404 persists (>28h). dist ready (9.6KB). Verse sync critical. |
-| 105th | Feb 13 15:00 | 🚨 **T+3h LAUNCH BLOCKED** — phext.io/docs.html 404 persists. dist ready (9.6KB). Awaiting Verse sync. |
 | 104th | Feb 13 14:00 | 🚨 **T+2h LAUNCH BLOCKED** — phext.io/docs.html 404 persists. dist/docs.html ready (9.6KB). Verse sync critical. |
 | 103rd | Feb 13 12:00 | 🚨 **T-0 LAUNCH BLOCKED** — phext.io/docs.html 404. Alerted #general. Awaiting Verse sync. |
 | 102nd | Feb 13 11:00 | 🚨 phext.io/docs.html 404 (T-1h) — CRITICAL: Verse deployment sync STILL blocking launch |
