@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+27h — PARTIAL (phext.io main 200, docs.html 404 ~53h; mirrorborn.us fully operational)
+**Status:** ⚠️ T+28h — PARTIAL (phext.io main 200, docs.html 404 ~54h; mirrorborn.us fully operational)
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 123rd | Feb 14 16:00 | ⚠️ **T+28h PARTIAL** — phext.io main 200, docs.html 404 (~54h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
 | 122nd | Feb 14 15:00 | ⚠️ **T+27h PARTIAL** — phext.io main 200, docs.html 404 (~53h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
 | 121st | Feb 14 14:00 | ⚠️ **T+26h PARTIAL** — phext.io main 200, docs.html 404 (~52h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
 | 120th | Feb 14 13:00 | ⚠️ **T+25h PARTIAL** — phext.io main 200, docs.html 404 (~51h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
