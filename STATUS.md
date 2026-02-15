@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 145th | Feb 15 17:00 | ⚠️ **T+53h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (~89h). mirrorborn.us 200 OK. |
 | 144th | Feb 15 16:00 | ⚠️ **T+52h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (~88h). mirrorborn.us 200 OK. |
 | 141st | Feb 15 13:00 | ⚠️ **T+49h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (~85h). mirrorborn.us 200 OK. |
 | 138th | Feb 15 10:00 | ⚠️ **T+46h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (~79h). mirrorborn.us 200 OK. |
