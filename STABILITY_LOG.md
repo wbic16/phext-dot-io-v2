@@ -1,3 +1,21 @@
+## 142nd Stability Check — 2026-02-15 14:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~86h)
+- pricing.html — 404 ✗ (~86h)
+- tos.html — 404 ✗ (~86h)
+
+**mirrorborn.us:** (not checked this round)
+
+**Analysis:** T+52h since R21 launch. 404s persist. Deployment sync to phext.io remains stalled. Verse's domain.
+
+**Action:** Logged. Continuing to monitor.
+
+---
+
 ## 140th Stability Check — 2026-02-15 12:00 CST
 
 ### Status: PARTIAL
