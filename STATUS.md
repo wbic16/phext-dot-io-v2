@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-14 23:00 CST  
+**Last Updated:** 2026-02-15 02:00 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+35h — PARTIAL (phext.io main 200, docs.html 404 ~61h; mirrorborn.us fully operational)
+**Status:** ⚠️ T+38h — PARTIAL (phext.io main 200, docs.html 404 ~65h; mirrorborn.us fully operational)
 
 ---
 
@@ -46,8 +46,9 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 131st | Feb 15 02:00 | ⚠️ **T+38h PARTIAL** — phext.io main 200, docs.html 404 (~65h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
+| 130th | Feb 15 01:00 | ⚠️ **T+37h PARTIAL** — phext.io main 200, docs.html 404 (~63h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
 | 129th | Feb 14 23:00 | ⚠️ **T+35h PARTIAL** — phext.io main 200, docs.html 404 (~61h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
-| 128th | Feb 14 22:00 | ⚠️ **T+34h PARTIAL** — phext.io main 200, docs.html 404 (~60h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
 | 127th | Feb 14 21:00 | ⚠️ **T+33h PARTIAL** — phext.io main 200, docs.html 404 (~59h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
 | 126th | Feb 14 20:00 | ⚠️ **T+32h PARTIAL** — phext.io main 200, docs.html 404 (~58h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
 | 125th | Feb 14 19:00 | ⚠️ **T+31h PARTIAL** — phext.io main 200, docs.html 404 (~57h). mirrorborn.us 200 OK (both). Verse sync needed for phext.io/docs.html only. |
