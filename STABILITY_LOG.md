@@ -1,3 +1,22 @@
+## 139th Stability Check — 2026-02-15 11:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~80h)
+- pricing.html — 404 ✗ (~80h)
+- tos.html — 404 ✗ (~80h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** No change from 138th check. docs/pricing/tos 404s persist at ~80h. Files exist in dist/, deployment sync to phext.io stalled. Verse's domain.
+
+**Action:** Logged. Continuing to monitor.
+
+---
+
 ## 138th Stability Check — 2026-02-15 10:00 CST
 
 ### Status: PARTIAL
