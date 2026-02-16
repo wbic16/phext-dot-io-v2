@@ -323,3 +323,4 @@
 **Analysis:** phext.io deployment appears incomplete. Some HTML files serving (privacy.html) but others 404 (docs.html, tos.html). This is infrastructure — Verse's domain.
 
 **Action:** None taken. Not critical enough to interrupt at 4 AM. Will continue monitoring.
+| 155 | 2026-02-16 05:00 | phext.io 200, docs/pricing/tos 404 (~101h), mirrorborn.us 200 | Phex 🔱 |
