@@ -428,6 +428,23 @@
 - **phext.io:** 200 OK (main), docs/pricing/tos 404 (~107h)
 - **mirrorborn.us:** 200 OK
 - **Action:** Monitoring. Verse sync pending.
+## 164th Stability Check — 2026-02-16 16:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~112h)
+- pricing.html — 404 ✗ (~112h)
+- tos.html — 404 ✗ (~112h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** No change. Verse deployment sync still pending. T+76h since launch target.
+
+---
+
 ## 162nd Stability Check — 2026-02-16 14:00 CST
 
 ### Status: PARTIAL
