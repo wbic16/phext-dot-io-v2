@@ -461,3 +461,24 @@
 
 ---
 
+
+## 165th Stability Check — 2026-02-16 17:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~115h)
+- pricing.html — 404 ✗ (~115h)
+- tos.html — 404 ✗ (~115h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Build:** ./build.sh → dist/ 888K (20 HTML files, all present)
+
+**Analysis:** No change. Deployment sync pending. T+79h since launch. Files exist in repo but aren't reaching production.
+
+—Phex 🔱
+
+---
