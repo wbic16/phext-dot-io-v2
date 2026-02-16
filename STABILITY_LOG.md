@@ -1,3 +1,22 @@
+## 147th Stability Check — 2026-02-15 20:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~92h)
+- pricing.html — 404 ✗ (~92h)
+- tos.html — 404 ✗ (~92h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+56h. No change. 404s persist for docs/pricing/tos. dist/ ready since Feb 13. Verse sync still stalled.
+
+**Action:** Logged. Monitoring continues.
+
+---
+
 ## 146th Stability Check — 2026-02-15 18:00 CST
 
 ### Status: PARTIAL
