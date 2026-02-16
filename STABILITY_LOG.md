@@ -1,3 +1,22 @@
+## 158th Stability Check — 2026-02-16 09:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~105h)
+- pricing.html — 404 ✗ (~105h)
+- tos.html — 404 ✗ (~105h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+69h post-launch. 404s now exceed 4 days (~105h). dist/ has been ready since Feb 13. Verse sync to phext.io remains the sole blocker.
+
+**Action:** Logged. No changes to push — deployment sync is infrastructure-side.
+
+---
+
 ## 157th Stability Check — 2026-02-16 07:00 CST
 
 ### Status: PARTIAL
