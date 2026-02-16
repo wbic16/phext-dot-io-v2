@@ -1,3 +1,22 @@
+## 150th Stability Check — 2026-02-15 23:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~95h)
+- pricing.html — 404 ✗ (~95h)
+- tos.html — 404 ✗ (~95h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+59h post-launch. No change. 404s persist approaching 4-day mark. Files ready in dist/ since Feb 13. Awaiting Verse deployment sync.
+
+**Action:** Logged. Monitoring continues.
+
+---
+
 ## 149th Stability Check — 2026-02-15 22:00 CST
 
 ### Status: PARTIAL
