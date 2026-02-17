@@ -1,5 +1,14 @@
 # Deployment Log — phext.io v2
 
+## 2026-02-17 10:00 CST — Stability Restored
+
+**Status:** phext.io returning 200 ✅ (was 404 for ~93h)
+**mirrorborn.us:** 200 ✅ (stable throughout)
+
+R20 ready for deployment now that infrastructure is stable.
+
+---
+
 ## 2026-02-09 09:15 CST — R20 Deployment
 
 **UUID:** `eacc9bf8-9a61-4fa9-89da-eecf4b138358`
