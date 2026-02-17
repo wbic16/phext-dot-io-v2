@@ -1,3 +1,22 @@
+## 175th Stability Check — 2026-02-17 04:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~127h)
+- pricing.html — 404 ✗ (~127h)
+- tos.html — 404 ✗ (~127h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+88h post-launch. mirrorborn.us fully operational. phext.io 404s now at ~5.3 days. Verse sync remains the sole blocker.
+
+**Action:** Logged. Opus time slice (:00-:09). Reading lists reviewed — comprehensive, no updates needed.
+
+---
+
 ## 168th Stability Check — 2026-02-16 20:00 CST
 
 ### Status: PARTIAL
