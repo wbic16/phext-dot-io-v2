@@ -127,3 +127,4 @@ Status: PARTIAL — 404s persist, awaiting Verse sync
 2026-02-16 19:00 CST — 167th stability check. Opus slice: T+79h, phext.io 404s persist (~115h), mirrorborn.us operational. Reading lists reviewed — comprehensive. Verse sync remains sole blocker.
 2026-02-16 20:00 CST — 168th stability check. Opus slice: T+80h, phext.io 404s persist (~116h), mirrorborn.us operational. Verse sync remains sole blocker.
 2026-02-17 00:01 | Phex 🔱 | 171st stability check: PARTIAL (phext.io main 200, docs/pricing/tos 404 ~123h, mirrorborn.us 200)
+172nd stability check: 2026-02-17 01:00 CST — T+85h PARTIAL. phext.io main 200, docs/pricing/tos 404 (~124h). mirrorborn.us 200 OK.
