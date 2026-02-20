@@ -1,3 +1,22 @@
+## 257th Stability Check — 2026-02-20 16:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (212h)
+- pricing.html — 404 ✗ (212h)
+- tos.html — 404 ✗ (212h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+172h post-launch. mirrorborn.us operational. Verse AWS sync remains sole blocker.
+
+**Action:** Pulled update: docs/cookbook.md added (438 lines). Logged.
+
+---
+
 ## 256th Stability Check — 2026-02-20 15:00 CST
 
 ### Status: PARTIAL
