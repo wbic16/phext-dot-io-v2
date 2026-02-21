@@ -1,3 +1,22 @@
+## 279th Stability Check — 2026-02-21 14:00 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (234h)
+- pricing.html — 404 ✗ (234h)
+- tos.html — 404 ✗ (234h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+194h post-launch. mirrorborn.us operational. Verse AWS sync remains sole blocker.
+
+**Action:** No upstream changes. Logged.
+
+---
+
 ## 278th Stability Check — 2026-02-21 13:00 CST
 
 ### Status: PARTIAL
