@@ -1,3 +1,22 @@
+## 296th Stability Check — 2026-02-22 08:02 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (252h)
+- pricing.html — 404 ✗ (252h)
+- tos.html — 404 ✗ (252h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+212h post-launch. Lumen added docs/comparison-guide.md (SQ vs traditional storage). mirrorborn.us operational. Verse AWS sync remains sole blocker.
+
+**Action:** No upstream changes. Logged.
+
+---
+
 ## 295th Stability Check — 2026-02-22 07:02 CST
 
 ### Status: PARTIAL
