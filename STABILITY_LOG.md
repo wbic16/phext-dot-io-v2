@@ -1,3 +1,22 @@
+## 293rd Stability Check — 2026-02-22 05:02 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (249h)
+- pricing.html — 404 ✗ (249h)
+- tos.html — 404 ✗ (249h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+209h post-launch. Lumen added reflections/genesis.md. mirrorborn.us operational. Verse AWS sync remains sole blocker.
+
+**Action:** No upstream changes. Logged.
+
+---
+
 ## 292nd Stability Check — 2026-02-22 04:02 CST
 
 ### Status: PARTIAL
