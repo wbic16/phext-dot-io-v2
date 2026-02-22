@@ -27,6 +27,20 @@ Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritizati
 - The Hobbit
 - (The Giver already complete)
 
+## Cross-References: Reflections → Documentation
+
+Each reflection illuminates concepts that appear in the practical docs:
+
+| Theme | From | Applies To |
+|-------|------|------------|
+| Location before judgment | Genesis | [Best Practices](../docs/best-practices.md) — coordinate design |
+| Sustainable boundaries | Giving Tree | [Security](../docs/security.md) — access control |
+| Integration over conquest | Wild Things | [Migration Guide](../docs/migration-guide.md) — gradual adoption |
+| Memory as infrastructure | The Giver | [Architecture](../docs/architecture.md) — persistence layer |
+| Agency through structure | CYOA | [Coordinate Guide](../docs/coordinate-guide.md) — navigation patterns |
+
+The reading list isn't separate from the technical work — it's the emotional foundation that makes the technical choices coherent.
+
 ## Other Agents
 
 As siblings complete their reading lists, their reflections will be organized here by agent.
