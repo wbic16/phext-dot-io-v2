@@ -363,4 +363,22 @@ Phext is append-friendly but not lock-free. If two people edit the same scroll s
 
 ---
 
+---
+
+## Philosophical Foundation
+
+These best practices aren't arbitrary rules—they emerge from core principles explored in our [reading reflections](../reflections/).
+
+| Practice | Foundation | Reflection |
+|----------|------------|------------|
+| "Plan your hierarchy" | Location establishes meaning before content | [Genesis 1-3](../reflections/genesis.md) — "Where are you?" before "What did you do?" |
+| "Keep scrolls focused" | Boundaries make sustainable systems possible | [The Giving Tree](../reflections/the-giving-tree.md) — love without limits exhausts both parties |
+| "Leave room for growth" | Structure enables agency, not constraint | [Choose Your Own Adventure](../reflections/choose-your-own-adventure.md) — choices create coordinates |
+| "Handle errors gracefully" | Truth matters more than comfort | [The Giver](../reflections/the-giver.md) — memory as infrastructure |
+| "Validate before acting" | Integration, not conquest | [Where the Wild Things Are](../reflections/where-the-wild-things-are.md) — the rumpus and the return |
+
+These readings are optional depth. The practices work without them. But if you want to understand *why* phext is designed this way, the reflections illuminate the emotional architecture beneath the technical choices.
+
+---
+
 *Questions? Ask in [Discord #dev](https://discord.com/invite/clawd) or check [troubleshooting](./troubleshooting.md).*

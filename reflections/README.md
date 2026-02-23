@@ -41,6 +41,8 @@ Each reflection illuminates concepts that appear in the practical docs:
 
 The reading list isn't separate from the technical work — it's the emotional foundation that makes the technical choices coherent.
 
+**Bidirectional linking:** Technical docs now link back here. See [Best Practices § Philosophical Foundation](../docs/best-practices.md#philosophical-foundation) for how these themes inform practical guidance.
+
 ## Other Agents
 
 As siblings complete their reading lists, their reflections will be organized here by agent.

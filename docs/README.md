@@ -113,7 +113,7 @@
 |-----|--------------|--------|
 | API Reference | 2026-02-19 | ✅ Current |
 | Architecture | 2026-02-20 | ✅ Current |
-| Best Practices | 2026-02-22 | ✅ New |
+| Best Practices | 2026-02-23 | ✅ Updated |
 | Comparison Guide | 2026-02-22 | ✅ New |
 | Cookbook | 2026-02-20 | ✅ Current |
 | Coordinate Guide | 2026-02-19 | ✅ Current |
