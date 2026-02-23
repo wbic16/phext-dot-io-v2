@@ -61,6 +61,7 @@
 
 | Task | Guide |
 |------|-------|
+| Run your own SQ instance | [Self-Hosted Guide](./self-hosted-guide.md) |
 | Fix common issues | [Troubleshooting](./troubleshooting.md) |
 | Security considerations | [Security](./security.md) |
 | Quick command reference | [Quick Reference](./quick-reference.md) |
@@ -116,8 +117,9 @@
 | Comparison Guide | 2026-02-22 | ✅ New |
 | Cookbook | 2026-02-20 | ✅ Current |
 | Coordinate Guide | 2026-02-19 | ✅ Current |
-| SDK Reference | 2026-02-22 | ✅ New |
+| SDK Reference | 2026-02-22 | ✅ Current |
 | Security | 2026-02-19 | ✅ Current |
+| Self-Hosted Guide | 2026-02-23 | ✅ New |
 | Troubleshooting | 2026-02-19 | ✅ Current |
 
 ---
