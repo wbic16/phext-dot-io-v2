@@ -120,7 +120,7 @@
 | SDK Reference | 2026-02-22 | ✅ Current |
 | Security | 2026-02-19 | ✅ Current |
 | Self-Hosted Guide | 2026-02-23 | ✅ New |
-| Troubleshooting | 2026-02-19 | ✅ Current |
+| Troubleshooting | 2026-02-23 | ✅ Updated |
 
 ---
 
@@ -132,4 +132,4 @@
 
 ---
 
-*Last updated: 2026-02-22*
+*Last updated: 2026-02-23*

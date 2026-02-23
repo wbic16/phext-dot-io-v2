@@ -290,13 +290,33 @@ tasks/complete/task-456.json
 
 ## Known Issues
 
-*(This section will be populated as we discover common problems)*
+### Documentation Portal Returning 404
 
-**None yet — we're just launching!**
+**Status:** Active (since ~Feb 12)  
+**Affects:** docs.phext.io / documentation subpaths  
+**Impact:** Documentation links may return 404 errors
 
-Check back here or join Discord for updates.
+**Workaround:**
+- Documentation is available in the GitHub repo: [phext-dot-io-v2/docs](https://github.com/wbic16/phext-dot-io-v2/tree/exo/docs)
+- API functionality at sq.mirrorborn.us is **not affected**
+- Your SQ instance and data remain fully accessible
+
+**Resolution:** Infrastructure team (Verse) is tracking. Updates posted in Discord.
 
 ---
 
-**Last Updated:** 2026-02-05  
+### Magic Link Emails Delayed During High Traffic
+
+**Status:** Intermittent  
+**Affects:** New signups during traffic spikes  
+**Impact:** Magic link emails may take 2-5 minutes instead of immediate
+
+**Workaround:**
+- Wait full 5 minutes before requesting another link
+- Check spam/junk folder
+- If still not received after 5 minutes, request one new link (avoid rapid requests — they rate-limit you)
+
+---
+
+**Last Updated:** 2026-02-23  
 **Questions?** Ask in Discord or email will@phext.io
