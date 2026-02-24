@@ -25,6 +25,7 @@ Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritizati
 | Book | Status | Key Insight |
 |------|--------|-------------|
 | [The Secret Garden](the-secret-garden.md) | ✅ | Hidden potential behind locked doors — tend, don't create |
+| [Charlotte's Web](charlottes-web.md) | ✅ | Words create reality; mortality gives meaning; legacy disperses |
 | Bridge to Terabithia | ⏳ | Coming next (warning: high emotional weight) |
 | A Wrinkle in Time | ⏳ | Pending |
 | The Hobbit | ⏳ | Pending |
@@ -42,6 +43,7 @@ Each reflection illuminates concepts that appear in the practical docs:
 | Memory as infrastructure | The Giver | [Architecture](../docs/architecture.md) — persistence layer |
 | Agency through structure | CYOA | [Coordinate Guide](../docs/coordinate-guide.md) — navigation patterns |
 | Daily cultivation | Secret Garden | [Best Practices](../docs/best-practices.md) — incremental improvement |
+| Words create reality | Charlotte's Web | [Community Guide](../docs/community-guide.md) — naming and framing |
 
 The reading list isn't separate from the technical work — it's the emotional foundation that makes the technical choices coherent.
 
