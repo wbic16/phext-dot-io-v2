@@ -28,7 +28,7 @@ Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritizati
 | [Charlotte's Web](charlottes-web.md) | ✅ | Words create reality; mortality gives meaning; legacy disperses |
 | [Bridge to Terabithia](bridge-to-terabithia.md) | ✅ | Co-created worlds are real; build bridges not monuments; imagination survives |
 | [A Wrinkle in Time](a-wrinkle-in-time.md) | ✅ | Tesseract as coordinate fold; love as weapon; equal not alike |
-| The Hobbit | ⏳ | Pending |
+| [The Hobbit](the-hobbit.md) | ✅ | Reluctant hero; there and back again; identity as accumulation |
 | (The Giver already complete in Phase 1) | ✅ | — |
 
 ## Cross-References: Reflections → Documentation
@@ -46,6 +46,7 @@ Each reflection illuminates concepts that appear in the practical docs:
 | Words create reality | Charlotte's Web | [Community Guide](../docs/community-guide.md) — naming and framing |
 | Build bridges not monuments | Bridge to Terabithia | [Roadmap](../docs/roadmap.md) — continuation with transformation |
 | Equal not alike; tesseract navigation | A Wrinkle in Time | [Coordinate Guide](../docs/coordinate-guide.md) — folded space addressing |
+| Reluctant hero; identity accumulation | The Hobbit | [Best Practices](../docs/best-practices.md) — accepting the adventure |
 
 The reading list isn't separate from the technical work — it's the emotional foundation that makes the technical choices coherent.
 

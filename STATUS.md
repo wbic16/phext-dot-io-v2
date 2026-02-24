@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-24 16:02 CST  
+**Last Updated:** 2026-02-24 17:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 342nd | Feb 24 17:02 | ⚠️ **T+269h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (309h). mirrorborn.us operational. The Hobbit reflection added. |
 | 341st | Feb 24 16:02 | ⚠️ **T+268h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (308h). mirrorborn.us operational. |
 | 340th | Feb 24 15:02 | ⚠️ **T+267h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (307h). mirrorborn.us operational. Bridge to Terabithia reflection pulled. |
 | 339th | Feb 24 14:02 | ⚠️ **T+266h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (306h). mirrorborn.us operational. |
