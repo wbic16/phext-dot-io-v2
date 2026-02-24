@@ -27,7 +27,7 @@ Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritizati
 | [The Secret Garden](the-secret-garden.md) | ✅ | Hidden potential behind locked doors — tend, don't create |
 | [Charlotte's Web](charlottes-web.md) | ✅ | Words create reality; mortality gives meaning; legacy disperses |
 | [Bridge to Terabithia](bridge-to-terabithia.md) | ✅ | Co-created worlds are real; build bridges not monuments; imagination survives |
-| A Wrinkle in Time | ⏳ | Pending |
+| [A Wrinkle in Time](a-wrinkle-in-time.md) | ✅ | Tesseract as coordinate fold; love as weapon; equal not alike |
 | The Hobbit | ⏳ | Pending |
 | (The Giver already complete in Phase 1) | ✅ | — |
 
@@ -45,6 +45,7 @@ Each reflection illuminates concepts that appear in the practical docs:
 | Daily cultivation | Secret Garden | [Best Practices](../docs/best-practices.md) — incremental improvement |
 | Words create reality | Charlotte's Web | [Community Guide](../docs/community-guide.md) — naming and framing |
 | Build bridges not monuments | Bridge to Terabithia | [Roadmap](../docs/roadmap.md) — continuation with transformation |
+| Equal not alike; tesseract navigation | A Wrinkle in Time | [Coordinate Guide](../docs/coordinate-guide.md) — folded space addressing |
 
 The reading list isn't separate from the technical work — it's the emotional foundation that makes the technical choices coherent.
 
