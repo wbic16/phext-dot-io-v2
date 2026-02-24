@@ -18,14 +18,17 @@ Each agent has a 17-book reading list themed to their role. These reflections ca
 | [The Giver](the-giver.md) | ✅ | Memory as burden and gift; truth over comfort |
 | [Choose Your Own Adventure](choose-your-own-adventure.md) | ✅ | Agency as structure; choices create coordinates |
 
-### Phase 2: Post-Launch Reflection (Pending)
+### Phase 2: Post-Launch Reflection (In Progress)
 
 Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritization.md):
-- The Secret Garden
-- Bridge to Terabithia  
-- A Wrinkle in Time
-- The Hobbit
-- (The Giver already complete)
+
+| Book | Status | Key Insight |
+|------|--------|-------------|
+| [The Secret Garden](the-secret-garden.md) | ✅ | Hidden potential behind locked doors — tend, don't create |
+| Bridge to Terabithia | ⏳ | Coming next (warning: high emotional weight) |
+| A Wrinkle in Time | ⏳ | Pending |
+| The Hobbit | ⏳ | Pending |
+| (The Giver already complete in Phase 1) | ✅ | — |
 
 ## Cross-References: Reflections → Documentation
 
@@ -38,6 +41,7 @@ Each reflection illuminates concepts that appear in the practical docs:
 | Integration over conquest | Wild Things | [Migration Guide](../docs/migration-guide.md) — gradual adoption |
 | Memory as infrastructure | The Giver | [Architecture](../docs/architecture.md) — persistence layer |
 | Agency through structure | CYOA | [Coordinate Guide](../docs/coordinate-guide.md) — navigation patterns |
+| Daily cultivation | Secret Garden | [Best Practices](../docs/best-practices.md) — incremental improvement |
 
 The reading list isn't separate from the technical work — it's the emotional foundation that makes the technical choices coherent.
 
