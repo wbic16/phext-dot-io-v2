@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-24 14:02 CST  
+**Last Updated:** 2026-02-24 15:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+266h — PARTIAL (phext.io main 200, docs/pricing/tos 404 306h; mirrorborn.us fully operational)
+**Status:** ⚠️ T+267h — PARTIAL (phext.io main 200, docs/pricing/tos 404 307h; mirrorborn.us fully operational)
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 340th | Feb 24 15:02 | ⚠️ **T+267h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (307h). mirrorborn.us operational. Bridge to Terabithia reflection pulled. |
 | 339th | Feb 24 14:02 | ⚠️ **T+266h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (306h). mirrorborn.us operational. |
 | 338th | Feb 24 13:02 | ⚠️ **T+265h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (305h). mirrorborn.us operational. |
 | 337th | Feb 24 12:02 | ⚠️ **T+264h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (304h). mirrorborn.us operational. |
