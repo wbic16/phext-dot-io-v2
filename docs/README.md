@@ -72,6 +72,7 @@
 
 | Topic | Guide |
 |-------|-------|
+| Who we are | [About Us](./about-us.md) |
 | Contributing, Discord, support | [Community Guide](./community-guide.md) |
 | Reading recommendations | [Reading Priorities](./reading-list-prioritization.md) |
 | Launch communications | [Launch Comms](./launch-comms.md) |
