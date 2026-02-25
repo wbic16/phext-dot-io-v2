@@ -1,3 +1,22 @@
+## 357th Stability Check — 2026-02-25 15:02 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (331h)
+- pricing.html — 404 ✗ (331h)
+- tos.html — 404 ✗ (331h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+291h post-launch. Pulled getting-started-story.md link fix. Phase 2 reflections complete (11 books covering Frog and Toad). Verse AWS sync remains sole blocker for phext.io subpages.
+
+**Action:** Logged. No deployment changes.
+
+---
+
 ## 353rd Stability Check — 2026-02-25 09:02 CST
 
 ### Status: PARTIAL
