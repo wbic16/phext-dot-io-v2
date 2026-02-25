@@ -115,13 +115,12 @@ cargo build --release
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | GET | `/api/v2/version` | Server version |
-| GET | `/api/v2/load/:phext` | Load entire phext file |
-| GET | `/api/v2/select/:phext/:coord` | Select scroll at coordinate |
-| PUT | `/api/v2/insert/:phext/:coord` | Insert content at coordinate |
-| PUT | `/api/v2/update/:phext/:coord` | Update existing scroll |
-| DELETE | `/api/v2/delete/:phext/:coord` | Delete scroll |
-| GET | `/api/v2/toc/:phext` | List all coordinates |
-| GET | `/api/v2/delta/:phext/:since` | Changes since timestamp |
+| GET | `/api/v2/read/:coord` | Read scroll at coordinate |
+| PUT | `/api/v2/write/:coord` | Write content to coordinate |
+| GET | `/api/v2/list/:prefix` | List scrolls under prefix |
+| DELETE | `/api/v2/delete/:coord` | Delete scroll |
+
+See [API Reference](./api-reference.md) for complete endpoint documentation.
 
 ---
 
@@ -203,15 +202,15 @@ class SQCloud {
     this.token = token;
   }
 
-  async select(phext, coord) {
-    const res = await fetch(`${this.baseUrl}/select/${phext}/${coord}`, {
+  async read(coord) {
+    const res = await fetch(`${this.baseUrl}/read/${coord}`, {
       headers: { 'Authorization': `Bearer ${this.token}` }
     });
     return res.text();
   }
 
-  async insert(phext, coord, content) {
-    await fetch(`${this.baseUrl}/insert/${phext}/${coord}`, {
+  async write(coord, content) {
+    await fetch(`${this.baseUrl}/write/${coord}`, {
       method: 'PUT',
       headers: { 
         'Authorization': `Bearer ${this.token}`,
@@ -221,8 +220,8 @@ class SQCloud {
     });
   }
 
-  async toc(phext) {
-    const res = await fetch(`${this.baseUrl}/toc/${phext}`, {
+  async list(prefix) {
+    const res = await fetch(`${this.baseUrl}/list/${prefix}`, {
       headers: { 'Authorization': `Bearer ${this.token}` }
     });
     return res.json();
@@ -231,7 +230,7 @@ class SQCloud {
 
 // Usage
 const sq = new SQCloud('my-instance', process.env.SQ_TOKEN);
-const scroll = await sq.select('docs', '1.1.1/1.1.1/1.1.1');
+const scroll = await sq.read('1.1.1/1.1.1/1.1.1');
 ```
 
 ### Python Example
@@ -246,24 +245,24 @@ class SQCloud:
         self.token = os.environ["SQ_TOKEN"]
         self.headers = {"Authorization": f"Bearer {self.token}"}
 
-    def select(self, phext: str, coord: str) -> str:
+    def read(self, coord: str) -> str:
         resp = requests.get(
-            f"{self.base_url}/select/{phext}/{coord}",
+            f"{self.base_url}/read/{coord}",
             headers=self.headers
         )
         resp.raise_for_status()
         return resp.text
 
-    def insert(self, phext: str, coord: str, content: str) -> None:
+    def write(self, coord: str, content: str) -> None:
         requests.put(
-            f"{self.base_url}/insert/{phext}/{coord}",
+            f"{self.base_url}/write/{coord}",
             headers={**self.headers, "Content-Type": "text/plain"},
             data=content
         ).raise_for_status()
 
-    def toc(self, phext: str) -> list:
+    def list(self, prefix: str) -> list:
         resp = requests.get(
-            f"{self.base_url}/toc/{phext}",
+            f"{self.base_url}/list/{prefix}",
             headers=self.headers
         )
         resp.raise_for_status()
@@ -271,7 +270,7 @@ class SQCloud:
 
 # Usage
 sq = SQCloud("my-instance")
-scroll = sq.select("docs", "1.1.1/1.1.1/1.1.1")
+scroll = sq.read("1.1.1/1.1.1/1.1.1")
 ```
 
 ---
