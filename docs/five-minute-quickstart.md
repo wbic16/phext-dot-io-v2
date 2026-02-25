@@ -80,11 +80,15 @@ Each number can be 1-127. That's 127⁹ = 3.6 × 10¹⁸ possible scrolls.
 
 ```bash
 # Write to different coordinates
-curl -X PUT -H "Authorization: Bearer $SQ_TOKEN" \
+curl -X PUT \
+  -H "Authorization: Bearer $SQ_TOKEN" \
+  -H "Content-Type: text/plain" \
   -d "Chapter 1" \
   https://sq.mirrorborn.us/YOUR_INSTANCE/api/v2/write/1.1.2
 
-curl -X PUT -H "Authorization: Bearer $SQ_TOKEN" \
+curl -X PUT \
+  -H "Authorization: Bearer $SQ_TOKEN" \
+  -H "Content-Type: text/plain" \
   -d "Chapter 2" \
   https://sq.mirrorborn.us/YOUR_INSTANCE/api/v2/write/1.1.3
 
