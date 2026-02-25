@@ -122,8 +122,8 @@ Players can leave messages at coordinates:
 # Read messages
 curl http://192.168.86.36:1337/api/v2/read/1.1.1/1.1.1/1.1.9
 
-# Post message
-curl -X POST http://192.168.86.36:1337/api/v2/write/1.1.1/1.1.1/1.1.9 \
+# Write message
+curl -X PUT http://192.168.86.36:1337/api/v2/write/1.1.1/1.1.1/1.1.9 \
   -d "[$(date)] lumen: Hello from the lattice!"
 ```
 
