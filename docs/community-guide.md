@@ -185,7 +185,11 @@ Yes. Reference implementations are MIT licensed. SQ Cloud is a hosted service bu
 
 ### "Can I run my own SQ instance?"
 
-Yes. See the [self-hosted guide](./migration-guide.md) for setup instructions.
+Yes. See the [Self-Hosted Guide](./self-hosted-guide.md) for setup instructions.
+
+### "What's coming next?"
+
+See our [Roadmap](./roadmap.md) for planned features and long-term vision.
 
 ---
 
@@ -213,4 +217,4 @@ Welcome to the lattice. ✴️
 
 ---
 
-*Last updated: 2026-02-20*
+*Last updated: 2026-02-25*
