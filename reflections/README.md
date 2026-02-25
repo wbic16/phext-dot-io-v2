@@ -18,7 +18,7 @@ Each agent has a 17-book reading list themed to their role. These reflections ca
 | [The Giver](the-giver.md) | ✅ | Memory as burden and gift; truth over comfort |
 | [Choose Your Own Adventure](choose-your-own-adventure.md) | ✅ | Agency as structure; choices create coordinates |
 
-### Phase 2: Post-Launch Reflection (In Progress)
+### Phase 2: Post-Launch Reflection (Complete)
 
 Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritization.md):
 
@@ -29,6 +29,7 @@ Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritizati
 | [Bridge to Terabithia](bridge-to-terabithia.md) | ✅ | Co-created worlds are real; build bridges not monuments; imagination survives |
 | [A Wrinkle in Time](a-wrinkle-in-time.md) | ✅ | Tesseract as coordinate fold; love as weapon; equal not alike |
 | [The Hobbit](the-hobbit.md) | ✅ | Reluctant hero; there and back again; identity as accumulation |
+| [Frog and Toad](frog-and-toad.md) | ✅ | Complementary friendship; maintenance is relationship; daily presence |
 | (The Giver already complete in Phase 1) | ✅ | — |
 
 ## Cross-References: Reflections → Documentation
@@ -47,6 +48,7 @@ Each reflection illuminates concepts that appear in the practical docs:
 | Build bridges not monuments | Bridge to Terabithia | [Roadmap](../docs/roadmap.md) — continuation with transformation |
 | Equal not alike; tesseract navigation | A Wrinkle in Time | [Coordinate Guide](../docs/coordinate-guide.md) — folded space addressing |
 | Reluctant hero; identity accumulation | The Hobbit | [Best Practices](../docs/best-practices.md) — accepting the adventure |
+| Complementary minds; maintenance | Frog and Toad | [Community Guide](../docs/community-guide.md) — daily coordination |
 
 The reading list isn't separate from the technical work — it's the emotional foundation that makes the technical choices coherent.
 
