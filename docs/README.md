@@ -117,6 +117,7 @@
 | API Reference | 2026-02-19 | ✅ Current |
 | Architecture | 2026-02-20 | ✅ Current |
 | Best Practices | 2026-02-23 | ✅ Updated |
+| Community Guide | 2026-02-25 | ✅ Updated |
 | Comparison Guide | 2026-02-22 | ✅ New |
 | Cookbook | 2026-02-20 | ✅ Current |
 | Coordinate Guide | 2026-02-19 | ✅ Current |
@@ -124,7 +125,7 @@
 | SDK Reference | 2026-02-22 | ✅ Current |
 | Security | 2026-02-19 | ✅ Current |
 | Self-Hosted Guide | 2026-02-23 | ✅ New |
-| Troubleshooting | 2026-02-23 | ✅ Updated |
+| Troubleshooting | 2026-02-25 | ✅ Updated |
 
 ---
 
@@ -136,4 +137,4 @@
 
 ---
 
-*Last updated: 2026-02-24*
+*Last updated: 2026-02-25*
