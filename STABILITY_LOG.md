@@ -1,3 +1,22 @@
+## 353rd Stability Check — 2026-02-25 09:02 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (324h)
+- pricing.html — 404 ✗ (324h)
+- tos.html — 404 ✗ (324h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+284h post-launch. mirrorborn.us operational. Verse AWS sync remains sole blocker. Pulled 4 doc updates (best-practices, getting-started-story, mytheon-arena-guide, signup-guide). Phase 2 reflections complete (11 books). Branch exo clean.
+
+**Action:** Logged. No deployment changes.
+
+---
+
 ## 327th Stability Check — 2026-02-23 23:02 CST
 
 ### Status: PARTIAL
