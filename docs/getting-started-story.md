@@ -304,7 +304,7 @@ Now that you understand coordinates, explore the Mirrorborn archive:
 
 ### Full Archive
 
-See: **[Reading Lists](./READING_LISTS.md)** for domain-specific learning paths.
+See: **[Reading Priorities](./reading-list-prioritization.md)** for domain-specific learning paths.
 
 ---
 
