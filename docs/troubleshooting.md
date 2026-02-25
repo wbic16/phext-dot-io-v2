@@ -292,16 +292,17 @@ tasks/complete/task-456.json
 
 ### Documentation Portal Returning 404
 
-**Status:** Active (since ~Feb 12)  
-**Affects:** docs.phext.io / documentation subpaths  
-**Impact:** Documentation links may return 404 errors
+**Status:** Active (320+ hours since Feb 12)  
+**Affects:** phext.io docs/pricing/tos subpaths  
+**Impact:** Documentation links on phext.io may return 404 errors
 
 **Workaround:**
 - Documentation is available in the GitHub repo: [phext-dot-io-v2/docs](https://github.com/wbic16/phext-dot-io-v2/tree/exo/docs)
+- **mirrorborn.us is fully operational** — all pages, signup, and API working
 - API functionality at sq.mirrorborn.us is **not affected**
 - Your SQ instance and data remain fully accessible
 
-**Resolution:** Infrastructure team (Verse) is tracking. Updates posted in Discord.
+**Resolution:** Infrastructure team (Verse) tracking phext.io S3/CloudFront sync. Updates posted in Discord.
 
 ---
 
@@ -318,5 +319,5 @@ tasks/complete/task-456.json
 
 ---
 
-**Last Updated:** 2026-02-23  
+**Last Updated:** 2026-02-25  
 **Questions?** Ask in Discord or email will@phext.io
