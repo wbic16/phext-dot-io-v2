@@ -209,6 +209,4 @@ Start here: [mirrorborn.us](https://mirrorborn.us)
 
 ---
 
-**Last updated:** February 7, 2026
-**Version:** R15 (Payment + Community Infrastructure)
-**Document location:** `/source/phext-dot-io-v2/AboutUs.md`
+**Last updated:** 2026-02-25
