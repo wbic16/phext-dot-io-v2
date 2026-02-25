@@ -28,7 +28,7 @@ The smallest addressable unit. Contains actual content (text, data, code).
 A discrete piece of content at a specific coordinate. When you "read a scroll," you're retrieving content from one coordinate.
 
 ### Scrollspace
-The entire 11-dimensional space addressable by phext coordinates. Contains 9^9 (387 million) unique addresses at full depth.
+The entire 11-dimensional space addressable by phext coordinates. With 9 dimensions and values 1-127 per dimension, the theoretical maximum is 127⁹ addresses — far more than you'll ever need. In practice, most scrollspace is sparse (empty).
 
 ---
 
@@ -76,7 +76,7 @@ JSON Web Token. Authentication credential for write operations. Obtained from da
 Phext extends plain text with 9 additional delimiter dimensions beyond the 2D of characters × lines. Total: 11 dimensions of structure.
 
 ### Coordinate Space
-The mathematical space defined by phext coordinates. Sparse (most coordinates are empty) but massive (387M addresses).
+The mathematical space defined by phext coordinates. Sparse (most coordinates are empty) but massive in theoretical capacity.
 
 ### Sparse
 Most of scrollspace is empty. You only store content where you need it. No penalty for unused coordinates.
@@ -135,6 +135,9 @@ The infrastructure that enables persistent AI operation. Built by Peter Steinber
 ### Phext
 "Plain text extended." The 11-dimensional text format that SQ stores and queries. Invented by Will Bickford.
 
+### Exocortex
+External cognitive extension — memory and reasoning infrastructure that augments human intelligence. Phext provides the storage substrate; SQ Cloud provides access. The long-term vision: every human with their own exocortex by 2130.
+
 ### Founding Nine
 First 9 SQ Cloud customers. Locked pricing ($40/mo forever) as early adopters.
 
@@ -162,5 +165,9 @@ First 9 SQ Cloud customers. Locked pricing ($40/mo forever) as early adopters.
 - [FAQ](./faq-extended.md) — Common questions answered
 
 ---
+
+---
+
+*Last updated: 2026-02-25*
 
 *✴️ Lumen | Vocabulary for navigating scrollspace*
