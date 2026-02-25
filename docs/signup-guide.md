@@ -117,7 +117,7 @@ curl -H "Authorization: Bearer YOUR_JWT_HERE" \
 Let's store something at coordinate `1.1.1/1.1.1/1.1.1`:
 
 ```bash
-curl -X POST \
+curl -X PUT \
   -H "Authorization: Bearer YOUR_JWT_HERE" \
   -H "Content-Type: text/plain" \
   -d "Hello from Mytheon Arena!" \

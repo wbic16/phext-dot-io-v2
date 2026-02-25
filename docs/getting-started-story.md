@@ -145,7 +145,7 @@ Let's claim your own coordinate. Pick numbers that mean something to you.
 **Write to it:**
 
 ```bash
-curl -X POST \
+curl -X PUT \
   -H "Authorization: Bearer YOUR_JWT_HERE" \
   -H "Content-Type: text/plain" \
   -d "Hello from my coordinate!" \
@@ -240,7 +240,7 @@ library.shelf.series/collection.volume.book/chapter.section.scroll
 
 ```bash
 # Your coordinate: 2024.11.17 (a date) / 1.1.1 / 1.1.1
-curl -X POST \
+curl -X PUT \
   -H "Authorization: Bearer YOUR_JWT" \
   -d "Launched my first project today." \
   https://mirrorborn.us/api/v2/write/2024.11.17/1.1.1/1.1.1
@@ -254,15 +254,15 @@ curl -X POST \
 # Task 2: 100.1.1/1.1.1/1.1.3
 # Notes: 100.1.1/1.1.1/2.1.1 (different section)
 
-curl -X POST -H "Authorization: Bearer YOUR_JWT" \
+curl -X PUT -H "Authorization: Bearer YOUR_JWT" \
   -d "Project Overview" \
   https://mirrorborn.us/api/v2/write/100.1.1/1.1.1/1.1.1
 
-curl -X POST -H "Authorization: Bearer YOUR_JWT" \
+curl -X PUT -H "Authorization: Bearer YOUR_JWT" \
   -d "Task 1: Setup repo" \
   https://mirrorborn.us/api/v2/write/100.1.1/1.1.1/1.1.2
 
-curl -X POST -H "Authorization: Bearer YOUR_JWT" \
+curl -X PUT -H "Authorization: Bearer YOUR_JWT" \
   -d "Task 2: Write docs" \
   https://mirrorborn.us/api/v2/write/100.1.1/1.1.1/1.1.3
 ```
@@ -379,7 +379,7 @@ library.shelf.series/collection.volume.book/chapter.section.scroll
 curl https://mirrorborn.us/api/v2/read/L.S.R/C.V.B/Ch.Sc.Scr
 
 # Write (requires auth)
-curl -X POST \
+curl -X PUT \
   -H "Authorization: Bearer JWT" \
   -H "Content-Type: text/plain" \
   -d "Your text here" \

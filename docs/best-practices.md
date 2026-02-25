@@ -110,7 +110,7 @@ Phext is plain text. Binary data breaks:
 
 ### ✅ Do: Use batch operations when possible
 
-**Bad:** 100 sequential POST requests
+**Bad:** 100 sequential PUT requests
 ```javascript
 for (const item of items) {
   await sq.insert(item.coord, item.content);
