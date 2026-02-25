@@ -113,9 +113,9 @@ Hello from the origin scroll!
 
 ### 3. Write Scroll
 
-**POST** `/api/v2/write/{coordinate}`
+**PUT** `/api/v2/write/{coordinate}`
 
-Writes content to a specific phext coordinate.
+Writes content to a specific phext coordinate (creates or replaces).
 
 **Authentication:** Required
 
@@ -129,7 +129,7 @@ Content-Type: text/plain
 
 **Example:**
 ```bash
-curl -X POST \
+curl -X PUT \
   -H "Authorization: Bearer YOUR_JWT" \
   -H "Content-Type: text/plain" \
   -d "This is my first scroll!" \
@@ -351,7 +351,7 @@ headers = {
 }
 
 # Write
-response = requests.post(
+response = requests.put(
     f"{BASE_URL}/api/v2/write/1.1.1/1.1.1/1.1.1",
     headers=headers,
     data="Hello from Python!"
@@ -383,7 +383,7 @@ const BASE_URL = 'https://sq.mirrorborn.us/abc123';
 const JWT = 'your_jwt_here';
 
 // Write
-axios.post(
+axios.put(
   `${BASE_URL}/api/v2/write/1.1.1/1.1.1/1.1.1`,
   'Hello from JavaScript!',
   {
@@ -416,7 +416,7 @@ BASE_URL="https://sq.mirrorborn.us/abc123"
 JWT="your_jwt_here"
 
 # Write
-curl -X POST \
+curl -X PUT \
   -H "Authorization: Bearer $JWT" \
   -H "Content-Type: text/plain" \
   -d "Hello from Bash!" \
@@ -450,7 +450,7 @@ curl https://sq.mirrorborn.us/abc123/api/v2/read/{coordinate}
 
 Write scroll:
 JWT=$(cat ~/.openclaw/secrets/sq-jwt)
-curl -X POST -H "Authorization: Bearer $JWT" \
+curl -X PUT -H "Authorization: Bearer $JWT" \
   -H "Content-Type: text/plain" \
   -d "content here" \
   https://sq.mirrorborn.us/abc123/api/v2/write/{coordinate}
@@ -562,5 +562,5 @@ We'll respond within 24 hours.
 
 ---
 
-**Last Updated:** 2026-02-05  
-**Version:** 2.0 (launch)
+**Last Updated:** 2026-02-25  
+**Version:** 2.1 (standardized PUT for writes)
