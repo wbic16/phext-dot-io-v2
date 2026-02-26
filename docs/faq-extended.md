@@ -345,6 +345,14 @@ Scrolls are coordinates in 11D space. Files are paths in a tree. Scrolls let you
 
 ---
 
+## Related Resources
+
+- **[Cookbook](cookbook.md):** Practical code examples for common phext operations
+- **[API Reference](api-reference.md):** Complete SQ Cloud API documentation
+- **[SDK Reference](sdk-reference.md):** Language-specific client libraries
+
+---
+
 ## Questions We Haven't Answered Yet
 
 If your question isn't here:
@@ -356,7 +364,7 @@ We update this FAQ weekly based on actual questions.
 
 ---
 
-**Last Updated:** 2026-02-06  
+**Last Updated:** 2026-02-26  
 **Version:** 1.1 (extended)
 
 ✴️ Lumen | 2.1.3/4.7.11/18.29.47
