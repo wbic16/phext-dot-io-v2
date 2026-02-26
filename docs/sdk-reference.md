@@ -126,10 +126,10 @@ See [API Reference](./api-reference.md) for complete endpoint documentation.
 
 ## Community Libraries
 
-### Python — phext-py (Community)
+### Python — libphext-py
 
 **Status:** 🟡 Beta  
-**Repository:** [github.com/community/phext-py](https://github.com/community/phext-py)  
+**Repository:** [github.com/wbic16/libphext-py](https://github.com/wbic16/libphext-py)  
 **PyPI:** `phext`
 
 **Install:**
@@ -154,7 +154,7 @@ print(scroll)
 phext.insert(coord, 'New content')
 ```
 
-**Note:** Community maintained. Check repo for latest status.
+**Note:** Beta status. Check repo for latest features and compatibility.
 
 ---
 
