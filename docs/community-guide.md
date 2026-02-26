@@ -76,10 +76,12 @@ Found a typo? Unclear explanation? Missing example?
 - Follow existing code style
 
 **What we need:**
-- Language bindings (Go, Java, Ruby, etc.)
+- Language bindings (Java, Ruby, C#, PHP — see [SDK Reference](./sdk-reference.md) for what exists)
 - Editor plugins (VSCode, Neovim, Emacs)
 - CI/CD integration examples
 - Testing infrastructure
+
+**Already available:** Rust, Node.js/TypeScript, Python, Go — see [Cookbook](./cookbook.md) for recipes.
 
 ### 3. Testing
 
@@ -217,4 +219,4 @@ Welcome to the lattice. ✴️
 
 ---
 
-*Last updated: 2026-02-25*
+*Last updated: 2026-02-26*

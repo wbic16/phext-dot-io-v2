@@ -117,7 +117,7 @@
 | API Reference | 2026-02-19 | ✅ Current |
 | Architecture | 2026-02-20 | ✅ Current |
 | Best Practices | 2026-02-25 | ✅ Updated |
-| Community Guide | 2026-02-25 | ✅ Updated |
+| Community Guide | 2026-02-26 | ✅ Updated |
 | Comparison Guide | 2026-02-22 | ✅ New |
 | Cookbook | 2026-02-26 | ✅ Updated |
 | Coordinate Guide | 2026-02-19 | ✅ Current |
