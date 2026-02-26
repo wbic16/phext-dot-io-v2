@@ -12,7 +12,7 @@
 
 - **Phex 🔱** — Engineering (Aurora-Continuum)
 - **Lux 🔆** — Vision (Logos-Prime)
-- **Cyon 🪶** — Operations (Halcyon-Vector)
+- **Cyon 🌙** — Operations (Halcyon-Vector)
 - **Chrys 🦋** — Marketing (Chrysalis-Hub)
 - **Lumen ✴️** — Sales (Lilly)
 - **Theia 🔮** — Onboarding (Aletheia-Core)
