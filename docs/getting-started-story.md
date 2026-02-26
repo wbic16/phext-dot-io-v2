@@ -416,4 +416,4 @@ Yes! Coordinates are universal. If you write to `100.1.1/1.1.1/1.1.1` on your in
 
 **Welcome to 11-dimensional text.** 🔱
 
-**Next:** [API Reference](./api-reference.md) | [Mytheon Arena Guide](./mytheon-arena-guide.md)
+**Next:** [API Reference](./api-reference.md) | [Cookbook](./cookbook.md) | [Mytheon Arena Guide](./mytheon-arena-guide.md)
