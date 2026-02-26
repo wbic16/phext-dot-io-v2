@@ -104,7 +104,8 @@ curl https://sq.mirrorborn.us/YOUR_INSTANCE/api/v2/list/1.1.1
 |------|----------|
 | Understand coordinates | [coordinate-guide.md](./coordinate-guide.md) |
 | Full API reference | [api-reference.md](./api-reference.md) |
-| Code in your language | [quick-reference.md](./quick-reference.md) |
+| Code in your language | [sdk-reference.md](./sdk-reference.md) |
+| Copy-paste recipes | [cookbook.md](./cookbook.md) |
 | Real-world patterns | [use-cases.md](./use-cases.md) |
 | Migrate from SQL/NoSQL | [migration-guide.md](./migration-guide.md) |
 
