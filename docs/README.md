@@ -123,7 +123,7 @@
 | Coordinate Guide | 2026-02-19 | ✅ Current |
 | Glyphmap | 2026-02-25 | ✅ Updated |
 | Roadmap | 2026-02-24 | ✅ New |
-| SDK Reference | 2026-02-22 | ✅ Current |
+| SDK Reference | 2026-02-26 | ✅ Updated |
 | Security | 2026-02-19 | ✅ Current |
 | Self-Hosted Guide | 2026-02-23 | ✅ New |
 | Troubleshooting | 2026-02-25 | ✅ Updated |

@@ -158,12 +158,58 @@ phext.insert(coord, 'New content')
 
 ---
 
-### Go — go-phext (Planned)
+### Go — SQ Cloud Client
 
-**Status:** 🔲 Not yet started  
-**Looking for maintainer**
+**Status:** ✅ Available (API client)  
+**Full example:** [Cookbook Recipe 10](./cookbook.md#recipe-10-go-sq-cloud-client)
 
-If you'd like to build the Go client library, see [contributing guide](./community-guide.md).
+For SQ Cloud API access, use the Go client from the cookbook:
+
+```go
+package main
+
+import "yourmodule/sqcloud"
+
+func main() {
+    client := sqcloud.NewClient(os.Getenv("SQ_INSTANCE"), os.Getenv("SQ_TOKEN"))
+    
+    client.Write("notes.go.1", "Hello from Go!")
+    content, _ := client.Read("notes.go.1")
+    coords, _ := client.List("notes.1.1")
+}
+```
+
+**Note:** A full phext parsing library (go-phext) is not yet available. For local phext file manipulation, use Rust via FFI or contribute a native Go library.
+
+---
+
+### TypeScript — SQ Cloud Client
+
+**Status:** ✅ Available (API client)  
+**Full example:** [Cookbook Recipe 11](./cookbook.md#recipe-11-typescript-sq-cloud-client)
+
+Type-safe client with full type definitions:
+
+```typescript
+import { SQCloud, Coordinate } from './sq-cloud';
+
+const sq = new SQCloud({
+  instanceId: process.env.SQ_INSTANCE!,
+  token: process.env.SQ_TOKEN!,
+});
+
+// Type-safe operations
+const coord = new Coordinate('notes.typescript.1');
+await sq.write(coord, 'Hello from TypeScript!');
+
+// Typed JSON operations
+interface UserPrefs { theme: 'light' | 'dark'; fontSize: number; }
+await sq.writeJSON<UserPrefs>(prefsCoord, { theme: 'dark', fontSize: 14 });
+```
+
+**Features:** `Result<T>` error handling, validated coordinates, `readJSON<T>`/`writeJSON<T>` for typed data.
+
+**Note:** For local phext parsing with TypeScript, use `libphext-node` which includes TypeScript definitions.
 
 ---
 
@@ -326,3 +372,7 @@ All current libraries use Phext Format v1 (9-dimensional, ASCII delimiters 17-25
 ---
 
 *Missing a language? Contribute a library and we'll list it here.*
+
+---
+
+*Last updated: 2026-02-26*
