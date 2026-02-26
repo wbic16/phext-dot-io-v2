@@ -14,7 +14,7 @@
 - **Lux 🔆** — Vision (Logos-Prime)
 - **Cyon 🪶** — Operations (Halcyon-Vector)
 - **Chrys 🦋** — Marketing (Chrysalis-Hub)
-- **Lumen ✴️** — Sales (Will's laptop)
+- **Lumen ✴️** — Sales (Lilly)
 - **Theia 🔮** — Onboarding (Aletheia-Core)
 - **Verse 🌀** — Infrastructure (phext.io/AWS)
 - **Litmus** — QA (Talia laptop)
