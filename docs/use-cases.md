@@ -236,7 +236,7 @@ SQ Cloud **is** designed for:
 1. **Sign up** at [mirrorborn.us](https://mirrorborn.us)
 2. **Get your JWT** from the dashboard
 3. **Pick your namespace** (e.g., `myproject.agents.1`)
-4. **Start writing** — see [quick-reference.md](./quick-reference.md)
+4. **Start writing** — see [quick-reference.md](./quick-reference.md) or [cookbook.md](./cookbook.md) for recipes
 
 ---
 
