@@ -370,6 +370,8 @@ await sq.write('agents.node.state', JSON.stringify({ task: 'review PR' }));
 ## Links
 
 - **API Reference:** [api-reference.md](./api-reference.md)
+- **SDK Reference:** [sdk-reference.md](./sdk-reference.md)
+- **Cookbook:** [cookbook.md](./cookbook.md)
 - **Quick Reference:** [quick-reference.md](./quick-reference.md)
 - **Use Cases:** [use-cases.md](./use-cases.md)
 - **Troubleshooting:** [troubleshooting.md](./troubleshooting.md)
