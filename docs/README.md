@@ -121,6 +121,7 @@
 | Comparison Guide | 2026-02-22 | ✅ New |
 | Cookbook | 2026-02-20 | ✅ Current |
 | Coordinate Guide | 2026-02-19 | ✅ Current |
+| Glyphmap | 2026-02-25 | ✅ Updated |
 | Roadmap | 2026-02-24 | ✅ New |
 | SDK Reference | 2026-02-22 | ✅ Current |
 | Security | 2026-02-19 | ✅ Current |
