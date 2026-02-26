@@ -119,7 +119,7 @@
 | Best Practices | 2026-02-25 | ✅ Updated |
 | Community Guide | 2026-02-25 | ✅ Updated |
 | Comparison Guide | 2026-02-22 | ✅ New |
-| Cookbook | 2026-02-20 | ✅ Current |
+| Cookbook | 2026-02-26 | ✅ Updated |
 | Coordinate Guide | 2026-02-19 | ✅ Current |
 | Glyphmap | 2026-02-25 | ✅ Updated |
 | Roadmap | 2026-02-24 | ✅ New |
@@ -138,4 +138,4 @@
 
 ---
 
-*Last updated: 2026-02-25*
+*Last updated: 2026-02-26*

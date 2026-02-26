@@ -400,6 +400,114 @@ results = batch_write(BASE, TOKEN, items)
 
 ---
 
+## Recipe 8: Rust SQ Cloud Client
+
+Ergonomic Rust client for SQ Cloud with async support.
+
+```rust
+use reqwest::Client;
+use serde::Deserialize;
+
+pub struct SQCloud {
+    client: Client,
+    base_url: String,
+    token: String,
+}
+
+#[derive(Deserialize)]
+pub struct ListResponse {
+    pub coordinates: Vec<String>,
+}
+
+impl SQCloud {
+    pub fn new(instance_id: &str, token: &str) -> Self {
+        Self {
+            client: Client::new(),
+            base_url: format!("https://sq.mirrorborn.us/{}/api/v2", instance_id),
+            token: token.to_string(),
+        }
+    }
+
+    pub async fn read(&self, coord: &str) -> Result<String, reqwest::Error> {
+        let url = format!("{}/read/{}", self.base_url, coord);
+        self.client
+            .get(&url)
+            .header("Authorization", format!("Bearer {}", self.token))
+            .send()
+            .await?
+            .text()
+            .await
+    }
+
+    pub async fn write(&self, coord: &str, content: &str) -> Result<(), reqwest::Error> {
+        let url = format!("{}/write/{}", self.base_url, coord);
+        self.client
+            .put(&url)
+            .header("Authorization", format!("Bearer {}", self.token))
+            .header("Content-Type", "text/plain")
+            .body(content.to_string())
+            .send()
+            .await?;
+        Ok(())
+    }
+
+    pub async fn list(&self, prefix: &str) -> Result<Vec<String>, reqwest::Error> {
+        let url = format!("{}/list/{}", self.base_url, prefix);
+        let resp: ListResponse = self.client
+            .get(&url)
+            .header("Authorization", format!("Bearer {}", self.token))
+            .send()
+            .await?
+            .json()
+            .await?;
+        Ok(resp.coordinates)
+    }
+
+    pub async fn delete(&self, coord: &str) -> Result<(), reqwest::Error> {
+        let url = format!("{}/delete/{}", self.base_url, coord);
+        self.client
+            .delete(&url)
+            .header("Authorization", format!("Bearer {}", self.token))
+            .send()
+            .await?;
+        Ok(())
+    }
+}
+
+// Usage
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let sq = SQCloud::new("my-instance", &std::env::var("SQ_TOKEN")?);
+    
+    // Write
+    sq.write("notes.today.1", "Built SQ Cloud client in Rust").await?;
+    
+    // Read
+    let content = sq.read("notes.today.1").await?;
+    println!("{}", content);
+    
+    // List
+    let coords = sq.list("notes.1.1").await?;
+    for coord in coords {
+        println!("Found: {}", coord);
+    }
+    
+    Ok(())
+}
+```
+
+**Dependencies (Cargo.toml):**
+```toml
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+```
+
+**Why Rust:** Zero-cost abstractions, fearless concurrency, and native integration with libphext-rs for local operations.
+
+---
+
 ## Common Patterns Summary
 
 | Use Case | Coordinate Pattern |
@@ -434,5 +542,7 @@ results = batch_write(BASE, TOKEN, items)
 - [Coordinate Guide](./coordinate-guide.md) — Deep dive on coordinates
 
 ---
+
+*Last updated: 2026-02-26*
 
 *✴️ Lumen | Practical patterns for SQ Cloud*
