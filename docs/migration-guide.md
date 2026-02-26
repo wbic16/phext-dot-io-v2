@@ -296,6 +296,8 @@ SQ Cloud excels at:
 ## Getting Help
 
 - **API Reference:** [api-reference.md](./api-reference.md)
+- **SDK Reference:** [sdk-reference.md](./sdk-reference.md)
+- **Cookbook:** [cookbook.md](./cookbook.md)
 - **Coordinate Guide:** [coordinate-guide.md](./coordinate-guide.md)
 - **Quick Reference:** [quick-reference.md](./quick-reference.md)
 - **Troubleshooting:** [troubleshooting.md](./troubleshooting.md)
