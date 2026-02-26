@@ -578,6 +578,172 @@ curl -I "https://sq.mirrorborn.us/INSTANCE/api/v2/health"
 
 ---
 
+## Recipe 10: Go SQ Cloud Client
+
+Minimal Go client for backend services and CLI tools.
+
+```go
+package sqcloud
+
+import (
+	"bytes"
+	"encoding/json"
+	"fmt"
+	"io"
+	"net/http"
+	"time"
+)
+
+// Client provides SQ Cloud API access.
+type Client struct {
+	BaseURL    string
+	Token      string
+	HTTPClient *http.Client
+}
+
+// NewClient creates an SQ Cloud client.
+func NewClient(instanceID, token string) *Client {
+	return &Client{
+		BaseURL:    fmt.Sprintf("https://sq.mirrorborn.us/%s/api/v2", instanceID),
+		Token:      token,
+		HTTPClient: &http.Client{Timeout: 10 * time.Second},
+	}
+}
+
+// Read fetches content at a coordinate.
+func (c *Client) Read(coord string) (string, error) {
+	resp, err := c.HTTPClient.Get(fmt.Sprintf("%s/read/%s", c.BaseURL, coord))
+	if err != nil {
+		return "", err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == http.StatusNotFound {
+		return "", nil // Empty coordinate
+	}
+	if resp.StatusCode != http.StatusOK {
+		return "", fmt.Errorf("read failed: %d", resp.StatusCode)
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	return string(body), err
+}
+
+// Write stores content at a coordinate.
+func (c *Client) Write(coord, content string) error {
+	req, err := http.NewRequest(
+		http.MethodPut,
+		fmt.Sprintf("%s/write/%s", c.BaseURL, coord),
+		bytes.NewBufferString(content),
+	)
+	if err != nil {
+		return err
+	}
+	req.Header.Set("Authorization", "Bearer "+c.Token)
+	req.Header.Set("Content-Type", "text/plain")
+
+	resp, err := c.HTTPClient.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK && resp.StatusCode != http.StatusCreated {
+		return fmt.Errorf("write failed: %d", resp.StatusCode)
+	}
+	return nil
+}
+
+// ListResponse contains child coordinates.
+type ListResponse struct {
+	Coordinates []string `json:"coordinates"`
+}
+
+// List returns child coordinates.
+func (c *Client) List(coord string) ([]string, error) {
+	resp, err := c.HTTPClient.Get(fmt.Sprintf("%s/list/%s", c.BaseURL, coord))
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == http.StatusNotFound {
+		return []string{}, nil
+	}
+
+	var result ListResponse
+	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
+		return nil, err
+	}
+	return result.Coordinates, nil
+}
+
+// Delete removes content at a coordinate.
+func (c *Client) Delete(coord string) error {
+	req, err := http.NewRequest(
+		http.MethodDelete,
+		fmt.Sprintf("%s/delete/%s", c.BaseURL, coord),
+		nil,
+	)
+	if err != nil {
+		return err
+	}
+	req.Header.Set("Authorization", "Bearer "+c.Token)
+
+	resp, err := c.HTTPClient.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK && resp.StatusCode != http.StatusNoContent {
+		return fmt.Errorf("delete failed: %d", resp.StatusCode)
+	}
+	return nil
+}
+```
+
+**Usage:**
+
+```go
+package main
+
+import (
+	"fmt"
+	"log"
+	"os"
+
+	"yourmodule/sqcloud"
+)
+
+func main() {
+	client := sqcloud.NewClient(os.Getenv("SQ_INSTANCE"), os.Getenv("SQ_TOKEN"))
+
+	// Write
+	if err := client.Write("notes.go.1", "Hello from Go!"); err != nil {
+		log.Fatal(err)
+	}
+
+	// Read
+	content, err := client.Read("notes.go.1")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Content:", content)
+
+	// List children
+	coords, err := client.List("notes.1.1")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Children:", coords)
+}
+```
+
+**Why Go:** Fast compilation, single binary deployment, excellent for microservices and CLI tools. No runtime dependencies.
+
+---
+
 ## Common Patterns Summary
 
 | Use Case | Coordinate Pattern |
