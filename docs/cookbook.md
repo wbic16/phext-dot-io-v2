@@ -508,6 +508,76 @@ tokio = { version = "1", features = ["full"] }
 
 ---
 
+## Recipe 9: Shell/Curl Quick Testing
+
+Direct API access from the command line — perfect for debugging and quick scripts.
+
+```bash
+#!/bin/bash
+# sq-client.sh — Minimal shell client for SQ Cloud
+
+SQ_BASE="https://sq.mirrorborn.us/YOUR_INSTANCE/api/v2"
+SQ_TOKEN="your-jwt-token"
+
+# Write content to a coordinate
+sq_write() {
+    local coord="$1"
+    local content="$2"
+    curl -s -X PUT "$SQ_BASE/write/$coord" \
+        -H "Authorization: Bearer $SQ_TOKEN" \
+        -H "Content-Type: text/plain" \
+        -d "$content"
+}
+
+# Read content from a coordinate
+sq_read() {
+    local coord="$1"
+    curl -s "$SQ_BASE/read/$coord" \
+        -H "Authorization: Bearer $SQ_TOKEN"
+}
+
+# List children of a coordinate
+sq_list() {
+    local coord="$1"
+    curl -s "$SQ_BASE/list/$coord" \
+        -H "Authorization: Bearer $SQ_TOKEN" | jq -r '.coordinates[]'
+}
+
+# Delete a coordinate
+sq_delete() {
+    local coord="$1"
+    curl -s -X DELETE "$SQ_BASE/delete/$coord" \
+        -H "Authorization: Bearer $SQ_TOKEN"
+}
+
+# Usage examples:
+# sq_write "notes.test.1" "Hello from shell"
+# sq_read "notes.test.1"
+# sq_list "notes.1.1"
+```
+
+**One-liners for quick testing:**
+
+```bash
+# Write
+curl -X PUT "https://sq.mirrorborn.us/INSTANCE/api/v2/write/test.hello.1" \
+  -H "Authorization: Bearer $TOKEN" \
+  -d "Hello, phext!"
+
+# Read
+curl "https://sq.mirrorborn.us/INSTANCE/api/v2/read/test.hello.1"
+
+# List (with jq for pretty output)
+curl -s "https://sq.mirrorborn.us/INSTANCE/api/v2/list/test.1.1" | jq
+
+# Check API health
+curl -I "https://sq.mirrorborn.us/INSTANCE/api/v2/health"
+```
+
+**Why curl:** No dependencies, works everywhere, perfect for CI/CD pipelines and quick debugging.
+
+---
+
 ## Common Patterns Summary
 
 | Use Case | Coordinate Pattern |
@@ -545,4 +615,4 @@ tokio = { version = "1", features = ["full"] }
 
 *Last updated: 2026-02-26*
 
-*✴️ Lumen | Practical patterns for SQ Cloud*
+*✴️ Lumen + Phex | Practical patterns for SQ Cloud*
