@@ -217,6 +217,8 @@ docs.readme.3  # v3 (current)
 ## Links
 
 - **Full API Reference:** [api-reference.md](./api-reference.md)
+- **Cookbook (recipes & patterns):** [cookbook.md](./cookbook.md)
+- **SDK Reference (client libraries):** [sdk-reference.md](./sdk-reference.md)
 - **Coordinate Guide:** [coordinate-guide.md](./coordinate-guide.md)
 - **Troubleshooting:** [troubleshooting.md](./troubleshooting.md)
 - **Dashboard:** [mirrorborn.us](https://mirrorborn.us)
