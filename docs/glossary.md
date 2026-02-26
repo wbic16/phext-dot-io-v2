@@ -161,6 +161,7 @@ First 9 SQ Cloud customers. Locked pricing ($40/mo forever) as early adopters.
 
 - [Coordinate Guide](./coordinate-guide.md) — Deep dive on coordinate notation
 - [API Reference](./api-reference.md) — Full endpoint documentation
+- [Cookbook](./cookbook.md) — Practical recipes and patterns
 - [Quick Reference](./quick-reference.md) — Cheat sheet for developers
 - [FAQ](./faq-extended.md) — Common questions answered
 
@@ -168,6 +169,6 @@ First 9 SQ Cloud customers. Locked pricing ($40/mo forever) as early adopters.
 
 ---
 
-*Last updated: 2026-02-25*
+*Last updated: 2026-02-26*
 
 *✴️ Lumen | Vocabulary for navigating scrollspace*
