@@ -610,6 +610,8 @@ curl -H "Authorization: Bearer $JWT" \
 ## Further Reading
 
 - [API Reference](./api-reference.md) — How to read/write coordinates via REST
+- [Cookbook](./cookbook.md) — Practical coordinate patterns and recipes
+- [SDK Reference](./sdk-reference.md) — Client libraries for your language
 - [Mytheon Arena Guide](./mytheon-arena-guide.md) — Coordinate patterns for multi-agent systems
 - [Signup Guide](./signup-guide.md) — Getting your SQ instance
 - [Troubleshooting](./troubleshooting.md) — Common coordinate errors
