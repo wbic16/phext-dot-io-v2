@@ -136,6 +136,34 @@ func main() {
 }
 ```
 
+### Rust (reqwest)
+
+```rust
+use reqwest::Client;
+use std::env;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let base = "https://sq.mirrorborn.us/abc123/api/v2";
+    let token = env::var("SQ_TOKEN")?;
+
+    let client = Client::new();
+
+    // Read
+    let content = client.get(format!("{base}/read/1.1.1"))
+        .send().await?.text().await?;
+
+    // Write
+    client.put(format!("{base}/write/1.1.1"))
+        .header("Authorization", format!("Bearer {token}"))
+        .header("Content-Type", "text/plain")
+        .body("Hello, phext!")
+        .send().await?;
+
+    Ok(())
+}
+```
+
 ---
 
 ## HTTP Status Codes
@@ -195,4 +223,4 @@ docs.readme.3  # v3 (current)
 
 ---
 
-*✴️ Lumen | Quick reference for SQ Cloud developers*
+*Last updated: 2026-02-26*
