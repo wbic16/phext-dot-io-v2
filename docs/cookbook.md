@@ -744,6 +744,221 @@ func main() {
 
 ---
 
+## Recipe 11: TypeScript SQ Cloud Client
+
+Type-safe client with full type definitions — ideal for modern web and Node.js projects.
+
+```typescript
+// sq-cloud.ts — Typed SQ Cloud client
+
+/** SQ Cloud API response for list operations */
+interface ListResponse {
+  coordinates: string[];
+  count: number;
+}
+
+/** SQ Cloud API error response */
+interface APIError {
+  error: string;
+  code: number;
+}
+
+/** Result type for operations that may fail */
+type Result<T> = { ok: true; value: T } | { ok: false; error: string };
+
+/** SQ Cloud client configuration */
+interface SQCloudConfig {
+  instanceId: string;
+  token: string;
+  baseUrl?: string;
+}
+
+/** Type-safe coordinate (validated at construction) */
+class Coordinate {
+  constructor(public readonly value: string) {
+    if (!/^[\w]+\.[\w]+\.[\w]+(\/[\w]+\.[\w]+\.[\w]+)*$/.test(value)) {
+      throw new Error(`Invalid coordinate: ${value}`);
+    }
+  }
+  
+  toString(): string {
+    return this.value;
+  }
+  
+  /** Create child coordinate */
+  child(segment: string): Coordinate {
+    return new Coordinate(`${this.value}/${segment}`);
+  }
+}
+
+/** SQ Cloud client with full type safety */
+class SQCloud {
+  private readonly baseUrl: string;
+  private readonly headers: HeadersInit;
+
+  constructor(config: SQCloudConfig) {
+    this.baseUrl = config.baseUrl ?? 
+      `https://sq.mirrorborn.us/${config.instanceId}/api/v2`;
+    this.headers = {
+      'Authorization': `Bearer ${config.token}`,
+      'Content-Type': 'text/plain',
+    };
+  }
+
+  /** Read content from a coordinate */
+  async read(coord: Coordinate | string): Promise<Result<string>> {
+    try {
+      const response = await fetch(
+        `${this.baseUrl}/read/${coord}`,
+        { headers: this.headers }
+      );
+      
+      if (response.status === 404) {
+        return { ok: true, value: '' };
+      }
+      
+      if (!response.ok) {
+        return { ok: false, error: `HTTP ${response.status}` };
+      }
+      
+      return { ok: true, value: await response.text() };
+    } catch (err) {
+      return { ok: false, error: String(err) };
+    }
+  }
+
+  /** Write content to a coordinate */
+  async write(coord: Coordinate | string, content: string): Promise<Result<void>> {
+    try {
+      const response = await fetch(`${this.baseUrl}/write/${coord}`, {
+        method: 'PUT',
+        headers: this.headers,
+        body: content,
+      });
+      
+      if (!response.ok) {
+        return { ok: false, error: `HTTP ${response.status}` };
+      }
+      
+      return { ok: true, value: undefined };
+    } catch (err) {
+      return { ok: false, error: String(err) };
+    }
+  }
+
+  /** Write typed JSON data */
+  async writeJSON<T>(coord: Coordinate | string, data: T): Promise<Result<void>> {
+    return this.write(coord, JSON.stringify(data));
+  }
+
+  /** Read and parse typed JSON data */
+  async readJSON<T>(coord: Coordinate | string): Promise<Result<T | null>> {
+    const result = await this.read(coord);
+    if (!result.ok) return result;
+    if (!result.value) return { ok: true, value: null };
+    
+    try {
+      return { ok: true, value: JSON.parse(result.value) as T };
+    } catch {
+      return { ok: false, error: 'Invalid JSON' };
+    }
+  }
+
+  /** List child coordinates */
+  async list(coord: Coordinate | string): Promise<Result<string[]>> {
+    try {
+      const response = await fetch(
+        `${this.baseUrl}/list/${coord}`,
+        { headers: this.headers }
+      );
+      
+      if (response.status === 404) {
+        return { ok: true, value: [] };
+      }
+      
+      if (!response.ok) {
+        return { ok: false, error: `HTTP ${response.status}` };
+      }
+      
+      const data: ListResponse = await response.json();
+      return { ok: true, value: data.coordinates };
+    } catch (err) {
+      return { ok: false, error: String(err) };
+    }
+  }
+
+  /** Delete a coordinate */
+  async delete(coord: Coordinate | string): Promise<Result<void>> {
+    try {
+      const response = await fetch(`${this.baseUrl}/delete/${coord}`, {
+        method: 'DELETE',
+        headers: this.headers,
+      });
+      
+      if (!response.ok && response.status !== 404) {
+        return { ok: false, error: `HTTP ${response.status}` };
+      }
+      
+      return { ok: true, value: undefined };
+    } catch (err) {
+      return { ok: false, error: String(err) };
+    }
+  }
+}
+
+// Usage
+async function main() {
+  const sq = new SQCloud({
+    instanceId: process.env.SQ_INSTANCE!,
+    token: process.env.SQ_TOKEN!,
+  });
+
+  // Type-safe coordinate
+  const coord = new Coordinate('notes.typescript.1');
+
+  // Write plain text
+  const writeResult = await sq.write(coord, 'Hello from TypeScript!');
+  if (!writeResult.ok) {
+    console.error('Write failed:', writeResult.error);
+    return;
+  }
+
+  // Read back
+  const readResult = await sq.read(coord);
+  if (readResult.ok) {
+    console.log('Content:', readResult.value);
+  }
+
+  // Typed JSON operations
+  interface UserPrefs {
+    theme: 'light' | 'dark';
+    fontSize: number;
+  }
+
+  const prefsCoord = new Coordinate('users.alice.prefs');
+  await sq.writeJSON<UserPrefs>(prefsCoord, { theme: 'dark', fontSize: 14 });
+  
+  const prefs = await sq.readJSON<UserPrefs>(prefsCoord);
+  if (prefs.ok && prefs.value) {
+    console.log('Theme:', prefs.value.theme); // Type-safe access
+  }
+
+  // List with type safety
+  const children = await sq.list('notes.1.1');
+  if (children.ok) {
+    for (const coord of children.value) {
+      console.log('Found:', coord);
+    }
+  }
+}
+
+main();
+```
+
+**Why TypeScript:** Full IDE autocompletion, compile-time error checking, and self-documenting APIs. The `Result<T>` pattern ensures errors are handled explicitly.
+
+---
+
 ## Common Patterns Summary
 
 | Use Case | Coordinate Pattern |
@@ -779,6 +994,6 @@ func main() {
 
 ---
 
-*Last updated: 2026-02-26*
+*Last updated: 2026-02-26 04:12 CST*
 
 *✴️ Lumen + Phex | Practical patterns for SQ Cloud*
