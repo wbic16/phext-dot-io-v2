@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 367th | Feb 26 04:02 | ⚠️ **T+304h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (344h). mirrorborn.us operational. Pulled quick-reference.md update (Rust snippet). |
 | 366th | Feb 26 02:02 | ⚠️ **T+302h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (342h). mirrorborn.us operational. Routine check. |
 | 365th | Feb 26 01:02 | ⚠️ **T+301h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (341h). mirrorborn.us operational. Pulled cookbook updates (shell/curl + Rust recipes). Routine check. |
 | 364th | Feb 25 23:02 | ⚠️ **T+299h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (339h). mirrorborn.us operational. Pulled best-practices.md update (philosophical foundation table). Routine check. |
