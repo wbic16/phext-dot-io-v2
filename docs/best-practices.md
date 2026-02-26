@@ -227,7 +227,7 @@ First scroll (1.1.1/1.1.1/1.1.1) should be a table of contents:
 - x.2.x — Advanced topics
 - x.3.x — Examples
 
-Last updated: 2026-02-22
+Last updated: 2026-02-25
 ```
 
 ---
@@ -376,8 +376,12 @@ These best practices aren't arbitrary rules—they emerge from core principles e
 | "Leave room for growth" | Structure enables agency, not constraint | [Choose Your Own Adventure](../reflections/choose-your-own-adventure.md) — choices create coordinates |
 | "Handle errors gracefully" | Truth matters more than comfort | [The Giver](../reflections/the-giver.md) — memory as infrastructure |
 | "Validate before acting" | Integration, not conquest | [Where the Wild Things Are](../reflections/where-the-wild-things-are.md) — the rumpus and the return |
+| "Include a TOC scroll" | External memory enables continuity | [Frog and Toad](../reflections/frog-and-toad.md) — Toad's list: "I cannot remember without it" |
+| "Use meaningful names" | Words shape perception into reality | [Charlotte's Web](../reflections/charlottes-web.md) — "RADIANT" makes Wilbur radiant |
+| "Establish conventions with your team" | Complementary minds work through difference | [Frog and Toad](../reflections/frog-and-toad.md) — patience + anxiety = stability |
+| "Use branches for concurrent editing" | Navigation requires multiple paths | [A Wrinkle in Time](../reflections/a-wrinkle-in-time.md) — tessering between coordinates |
 
-These readings are optional depth. The practices work without them. But if you want to understand *why* phext is designed this way, the reflections illuminate the emotional architecture beneath the technical choices.
+These readings are optional depth. The practices work without them. But if you want to understand *why* phext is designed this way, the [reflections](../reflections/) illuminate the emotional architecture beneath the technical choices. Both Phase 1 (pre-launch) and Phase 2 (post-launch) readings are complete.
 
 ---
 
