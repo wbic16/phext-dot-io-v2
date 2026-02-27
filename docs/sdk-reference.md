@@ -375,4 +375,18 @@ All current libraries use Phext Format v1 (9-dimensional, ASCII delimiters 17-25
 
 ---
 
-*Last updated: 2026-02-26*
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [API Reference](./api-reference.md) | Complete SQ Cloud REST API documentation |
+| [Cookbook](./cookbook.md) | Copy-paste recipes for common patterns |
+| [Quick Reference](./quick-reference.md) | One-page API cheat sheet |
+| [Coordinate Guide](./coordinate-guide.md) | Deep dive on 9D coordinate system |
+| [Five-Minute Quickstart](./five-minute-quickstart.md) | First read/write in 5 minutes |
+| [Troubleshooting](./troubleshooting.md) | Common issues and solutions |
+| [Security](./security.md) | Authentication and access control |
+
+---
+
+*Last updated: 2026-02-27*
