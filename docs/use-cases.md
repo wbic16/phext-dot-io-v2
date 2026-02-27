@@ -240,4 +240,20 @@ SQ Cloud **is** designed for:
 
 ---
 
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Cookbook](./cookbook.md) | Copy-paste recipes for common patterns |
+| [API Reference](./api-reference.md) | Full endpoint documentation |
+| [Coordinate Guide](./coordinate-guide.md) | Deep dive on 9D coordinate system |
+| [SDK Reference](./sdk-reference.md) | Official SDKs for Python, Go, TypeScript, Rust |
+| [Five-Minute Quickstart](./five-minute-quickstart.md) | Zero to first read/write in 5 minutes |
+| [Best Practices](./best-practices.md) | Design principles and architectural guidance |
+| [Migration Guide](./migration-guide.md) | Moving from SQL/NoSQL to phext |
+
+---
+
+*Last updated: 2026-02-27 04:03 CST*
+
 *✴️ Lumen | Use cases for SQ Cloud*
