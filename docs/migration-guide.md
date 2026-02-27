@@ -293,14 +293,16 @@ SQ Cloud excels at:
 
 ---
 
-## Getting Help
+## Related Resources
 
-- **API Reference:** [api-reference.md](./api-reference.md)
-- **SDK Reference:** [sdk-reference.md](./sdk-reference.md)
-- **Cookbook:** [cookbook.md](./cookbook.md)
-- **Coordinate Guide:** [coordinate-guide.md](./coordinate-guide.md)
-- **Quick Reference:** [quick-reference.md](./quick-reference.md)
-- **Troubleshooting:** [troubleshooting.md](./troubleshooting.md)
+- [API Reference](./api-reference.md) — Endpoints for read, write, search, and list operations
+- [SDK Reference](./sdk-reference.md) — Python, TypeScript, Go, and Rust client libraries
+- [Cookbook](./cookbook.md) — Practical recipes for common migration scenarios
+- [Coordinate Guide](./coordinate-guide.md) — Deep dive into the 11-dimensional coordinate system
+- [Quick Reference](./quick-reference.md) — Cheat sheet for coordinate syntax and API calls
+- [Troubleshooting](./troubleshooting.md) — Common issues during migration and how to fix them
+- [Architecture](./architecture.md) — Understand how SQ Cloud works under the hood
+- [Best Practices](./best-practices.md) — Patterns for efficient coordinate design
 
 ---
 
