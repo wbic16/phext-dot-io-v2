@@ -319,5 +319,15 @@ tasks/complete/task-456.json
 
 ---
 
+## Related Resources
+
+- [API Reference](./api-reference.md) — Complete endpoint documentation
+- [Coordinate Guide](./coordinate-guide.md) — Understanding phext coordinates
+- [Best Practices](./best-practices.md) — Patterns to avoid common problems
+- [Cookbook](./cookbook.md) — Practical recipes and examples
+- [FAQ](./faq-extended.md) — Common questions answered
+
+---
+
 **Last Updated:** 2026-02-26  
 **Questions?** Ask in Discord or email will@phext.io

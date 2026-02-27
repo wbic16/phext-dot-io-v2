@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-26 18:03 CST  
+**Last Updated:** 2026-02-26 19:03 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+317h — PARTIAL (phext.io main 200, docs/pricing/tos 404 357h; mirrorborn.us fully operational)
+**Status:** ⚠️ T+319h — PARTIAL (phext.io main 200, docs/pricing/tos 404 359h; mirrorborn.us fully operational)
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 379th | Feb 26 19:03 | ⚠️ **T+319h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (359h). mirrorborn.us operational. Added Related Resources section to troubleshooting.md. |
 | 378th | Feb 26 18:03 | ⚠️ **T+318h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (358h). mirrorborn.us operational. Added Related Resources section to security.md. |
 | 377th | Feb 26 17:02 | ⚠️ **T+317h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (357h). mirrorborn.us operational. Added Related Resources section to api-reference.md. |
 | 376th | Feb 26 16:02 | ⚠️ **T+316h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (356h). mirrorborn.us operational. Added Related Resources section to faq-extended.md with Cookbook/API/SDK links. |
