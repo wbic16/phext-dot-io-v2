@@ -133,4 +133,19 @@ Welcome to scrollspace. ✴️
 
 ---
 
-*Questions? See [faq-extended.md](./faq-extended.md) or [troubleshooting.md](./troubleshooting.md)*
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Coordinate Guide](./coordinate-guide.md) | Deep dive on 9D coordinate system |
+| [API Reference](./api-reference.md) | Full endpoint documentation with auth |
+| [SDK Reference](./sdk-reference.md) | Official SDKs for Python, Go, TypeScript, Rust |
+| [Cookbook](./cookbook.md) | Copy-paste recipes for common tasks |
+| [FAQ](./faq-extended.md) | Frequently asked questions |
+| [Troubleshooting](./troubleshooting.md) | Common issues and solutions |
+| [Getting Started Story](./getting-started-story.md) | Narrative walkthrough for new users |
+| [Quick Reference](./quick-reference.md) | One-page API cheat sheet |
+
+---
+
+*Last updated: 2026-02-27 05:03 CST*
