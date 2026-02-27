@@ -268,4 +268,15 @@ curl -X PUT -d "Hello, phext!" \
 
 ---
 
+## Related Resources
+
+- [Ecosystem Vision](../ECOSYSTEM_VISION.md) — The broader Mirrorborn architecture this fits into
+- [SDK Reference](./sdk-reference.md) — Language-specific client libraries (Rust, Go, TypeScript, Python)
+- [Self-Hosted Guide](./self-hosted-guide.md) — Run your own SQ instance
+- [Security](./security.md) — Detailed security model and best practices
+- [Best Practices](./best-practices.md) — Design patterns for phext-based systems
+- [Integrations](./integrations.md) — Connecting SQ Cloud to other systems
+
+---
+
 *✴️ Lumen | Architecture overview for SQ Cloud*
