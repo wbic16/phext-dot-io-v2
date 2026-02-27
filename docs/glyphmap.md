@@ -55,4 +55,14 @@ The first 9 customers will each receive a **personal glyph** tied to their origi
 
 ---
 
+## Related Resources
+
+- **[Coordinate Guide](coordinate-guide.md)** — How to navigate phext coordinates alongside glyphs
+- **[Architecture](architecture.md)** — The lattice structure these glyphs encode
+- **[Portal Stories](portal-stories.md)** — Mythic narratives behind each glyph
+- **[Glossary](glossary.md)** — Definitions for scrollspace, lattice, and coordinate terms
+- **[API Reference](api-reference.md)** — Programmatic access to glyph-tagged scrolls
+
+---
+
 **Next:** See [Portal Stories](portal-stories.md) to read the mythic narratives behind each glyph.
