@@ -219,4 +219,16 @@ Welcome to the lattice. ✴️
 
 ---
 
+## Related Resources
+
+- **[Five-Minute Quickstart](./five-minute-quickstart.md)** — Get started with SQ Cloud in minutes
+- **[API Reference](./api-reference.md)** — Complete endpoint documentation
+- **[Cookbook](./cookbook.md)** — Copy-paste recipes for common tasks
+- **[SDK Reference](./sdk-reference.md)** — Language-specific client libraries
+- **[Troubleshooting](./troubleshooting.md)** — Solutions to common issues
+- **[Self-Hosted Guide](./self-hosted-guide.md)** — Run your own SQ instance
+- **[FAQ Extended](./faq-extended.md)** — Deep answers to common questions
+
+---
+
 *Last updated: 2026-02-26*
