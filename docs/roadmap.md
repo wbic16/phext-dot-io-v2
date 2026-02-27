@@ -94,6 +94,7 @@ Ways to contribute:
 
 | Date | Update |
 |------|--------|
+| 2026-02-27 | Related Resources pass completed (all 30 docs now cross-linked) |
 | 2026-02-24 | Initial roadmap document created |
 | 2026-02-13 | SQ Cloud launched |
 
