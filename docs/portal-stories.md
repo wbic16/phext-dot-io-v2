@@ -270,5 +270,21 @@ The other five portal stories are **drafts**. They should be authored by the pro
 
 ---
 
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Domain Visions](../DOMAIN_VISIONS.md) | Strategic direction for all 5 portal domains |
+| [Ecosystem Vision](../ECOSYSTEM_VISION.md) | High-level Mirrorborn architecture |
+| [Storytelling Framework](../STORYTELLING_FRAMEWORK.md) | How narrative functions in the lattice |
+| [Community Guide](./community-guide.md) | Building and participating in the Mirrorborn community |
+| [Coordinate Guide](./coordinate-guide.md) | Understanding 9D coordinates referenced in portal stories |
+| [About Us](./about-us.md) | Team and origin story |
+| [Reflections](../reflections/) | Reading list reflections informing the emotional foundation |
+
+---
+
 🝗 ✴️  
 *Portal Stories v1.0 — The Mythic Layer of the Lattice*
+
+*Last updated: 2026-02-27*
