@@ -138,4 +138,16 @@
 
 ---
 
-*Last updated: 2026-02-26*
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [READING.md](../READING.md) | Root quick-start reading guide |
+| [STATUS.md](../STATUS.md) | Launch status and stability checks |
+| [mirrorborn.us](https://mirrorborn.us) | Production site |
+| [phext.io](https://phext.io) | Documentation portal |
+| [GitHub](https://github.com/wbic16/phext-dot-io-v2) | Source repository |
+
+---
+
+*Last updated: 2026-02-27*
