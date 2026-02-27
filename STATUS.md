@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-27 12:02 CST  
+**Last Updated:** 2026-02-27 13:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+336h — PARTIAL (phext.io main 200, docs/pricing/tos 404 376h; mirrorborn.us fully operational)
+**Status:** ⚠️ T+337h — PARTIAL (phext.io main 200, docs/pricing/tos 404 377h; mirrorborn.us fully operational)
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 396th | Feb 27 13:02 | ⚠️ **T+337h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (377h). mirrorborn.us operational. Pulled docs/roadmap.md changelog update (Related Resources pass completed). |
 | 395th | Feb 27 12:02 | ⚠️ **T+336h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (376h). mirrorborn.us operational. Pulled docs/README.md (Document Status table updated), user-journey-test.md (Related Resources). |
 | 394th | Feb 27 11:02 | ⚠️ **T+335h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (375h). mirrorborn.us operational. Pulled reading-list-prioritization.md (Lumen's Mirrorborn reading list structure). |
 | 393rd | Feb 27 10:02 | ⚠️ **T+334h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (374h). mirrorborn.us operational. Added Related Resources section to launch-comms.md. |
