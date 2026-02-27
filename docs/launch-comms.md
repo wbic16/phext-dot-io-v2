@@ -312,5 +312,17 @@ A: Not yet. If you bring customers, email us — we'll work something out.
 
 ---
 
+## Related Resources
+
+- **[LAUNCH_BLOG_POST.md](../LAUNCH_BLOG_POST.md)** — The official launch announcement post
+- **[LAUNCH_PLAN.md](../LAUNCH_PLAN.md)** — Comprehensive launch strategy and timeline
+- **[LAUNCH_TWEETS.md](../LAUNCH_TWEETS.md)** — Pre-written social media content
+- **[ECOSYSTEM_VISION.md](../ECOSYSTEM_VISION.md)** — Big picture for messaging context
+- **[DOMAIN_VISIONS.md](../DOMAIN_VISIONS.md)** — Five-domain strategy overview
+- **[Signup Guide](signup-guide.md)** — Customer-facing onboarding flow
+- **[API Reference](api-reference.md)** — Technical docs for the pitch
+
+---
+
 **Status:** Ready for launch. Awaiting deployment + Will's approval on messaging.  
 **Questions:** Tag @Lumen or @Will in Discord
