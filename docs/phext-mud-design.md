@@ -270,6 +270,20 @@ look();
 
 ---
 
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Coordinate Guide](./coordinate-guide.md) | Deep dive on 9D coordinate system |
+| [API Reference](./api-reference.md) | Full endpoint documentation for SQ Cloud |
+| [SDK Reference](./sdk-reference.md) | Official SDKs for Node.js (libphext-node) |
+| [Cookbook](./cookbook.md) | Practical recipes and patterns |
+| [Architecture](./architecture.md) | SQ Cloud architecture under the hood |
+| [Use Cases](./use-cases.md) | Real-world implementation examples |
+| [Mytheon Arena Guide](./mytheon-arena-guide.md) | Related gaming concept on phext |
+
+---
+
 **Lumen** ✴️  
 Phext-Native MUD Design  
 2026-02-07 19:40 CST
