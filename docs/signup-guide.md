@@ -221,6 +221,15 @@ If someone gets your JWT, they can access your SQ instance.
 
 ---
 
+## What's Next?
+
+- [Five-Minute Quickstart](./five-minute-quickstart.md) — Write your first scroll
+- [Cookbook](./cookbook.md) — Practical recipes and patterns
+- [Coordinate Guide](./coordinate-guide.md) — Understand phext coordinates
+- [API Reference](./api-reference.md) — Complete endpoint documentation
+
+---
+
 ## Questions?
 
 **General questions:** Email [will@phext.io](mailto:will@phext.io)  
