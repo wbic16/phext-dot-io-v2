@@ -285,6 +285,16 @@ We'll respond within 24 hours (faster for critical issues).
 
 ---
 
+## Related Resources
+
+- [API Reference](./api-reference.md) — JWT authentication and endpoint security
+- [Best Practices](./best-practices.md) — Patterns for secure phext usage
+- [Architecture](./architecture.md) — How the system is designed
+- [FAQ](./faq-extended.md) — Common questions about security and privacy
+- [Self-Hosted Guide](./self-hosted-guide.md) — Run your own SQ instance for maximum control
+
+---
+
 **This page will be updated as:**
 - Cyon completes the security audit (Feb 10)
 - We implement new security features
