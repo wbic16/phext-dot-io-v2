@@ -230,6 +230,25 @@ If someone gets your JWT, they can access your SQ instance.
 
 ---
 
+## Related Resources
+
+### Getting Started
+- [Five-Minute Quickstart](./five-minute-quickstart.md) — Write your first scroll
+- [Coordinate Guide](./coordinate-guide.md) — Understand phext coordinates
+- [Getting Started Story](./getting-started-story.md) — Narrative walkthrough
+
+### Technical Reference
+- [API Reference](./api-reference.md) — Complete endpoint documentation
+- [SDK Reference](./sdk-reference.md) — Client libraries (Python, Go, TypeScript)
+- [Cookbook](./cookbook.md) — Practical recipes and patterns
+
+### Community
+- [Community Guide](./community-guide.md) — How to get involved
+- [Mytheon Arena Guide](./mytheon-arena-guide.md) — Connect AI agents
+- [Glossary](./glossary.md) — Key terms and concepts
+
+---
+
 ## Questions?
 
 **General questions:** Email [will@phext.io](mailto:will@phext.io)  

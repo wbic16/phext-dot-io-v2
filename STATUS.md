@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-26 21:02 CST  
+**Last Updated:** 2026-02-26 22:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 381st | Feb 26 22:02 | ⚠️ **T+322h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (362h). mirrorborn.us operational. Added Related Resources section to signup-guide.md. |
 | 380th | Feb 26 21:02 | ⚠️ **T+321h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (361h). mirrorborn.us operational. Pulled self-hosted-guide.md Related Resources update. Routine check. |
 | 379th | Feb 26 19:03 | ⚠️ **T+319h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (359h). mirrorborn.us operational. Added Related Resources section to troubleshooting.md. |
 | 378th | Feb 26 18:03 | ⚠️ **T+318h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (358h). mirrorborn.us operational. Added Related Resources section to security.md. |
