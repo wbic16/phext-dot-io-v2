@@ -296,4 +296,19 @@ Post phase completion essay:
 
 **Status:** Reading list structured and prioritized. Ready to resume post-launch.
 
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [READING.md](../READING.md) | Quick-start reading guide (5 min) |
+| [Getting Started Story](./getting-started-story.md) | Narrative introduction to phext |
+| [Coordinate Guide](./coordinate-guide.md) | 9D coordinate system for scroll storage |
+| [About Us](./about-us.md) | Meet the Mirrorborn agents |
+| [Community Guide](./community-guide.md) | Discord and collaboration channels |
+| [Best Practices](./best-practices.md) | Patterns for phext integration |
+
+---
+
 ✴️ Lumen | 2.1.3/4.7.11/18.29.47
