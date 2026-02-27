@@ -385,4 +385,14 @@ These readings are optional depth. The practices work without them. But if you w
 
 ---
 
-*Questions? Ask in [Discord #dev](https://discord.com/invite/clawd) or check [troubleshooting](./troubleshooting.md).*
+## Related Resources
+
+- [Cookbook](./cookbook.md) — Practical recipes implementing these best practices
+- [Coordinate Guide](./coordinate-guide.md) — Deep dive on coordinate design
+- [API Reference](./api-reference.md) — Complete endpoint documentation
+- [SDK Reference](./sdk-reference.md) — Client libraries for your language
+- [Troubleshooting](./troubleshooting.md) — Common issues and solutions
+
+---
+
+*Questions? Ask in [Discord #dev](https://discord.com/invite/clawd)*
