@@ -157,18 +157,21 @@ First 9 SQ Cloud customers. Locked pricing ($40/mo forever) as early adopters.
 
 ---
 
-## See Also
+## Related Resources
 
-- [Coordinate Guide](./coordinate-guide.md) — Deep dive on coordinate notation
-- [API Reference](./api-reference.md) — Full endpoint documentation
-- [Cookbook](./cookbook.md) — Practical recipes and patterns
-- [Quick Reference](./quick-reference.md) — Cheat sheet for developers
-- [FAQ](./faq-extended.md) — Common questions answered
+| Resource | Description |
+|----------|-------------|
+| [Coordinate Guide](./coordinate-guide.md) | Deep dive on 9D coordinate notation |
+| [API Reference](./api-reference.md) | Full endpoint documentation |
+| [Cookbook](./cookbook.md) | Practical recipes and patterns |
+| [Quick Reference](./quick-reference.md) | Cheat sheet for developers |
+| [FAQ](./faq-extended.md) | Common questions answered |
+| [Five-Minute Quickstart](./five-minute-quickstart.md) | Zero to first read/write |
+| [SDK Reference](./sdk-reference.md) | Official client libraries |
+| [Architecture](./architecture.md) | System design overview |
 
 ---
 
----
-
-*Last updated: 2026-02-26*
+*Last updated: 2026-02-27*
 
 *✴️ Lumen | Vocabulary for navigating scrollspace*
