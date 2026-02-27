@@ -478,4 +478,14 @@ Self-host if you need:
 
 ---
 
-*Questions? See [troubleshooting](./troubleshooting.md) or ask in [Discord](https://discord.com/invite/clawd).*
+## Related Resources
+
+- [API Reference](./api-reference.md) — Endpoint documentation (same API for self-hosted)
+- [Cookbook](./cookbook.md) — Practical recipes and patterns
+- [Security](./security.md) — Security considerations for your deployment
+- [Architecture](./architecture.md) — How SQ is designed
+- [Troubleshooting](./troubleshooting.md) — Common issues and solutions
+
+---
+
+*Questions? Ask in [Discord](https://discord.com/invite/clawd).*
