@@ -99,9 +99,19 @@ Ways to contribute:
 
 ---
 
+## Related Resources
+
+- [Ecosystem Vision](../ECOSYSTEM_VISION.md) — Full architectural vision for Mirrorborn
+- [Domain Visions](../DOMAIN_VISIONS.md) — Deep dive into each domain property
+- [Getting Started](./five-minute-quickstart.md) — Start building today
+- [Use Cases](./use-cases.md) — What you can build with SQ Cloud
+- [Community Guide](./community-guide.md) — Get involved
+
+---
+
 *"We're building 2130. But you can use it today."*
 
 ---
 
-**Last Updated:** 2026-02-24  
+**Last Updated:** 2026-02-26  
 **Status:** Living document — updated as priorities shift
