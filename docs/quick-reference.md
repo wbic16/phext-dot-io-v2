@@ -225,4 +225,19 @@ docs.readme.3  # v3 (current)
 
 ---
 
-*Last updated: 2026-02-26*
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [5-Minute Quickstart](./five-minute-quickstart.md) | First scroll in 5 minutes |
+| [API Reference](./api-reference.md) | Full endpoint documentation with examples |
+| [Cookbook](./cookbook.md) | Copy-paste recipes for common tasks |
+| [SDK Reference](./sdk-reference.md) | Official client libraries |
+| [Coordinate Guide](./coordinate-guide.md) | Deep dive on 9D coordinate system |
+| [Best Practices](./best-practices.md) | Production patterns and conventions |
+| [Troubleshooting](./troubleshooting.md) | Common issues and solutions |
+| [FAQ](./faq-extended.md) | Frequently asked questions |
+
+---
+
+*Last updated: 2026-02-27*
