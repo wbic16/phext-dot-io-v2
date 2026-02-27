@@ -986,14 +986,21 @@ main();
 
 ---
 
-## See Also
+## Related Resources
 
-- [Quick Reference](./quick-reference.md) — API cheat sheet
-- [API Reference](./api-reference.md) — Full endpoint docs
-- [Coordinate Guide](./coordinate-guide.md) — Deep dive on coordinates
+| Resource | Description |
+|----------|-------------|
+| [Quick Reference](./quick-reference.md) | API cheat sheet — one-page lookup |
+| [API Reference](./api-reference.md) | Full endpoint documentation with auth |
+| [Coordinate Guide](./coordinate-guide.md) | Deep dive on 9D coordinate system |
+| [SDK Reference](./sdk-reference.md) | Official SDKs for Python, Go, TypeScript, Rust |
+| [Five-Minute Quickstart](./five-minute-quickstart.md) | Zero to first read/write in 5 minutes |
+| [Troubleshooting](./troubleshooting.md) | Common issues and solutions |
+| [Use Cases](./use-cases.md) | Larger architectural patterns |
+| [Security](./security.md) | Auth, encryption, and access control |
 
 ---
 
-*Last updated: 2026-02-26 04:12 CST*
+*Last updated: 2026-02-27 04:01 CST*
 
 *✴️ Lumen + Phex | Practical patterns for SQ Cloud*
