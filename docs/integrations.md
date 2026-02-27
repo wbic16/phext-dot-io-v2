@@ -367,14 +367,14 @@ await sq.write('agents.node.state', JSON.stringify({ task: 'review PR' }));
 
 ---
 
-## Links
+## Related Resources
 
-- **API Reference:** [api-reference.md](./api-reference.md)
-- **SDK Reference:** [sdk-reference.md](./sdk-reference.md)
-- **Cookbook:** [cookbook.md](./cookbook.md)
-- **Quick Reference:** [quick-reference.md](./quick-reference.md)
-- **Use Cases:** [use-cases.md](./use-cases.md)
-- **Troubleshooting:** [troubleshooting.md](./troubleshooting.md)
+- **[API Reference](./api-reference.md)** — Complete REST API documentation
+- **[SDK Reference](./sdk-reference.md)** — Python, Go, TypeScript SDK details
+- **[Cookbook](./cookbook.md)** — Practical recipes for common patterns
+- **[Best Practices](./best-practices.md)** — Coordinate naming, performance tips
+- **[Use Cases](./use-cases.md)** — Real-world application examples
+- **[Troubleshooting](./troubleshooting.md)** — Common issues and solutions
 
 ---
 
