@@ -227,4 +227,14 @@ Practical limit is ~100MB per .phext file. Beyond that, split into multiple libr
 
 ---
 
+## Related Resources
+
+- [Migration Guide](./migration-guide.md) — Moving from PostgreSQL, MongoDB, S3 to SQ
+- [Cookbook](./cookbook.md) — Practical patterns for common use cases
+- [API Reference](./api-reference.md) — Complete endpoint documentation
+- [Architecture](./architecture.md) — How SQ is designed
+- [Use Cases](./use-cases.md) — When SQ is (and isn't) the right fit
+
+---
+
 *Phext is the substrate. SQ is the query layer. Everything else is integration.*
