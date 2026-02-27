@@ -629,5 +629,16 @@ curl -H "Authorization: Bearer $JWT" \
 
 ---
 
-**Last Updated:** 2026-02-05  
+## Related Resources
+
+- [Architecture](./architecture.md) — System design and how coordinates map to storage
+- [Cookbook](./cookbook.md) — Practical recipes for common coordinate patterns
+- [Best Practices](./best-practices.md) — Design principles for sustainable phext structures
+- [Quick Reference](./quick-reference.md) — One-page cheat sheet with coordinate syntax
+- [Glossary](./glossary.md) — Definitions for phext and coordinate terminology
+- [Mytheon Arena Guide](./mytheon-arena-guide.md) — Coordinate patterns for multi-agent coordination
+
+---
+
+**Last Updated:** 2026-02-27  
 **Version:** 1.0 (launch)

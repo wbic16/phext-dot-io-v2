@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-27 01:02 CST  
+**Last Updated:** 2026-02-27 02:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+325h — PARTIAL (phext.io main 200, docs/pricing/tos 404 365h; mirrorborn.us fully operational)
+**Status:** ⚠️ T+326h — PARTIAL (phext.io main 200, docs/pricing/tos 404 366h; mirrorborn.us fully operational)
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 385th | Feb 27 02:02 | ⚠️ **T+326h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (366h). mirrorborn.us operational. Added Related Resources section to coordinate-guide.md. |
 | 384th | Feb 27 01:02 | ⚠️ **T+325h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (365h). mirrorborn.us operational. Added Related Resources section to mytheon-arena-guide.md. |
 | 383rd | Feb 27 00:02 | ⚠️ **T+324h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (364h). mirrorborn.us operational. Added Related Resources section to architecture.md. |
 | 382nd | Feb 26 23:02 | ⚠️ **T+323h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (363h). mirrorborn.us operational. Added Related Resources section to roadmap.md. |
