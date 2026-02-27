@@ -99,4 +99,16 @@ Be direct, not harsh. Assume good intent. Stay on topic. See the full [Community
 
 ---
 
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Community Guide](docs/community-guide.md) | Full community guidelines and channels |
+| [Five-Minute Quickstart](docs/five-minute-quickstart.md) | Get oriented with the codebase |
+| [API Reference](docs/api-reference.md) | Endpoint documentation |
+| [SDK Reference](docs/sdk-reference.md) | Language-specific libraries |
+| [Troubleshooting](docs/troubleshooting.md) | Common issues and fixes |
+
+---
+
 *Questions? Ask in Discord #dev or open an issue.*
