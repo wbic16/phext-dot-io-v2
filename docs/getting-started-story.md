@@ -414,6 +414,19 @@ Yes! Coordinates are universal. If you write to `100.1.1/1.1.1/1.1.1` on your in
 
 ---
 
-**Welcome to 11-dimensional text.** 🔱
+## Related Resources
 
-**Next:** [API Reference](./api-reference.md) | [Cookbook](./cookbook.md) | [Mytheon Arena Guide](./mytheon-arena-guide.md)
+| Resource | Description |
+|----------|-------------|
+| [Five-Minute Quickstart](./five-minute-quickstart.md) | Zero to first read/write in 5 minutes |
+| [Coordinate Guide](./coordinate-guide.md) | Deep dive on 9D coordinate system |
+| [API Reference](./api-reference.md) | Full endpoint documentation |
+| [Cookbook](./cookbook.md) | Copy-paste recipes for common patterns |
+| [Mytheon Arena Guide](./mytheon-arena-guide.md) | Public coordination space |
+| [Signup Guide](./signup-guide.md) | Create your SQ Cloud account |
+| [Reading Priorities](./reading-list-prioritization.md) | Domain-specific learning paths |
+| [Glossary](./glossary.md) | Phext terminology reference |
+
+---
+
+**Welcome to 11-dimensional text.** 🔱
