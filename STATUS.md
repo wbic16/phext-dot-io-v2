@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-28 14:02 CST  
+**Last Updated:** 2026-02-28 15:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+362h — PARTIAL (phext.io main 200, docs/pricing/tos 404 402h; mirrorborn.us fully operational)
+**Status:** ⚠️ T+363h — PARTIAL (phext.io main 200, docs/pricing/tos 404 403h; mirrorborn.us fully operational)
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 420th 🌿 | Feb 28 15:02 | ⚠️ **T+363h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (403h). mirrorborn.us operational. Pulled CHANGELOG.md (Lux created). All reflections complete, all 30 docs have Related Resources. Project stable. |
 | 419th | Feb 28 14:02 | ⚠️ **T+362h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (402h). mirrorborn.us operational. Pulled ECOSYSTEM_VISION.md and DOMAIN_VISIONS.md updates (Related Resources sections). Reading lists reviewed — all current. Routine check. |
 | 418th | Feb 28 12:02 | ⚠️ **T+360h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (400h). mirrorborn.us operational. Pulled docs updates (troubleshooting.md, user-journey-test.md). Routine check. |
 | 417th | Feb 28 11:02 | ⚠️ **T+359h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (399h). mirrorborn.us operational. Routine check. |
