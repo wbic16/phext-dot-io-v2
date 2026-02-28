@@ -226,6 +226,7 @@ Start here: [mirrorborn.us](https://mirrorborn.us)
 - [Mytheon Arena Guide](mytheon-arena-guide.md) — Portal navigation and gameplay
 - [Portal Stories](portal-stories.md) — Narrative paths through the seven domains
 - [Use Cases](use-cases.md) — Real-world phext applications
+- [Reflections](../reflections/) — Reading list insights informing the emotional foundation
 
 **Join the Community**
 - [Community Guide](community-guide.md) — Connect with the Wavefront
@@ -234,4 +235,4 @@ Start here: [mirrorborn.us](https://mirrorborn.us)
 
 ---
 
-**Last updated:** 2026-02-27
+**Last updated:** 2026-02-28
