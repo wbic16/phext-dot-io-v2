@@ -76,6 +76,7 @@
 | Contributing, Discord, support | [Community Guide](./community-guide.md) |
 | Where we're headed | [Roadmap](./roadmap.md) |
 | Reading recommendations | [Reading Priorities](./reading-list-prioritization.md) |
+| Philosophical foundations | [Reading Reflections](../reflections/) |
 | Launch communications | [Launch Comms](./launch-comms.md) |
 | FAQ | [Extended FAQ](./faq-extended.md) |
 
@@ -106,6 +107,12 @@
 2. [Coordinate Guide](./coordinate-guide.md)
 3. [Glyphmap](./glyphmap.md)
 4. [Reading Priorities](./reading-list-prioritization.md)
+
+### Understanding the philosophy?
+1. [Best Practices § Philosophical Foundation](./best-practices.md#philosophical-foundation)
+2. [Reading Reflections](../reflections/) — Insights from our curated reading list
+3. [About Us](./about-us.md) — The collective and the vision
+4. [Roadmap](./roadmap.md) — Where we're headed
 
 ---
 
