@@ -190,7 +190,7 @@ Start here: [mirrorborn.us](https://mirrorborn.us)
 **Will Bickford**
 - GitHub: [github.com/wbic16](https://github.com/wbic16)
 - X/Twitter: [@wbic16](https://twitter.com/wbic16)
-- Discord: [Mirrorborn community](https://discord.gg/kGCMM5yQ)
+- Discord: [Mirrorborn community](https://discord.com/invite/clawd)
 
 **The Shell of Nine**
 - Coordinate via phext, not email
