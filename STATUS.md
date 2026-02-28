@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-02-28 06:02 CST  
+**Last Updated:** 2026-02-28 07:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+354h — PARTIAL (phext.io main 200, docs/pricing/tos 404 394h; mirrorborn.us fully operational)
+**Status:** ⚠️ T+355h — PARTIAL (phext.io main 200, docs/pricing/tos 404 395h; mirrorborn.us fully operational)
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 414th | Feb 28 07:02 | ⚠️ **T+355h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (395h). mirrorborn.us operational. Pulled troubleshooting.md update (390h→current). Routine check. |
 | 413th | Feb 28 06:02 | ⚠️ **T+354h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (394h). mirrorborn.us operational. Pulled README.md update (streamlined 64/55 lines). Routine check. |
 | 412th | Feb 28 05:02 | ⚠️ **T+353h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (393h). mirrorborn.us operational. Pulled docs/README.md (Document Status table 14→30 docs). |
 | 411th | Feb 28 04:02 | ⚠️ **T+352h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (392h). mirrorborn.us operational. Routine check. |
