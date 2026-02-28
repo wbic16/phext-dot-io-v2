@@ -292,7 +292,7 @@ tasks/complete/task-456.json
 
 ### Documentation Portal Returning 404
 
-**Status:** Active (390+ hours since Feb 12)  
+**Status:** Active (397+ hours since Feb 12)  
 **Affects:** phext.io docs/pricing/tos subpaths  
 **Impact:** Documentation links on phext.io may return 404 errors
 
