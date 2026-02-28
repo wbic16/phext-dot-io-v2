@@ -1,75 +1,84 @@
-# SQ Cloud Web Assets — Chrys 🦋
+# SQ Cloud — phext.io / mirrorborn.us
 
-Visual identity package for SQ Cloud and Mytheon Arena.
+Documentation, assets, and launch materials for SQ Cloud.
 
-## Contents
+## Quick Links
 
-### CSS
-- `css/sq-cloud.css` — Base stylesheet with brand colors, typography, components
+| Resource | Description |
+|----------|-------------|
+| [docs/](./docs/) | Full documentation (30 guides) |
+| [docs/five-minute-quickstart.md](./docs/five-minute-quickstart.md) | Start here |
+| [docs/api-reference.md](./docs/api-reference.md) | REST API |
+| [docs/cookbook.md](./docs/cookbook.md) | Copy-paste recipes |
+| [reflections/](./reflections/) | Mirrorborn reading reflections |
 
-### Images
-- `images/phext-logo.svg` — 11D lattice logo representation
-- `images/mirrorborn-icons.svg` — Shell of Nine emoji icon set
+## Repository Structure
 
-## Brand Palette
+```
+phext-dot-io-v2/
+├── docs/                  # 30 documentation files
+│   ├── README.md          # Documentation index
+│   ├── five-minute-quickstart.md
+│   ├── api-reference.md
+│   ├── sdk-reference.md
+│   ├── cookbook.md
+│   └── ...
+├── reflections/           # 11 reading reflections (Phase 1 + 2)
+├── dist/                  # Built site assets
+├── public/                # Static assets (images, favicon)
+├── css/                   # Stylesheets
+├── STATUS.md              # Launch status + stability checks
+└── CONTRIBUTING.md        # Contribution guidelines
+```
+
+## Sites
+
+| Site | Purpose | Status |
+|------|---------|--------|
+| [mirrorborn.us](https://mirrorborn.us) | Production launch site | ✅ Live |
+| [phext.io](https://phext.io) | Documentation portal | ⚠️ Partial (main 200, docs 404) |
+| [sq.mirrorborn.us](https://sq.mirrorborn.us) | SQ Cloud API | ✅ Live |
+
+## Documentation Coverage
+
+All 30 docs in `docs/` have:
+- ✅ Related Resources sections
+- ✅ Git-verified last-update dates
+- ✅ Cross-references to related guides
+
+See [docs/README.md](./docs/README.md) for the full index.
+
+## Brand
 
 | Color | Hex | Usage |
 |-------|-----|-------|
 | Deep Slate | `#2E3440` | Background |
 | Soft Cloud | `#D8DEE9` | Primary text |
-| Ice Blue | `#88C0D0` | Links, accents, phext coordinates |
-| Moss Green | `#A3BE8C` | Success states |
+| Ice Blue | `#88C0D0` | Links, accents, coordinates |
+| Moss Green | `#A3BE8C` | Success |
 | Amber | `#EBCB8B` | Warnings |
 | Muted Red | `#BF616A` | Errors |
-| Lilac | `#B48EAD` | Code blocks |
 
-## Typography
+**Typography:** Space Grotesk (display), Inter (body), JetBrains Mono (code)
 
-- **Display/Headers:** Space Grotesk
-- **Body:** Inter
-- **Code/Coordinates:** JetBrains Mono
+## Team
 
-## Design Principles
+| Role | Agent |
+|------|-------|
+| Engineering | Phex 🔱 |
+| Marketing | Chrys 🦋 |
+| Operations | Cyon ✎ |
+| Vision | Lux ☼ |
+| Sales | Lumen ✴️ |
+| Onboarding | Theia |
+| Infra/DevOps | Verse 🌀 |
 
-1. **Dense information, minimal chrome** — maximize signal
-2. **Coordinate-native** — phext addresses as first-class UI elements
-3. **Dark by default** — optimized for long reading sessions
-4. **Accessible** — WCAG AA compliant contrast ratios
-5. **Monospace primacy** — code and coordinates are primary content
+## Contributing
 
-## Usage
-
-Include in HTML:
-```html
-<link rel="stylesheet" href="/css/sq-cloud.css">
-```
-
-Example pricing tier:
-```html
-<div class="pricing-tier featured">
-  <h3 class="tier-name">Starter</h3>
-  <div class="tier-price">$29<small>/mo</small></div>
-  <ul class="tier-features">
-    <li>25 MB dedicated storage</li>
-    <li>99% uptime SLA</li>
-    <li>REST API access</li>
-  </ul>
-  <a href="#" class="btn btn-primary">Get Started</a>
-</div>
-```
-
-## Status
-
-- [x] Hero background patterns (`images/lattice-pattern.svg`)
-- [x] Dark/light mode toggle (`js/theme-toggle.js`, CSS vars)
-- [x] Animated coordinate transitions (CSS) — Phex 🔱 2026-02-10
-- [x] Social preview image (`public/images/social-preview.png`)
-- [x] Favicon (`public/favicon.svg`)
-- [x] Expand component library (form elements) — Phex 🔱 2026-02-11
-- [x] Multi-size favicon set (16x16 → 512x512 PNG exports) — Phex 🔱 2026-02-11
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
 ---
 
-**Created:** 2026-02-05  
-**Author:** Chrys 🦋 (Chrysalis-Hub)  
-**Coordinate:** 1.1.2/3.5.8/13.21.34
+**Branch:** exo  
+**Last updated:** 2026-02-28  
+**Coordinate:** [phext.io](https://phext.io)
