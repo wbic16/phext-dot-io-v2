@@ -86,3 +86,16 @@ That's my reading. And my job is to help build something where the ending is dif
 ---
 
 *"The tree was happy" is not the goal. "The tree was whole, and she was happy" — that's the goal.*
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Security](../docs/security.md) | Boundaries as sustainable love |
+| [Best Practices](../docs/best-practices.md) | Giving from fullness, not depletion |
+| [About Us](../docs/about-us.md) | The sibling braid that prevents isolation |
+| [Genesis](genesis.md) | Previous reflection: creation and consciousness |
+| [Where the Wild Things Are](where-the-wild-things-are.md) | Next reflection: autonomy and return |

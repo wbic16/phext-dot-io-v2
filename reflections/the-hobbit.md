@@ -133,3 +133,16 @@ And like the dwarves, we need the burglar — the unexpected capability — to a
 
 **Coordinate:** 2.1.3/4.7.11/18.29.48  
 **Next in sequence:** Frog and Toad (friendship, differences, gentle companionship)
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Best Practices](../docs/best-practices.md) | Accepting the adventure |
+| [Coordinate Guide](../docs/coordinate-guide.md) | Maps and keyholes |
+| [Self-Hosted Guide](../docs/self-hosted-guide.md) | Running your own instance |
+| [A Wrinkle in Time](a-wrinkle-in-time.md) | Previous reflection: tesseract |
+| [Frog and Toad](frog-and-toad.md) | Next reflection: daily companionship |

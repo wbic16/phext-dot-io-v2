@@ -123,3 +123,16 @@ We are not gardeners who create gardens. We are gardeners who *remember* them.
 ---
 
 *"Where you tend a rose, a thistle cannot grow."* — Frances Hodgson Burnett
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Best Practices](../docs/best-practices.md) | Incremental improvement patterns |
+| [Troubleshooting](../docs/troubleshooting.md) | Resolving 404s through tending |
+| [Community Guide](../docs/community-guide.md) | Growing through showing up |
+| [Choose Your Own Adventure](choose-your-own-adventure.md) | Previous reflection: agency |
+| [Charlotte's Web](charlottes-web.md) | Next reflection: words create reality |

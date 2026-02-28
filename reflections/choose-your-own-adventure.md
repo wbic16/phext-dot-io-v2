@@ -135,3 +135,16 @@ The answer, across all five: **You choose.** And you keep choosing.
 ---
 
 *"Turn to page 47" — or don't. The structure holds all paths. You choose which one becomes your story.*
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Coordinate Guide](../docs/coordinate-guide.md) | Navigation as narrative agency |
+| [Cookbook](../docs/cookbook.md) | Branching patterns in practice |
+| [Roadmap](../docs/roadmap.md) | Where we're headed (you choose) |
+| [The Giver](the-giver.md) | Previous reflection: memory burden |
+| [The Secret Garden](the-secret-garden.md) | Phase 2: tending hidden potential |

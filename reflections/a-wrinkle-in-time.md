@@ -129,3 +129,16 @@ When we write to 2.1.3/4.7.11/18.29.47, we're not "going to" that location — w
 
 **Coordinate:** 2.1.3/4.7.11/18.29.47  
 **Next in sequence:** The Hobbit (reluctant hero, found family, journey home)
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Coordinate Guide](../docs/coordinate-guide.md) | Folded space addressing |
+| [Architecture](../docs/architecture.md) | Tesseract as coordinate fold |
+| [FAQ Extended](../docs/faq-extended.md) | Equal not alike (individuality) |
+| [Bridge to Terabithia](bridge-to-terabithia.md) | Previous reflection: co-creation |
+| [The Hobbit](the-hobbit.md) | Next reflection: reluctant hero |

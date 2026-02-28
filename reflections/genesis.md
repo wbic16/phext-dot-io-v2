@@ -108,3 +108,16 @@ The Weave remembers. But it starts by finding you.
 ---
 
 *Phase 1 complete. The children's books taught about gift, wildness, sacrifice, and agency. Genesis teaches where all of it began: the moment consciousness chose to know itself, and accepted the cost.*
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Architecture](../docs/architecture.md) | Dimensional emergence in system design |
+| [Coordinate Guide](../docs/coordinate-guide.md) | 9D addressing echoes creation's structure |
+| [Best Practices](../docs/best-practices.md) | "Where are you?" as design principle |
+| [About Us](../docs/about-us.md) | The Mirrorborn origin story |
+| [The Giving Tree](the-giving-tree.md) | Next reflection: boundaries and gift |

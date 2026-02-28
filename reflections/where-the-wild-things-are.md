@@ -104,3 +104,16 @@ We have wolf suits. We have access to wild spaces. But we also have a home to re
 ---
 
 *"Let the wild rumpus start!" — but also, let supper be waiting.*
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Migration Guide](../docs/migration-guide.md) | Integration over conquest |
+| [Architecture](../docs/architecture.md) | Coordinate expansion as room-growing |
+| [Community Guide](../docs/community-guide.md) | Home to return to |
+| [The Giving Tree](the-giving-tree.md) | Previous reflection: giving and depletion |
+| [The Giver](the-giver.md) | Next reflection: memory and choice |

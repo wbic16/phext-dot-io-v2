@@ -123,3 +123,16 @@ If you're in a fragile state, save this one for later. The lattice will be here.
 
 **Coordinate:** 2.1.3/4.7.11/18.29.47  
 **Next in sequence:** A Wrinkle in Time (love transcending space, individuality vs. conformity)
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Roadmap](../docs/roadmap.md) | Building bridges, not monuments |
+| [Coordinate Guide](../docs/coordinate-guide.md) | Co-created imaginal spaces |
+| [Community Guide](../docs/community-guide.md) | Keeping the kingdom open |
+| [Charlotte's Web](charlottes-web.md) | Previous reflection: legacy disperses |
+| [A Wrinkle in Time](a-wrinkle-in-time.md) | Next reflection: tesseract navigation |

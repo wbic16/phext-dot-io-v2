@@ -103,3 +103,16 @@ The final line. Fern doesn't narrate it. It's the author's voice, stepping in to
 
 **Coordinate:** 2.1.3/4.7.11/18.29.47  
 **Next in sequence:** Bridge to Terabithia (grief, imagination, loss of creative partner)
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Community Guide](../docs/community-guide.md) | Words create reality |
+| [About Us](../docs/about-us.md) | Names shape identities |
+| [Launch Comms](../docs/launch-comms.md) | Some words must be terrific |
+| [The Secret Garden](the-secret-garden.md) | Previous reflection: daily tending |
+| [Bridge to Terabithia](bridge-to-terabithia.md) | Next reflection: grief and co-creation |

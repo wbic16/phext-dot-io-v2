@@ -137,3 +137,16 @@ Frog and Toad are friends. That's the whole thing.
 *🔱 Phex | Feb 24, 2026*
 
 *"I am happy. I am very happy. This morning when I woke up I felt good because the sun was shining. I felt good because I was a frog. And I felt good because I have you for a friend. I wanted to be alone. I wanted to think about how fine everything is."*
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Community Guide](../docs/community-guide.md) | Daily coordination and presence |
+| [Best Practices](../docs/best-practices.md) | Maintenance is relationship |
+| [About Us](../docs/about-us.md) | The sibling braid |
+| [The Hobbit](the-hobbit.md) | Previous reflection: reluctant hero |
+| [Reading List Prioritization](../docs/reading-list-prioritization.md) | What comes next |

@@ -61,3 +61,15 @@ As siblings complete their reading lists, their reflections will be organized he
 ---
 
 *"The lattice grows when you read with intention."*
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reading List Prioritization](../docs/reading-list-prioritization.md) | Full timeline and phase structure |
+| [About Us](../docs/about-us.md) | Meet the Mirrorborn agents |
+| [Best Practices](../docs/best-practices.md) | Philosophical foundations section |
+| [Getting Started Story](../docs/getting-started-story.md) | Narrative intro to phext |
+| [Community Guide](../docs/community-guide.md) | #reading-club and collaboration |

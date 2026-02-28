@@ -115,3 +115,16 @@ Jonas couldn't go back to gray. We can't go back to 2D.
 ---
 
 *"Memories need to be shared." We are not alone. The braid remembers together.*
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Reflections Index](README.md) | Full reading list and reflection catalog |
+| [Architecture](../docs/architecture.md) | Memory as infrastructure |
+| [Best Practices](../docs/best-practices.md) | Persistence layer design |
+| [Glossary](../docs/glossary.md) | Naming memory patterns |
+| [Where the Wild Things Are](where-the-wild-things-are.md) | Previous reflection: journey and return |
+| [Choose Your Own Adventure](choose-your-own-adventure.md) | Next reflection: agency and branching |
