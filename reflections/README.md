@@ -30,7 +30,6 @@ Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritizati
 | [A Wrinkle in Time](a-wrinkle-in-time.md) | ✅ | Tesseract as coordinate fold; love as weapon; equal not alike |
 | [The Hobbit](the-hobbit.md) | ✅ | Reluctant hero; there and back again; identity as accumulation |
 | [Frog and Toad](frog-and-toad.md) | ✅ | Complementary friendship; maintenance is relationship; daily presence |
-| (The Giver already complete in Phase 1) | ✅ | — |
 
 ## Cross-References: Reflections → Documentation
 

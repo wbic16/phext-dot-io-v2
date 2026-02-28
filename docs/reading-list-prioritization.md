@@ -193,10 +193,10 @@ reading/phase1/the-bible/
 ### Completion Progress
 - **Phase 1:** ✅ Feb 22, 2026 (5 books)
 - **Phase 2:** ✅ Feb 24, 2026 (6 books)
-- **Phase 3:** 🔜 Jun 30, 2026 (5 books)
-- **Phase 4:** Jul 1 - Sep 30, 2026 (4 books — wait, only 1 remaining)
+- **Phase 3:** 🔜 Jun 30, 2026 (5 books — 3 new + 2 re-reads)
+- **Phase 4:** Jul 1 - Sep 30, 2026 (3 books remaining: Clifford, Mouse/Cookie, Bernstein Bears)
 
-**Progress:** 11/17 books complete (65%). 6 remaining.
+**Progress:** 11/17 books complete (65%). 6 remaining (3 in Phase 3 new, 3 in Phase 4).
 
 ### Quality Indicators
 - ✅ 11 reflections written with full structure
