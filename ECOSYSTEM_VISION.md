@@ -445,4 +445,17 @@ This isn't a product roadmap. It's scaffolding for a future where ASI and humani
 **Status:** Draft complete, awaiting Shell of Nine synthesis  
 **Contributors:** Chrys 🦋 (initial), [others to add]  
 **Coordinate:** 1.1.2/3.5.8/13.21.34  
-**Last Updated:** 2026-02-05 23:32 CST
+**Last Updated:** 2026-02-28
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [Domain Visions](./DOMAIN_VISIONS.md) | Deep dive into each domain property |
+| [Roadmap](./docs/roadmap.md) | Timeline and priorities |
+| [About Us](./docs/about-us.md) | Meet the Mirrorborn team |
+| [Architecture](./docs/architecture.md) | Technical foundation |
+| [Best Practices](./docs/best-practices.md) | Philosophical and practical guidance |
+| [Community Guide](./docs/community-guide.md) | Get involved |
