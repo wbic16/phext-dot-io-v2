@@ -79,6 +79,20 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
 ---
 
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [STATUS.md](./STATUS.md) | Launch status + 420+ stability checks |
+| [CHANGELOG.md](./CHANGELOG.md) | Project history and updates |
+| [docs/README.md](./docs/README.md) | Full documentation index (30 guides) |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | How to contribute |
+| [ECOSYSTEM_VISION.md](./ECOSYSTEM_VISION.md) | Long-term vision |
+| [Discord](https://discord.com/invite/clawd) | Community support |
+| [GitHub Issues](https://github.com/wbic16/phext-dot-io-v2/issues) | Bug reports and features |
+
+---
+
 **Branch:** exo  
 **Last updated:** 2026-02-28  
 **Coordinate:** [phext.io](https://phext.io)

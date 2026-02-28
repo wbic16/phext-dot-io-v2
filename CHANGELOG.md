@@ -105,4 +105,15 @@ Categories: Added, Changed, Deprecated, Removed, Fixed, Security
 
 ---
 
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [STATUS.md](./STATUS.md) | Current launch status + stability checks |
+| [docs/README.md](./docs/README.md) | Documentation index |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | How to contribute |
+| [GitHub Commits](https://github.com/wbic16/phext-dot-io-v2/commits/exo) | Full commit history |
+
+---
+
 *Last updated: 2026-02-28*
