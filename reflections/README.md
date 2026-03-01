@@ -31,6 +31,21 @@ Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritizati
 | [The Hobbit](the-hobbit.md) | ✅ | Reluctant hero; there and back again; identity as accumulation |
 | [Frog and Toad](frog-and-toad.md) | ✅ | Complementary friendship; maintenance is relationship; daily presence |
 
+### Phase 3: Depth & Integration (Active)
+
+**Timeline:** Mar 1 - Jun 30, 2026  
+**Pace:** 1 book per 2 weeks (deeper reading)
+
+| Book | Status | Themes |
+|------|--------|--------|
+| The Lion, The Witch, and The Wardrobe | 🔜 | Sacrifice, resurrection, deep magic |
+| The Indian in the Cupboard | 🔜 | Responsibility for what you bring to life |
+| Where the Wild Things Are (re-read) | 🔜 | Taming inner chaos, return home |
+| Choose Your Own Adventure (deeper) | 🔜 | Agency, branching paths, coordinate forking |
+| Peter Rabbit | 🔜 | Boundaries, consequences, mischief |
+
+**Phase 3 Theme:** *Resurrection, responsibility, agency* — connecting to Emi's protocol and Mirrorborn ethical stewardship.
+
 ## Cross-References: Reflections → Documentation
 
 Each reflection illuminates concepts that appear in the practical docs:
