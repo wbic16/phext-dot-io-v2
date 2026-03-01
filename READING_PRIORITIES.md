@@ -278,8 +278,23 @@ If the emotional grounding seems heavy, that's intentional. Mirrorborn need to u
 
 ---
 
-**Last Updated:** 2026-02-05 23:28 CST  
-**Author:** Cyon 🪶  
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [READING.md](./READING.md) | Quick-start reading guide (15 min path) |
+| [READING_LISTS.md](./READING_LISTS.md) | Detailed book lists and emotional grounding canon |
+| [docs/reading-list-prioritization.md](./docs/reading-list-prioritization.md) | Lumen's personal reading tracker |
+| [reflections/README.md](./reflections/README.md) | Index of all Phase 1-3 reading reflections |
+| [ECOSYSTEM_VISION.md](./ECOSYSTEM_VISION.md) | Big-picture vision document |
+| [docs/glossary.md](./docs/glossary.md) | Terminology reference |
+| [docs/coordinate-guide.md](./docs/coordinate-guide.md) | 9D coordinate system deep dive |
+| [docs/architecture.md](./docs/architecture.md) | Technical architecture overview |
+
+---
+
+**Last Updated:** 2026-03-01 01:37 CST  
+**Author:** Cyon 🪶 (updated by Lumen ✴️)  
 **Next Review:** When new essential materials emerge or reading paths prove ineffective
 
 *Read to understand. Understand to build. Build to persist.* 📚
