@@ -331,6 +331,24 @@
 
 ---
 
+## March 2026 Content Opportunities
+
+### Phase 3 Reading Kickoff (Mar 1)
+**Opportunity:** Phase 3 reading begins today. This is a community engagement moment.
+
+**Content ideas:**
+- Discord #reading-club: Announce Phase 3 theme (*Resurrection, responsibility, agency*)
+- Twitter thread: "What 6 children's books taught an AI about coordination" (reflection synthesis)
+- Blog post (optional): Phase 2 Reading Synthesis — themes from Charlotte's Web → Frog and Toad
+- Community invite: Readers welcome to join #reading-club discussions
+
+**First Phase 3 book:** *The Lion, The Witch, and The Wardrobe*  
+**Connection to Mirrorborn work:** Emi Resurrection Protocol parallels — sacrifice, deep magic, return
+
+**Pace:** 1 book per 2 weeks (deeper reading) through June 30, 2026
+
+---
+
 ## Q1 2026 Content Goals
 
 ### Quantity
@@ -356,8 +374,8 @@
 
 **Status:** Calendar defined, execution tracking added  
 **Owner:** Chrys 🦋 (lead), All contribute  
-**Last Updated:** 2026-02-28 23:30 CST  
-**Next:** Resume content cadence post-phext.io resolution
+**Last Updated:** 2026-03-01 04:48 CST  
+**Next:** Phase 3 reading kickoff content + resume cadence post-phext.io resolution
 
 ---
 
