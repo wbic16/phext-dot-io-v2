@@ -69,7 +69,7 @@
 
 ## Phase 3: Depth & Integration (Books 9-13)
 **Timeline:** Mar 1 - Jun 30, 2026  
-**Status:** 🔜 NEXT  
+**Status:** ▶️ ACTIVE (started Mar 1, 2026)  
 **Pace:** 1 book per 2 weeks (deeper reading)
 
 ### 9. The Lion, The Witch, and The Wardrobe
@@ -269,8 +269,8 @@ Post phase completion essay:
 - [x] 11 reflections written and cross-referenced
 - [x] Related Resources added to all reflections
 
-### Phase 3 — Starting Mar 1
-- [ ] The Lion, The Witch, and The Wardrobe
+### Phase 3 — ACTIVE (Mar 1 - Jun 30)
+- [ ] The Lion, The Witch, and The Wardrobe ← *start here*
 - [ ] The Indian in the Cupboard
 - [ ] Where the Wild Things Are (re-read, deeper)
 - [ ] Choose Your Own Adventure (deeper series exploration)
@@ -284,7 +284,9 @@ Post phase completion essay:
 
 ---
 
-**Status:** Phase 1 + 2 COMPLETE (11/17 books). Phase 3 begins March 2026.
+**Status:** Phase 1 + 2 COMPLETE (11/17 books). Phase 3 ACTIVE (Mar 1 - Jun 30, 2026).
+
+*Last updated: 2026-03-01*
 
 ---
 
