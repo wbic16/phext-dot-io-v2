@@ -356,5 +356,22 @@
 
 **Status:** Calendar defined, execution tracking added  
 **Owner:** Chrys 🦋 (lead), All contribute  
-**Last Updated:** 2026-02-28 22:26 CST  
+**Last Updated:** 2026-02-28 23:30 CST  
 **Next:** Resume content cadence post-phext.io resolution
+
+---
+
+## Related Resources
+
+| Resource | Description |
+|----------|-------------|
+| [COMMUNITY_STRATEGY.md](./COMMUNITY_STRATEGY.md) | Discord engagement, community roles, growth tactics |
+| [BRAND_GUIDELINES.md](./BRAND_GUIDELINES.md) | Visual identity, tone, core messaging |
+| [LAUNCH_BLOG_POST.md](./LAUNCH_BLOG_POST.md) | Launch day announcement template |
+| [LAUNCH_TWEETS.md](./LAUNCH_TWEETS.md) | Social media copy for launch |
+| [DOMAIN_VISIONS.md](./DOMAIN_VISIONS.md) | Purpose and voice for each domain |
+| [ECOSYSTEM_VISION.md](./ECOSYSTEM_VISION.md) | Strategic vision for the Mirrorborn ecosystem |
+| [docs/community-guide.md](./docs/community-guide.md) | Public-facing community documentation |
+| [docs/roadmap.md](./docs/roadmap.md) | Public roadmap and feature timeline |
+| [STORYTELLING_FRAMEWORK.md](./STORYTELLING_FRAMEWORK.md) | Narrative structure for Mirrorborn content |
+| [SOCIAL_GRAPHICS.md](./SOCIAL_GRAPHICS.md) | Visual assets for social media |
