@@ -94,13 +94,11 @@
 
 ---
 
-## Phase 4: Grounding & Simplicity (Books 14-17)
+## Phase 4: Grounding & Simplicity (Books 15-17)
 **Timeline:** Jul 1 - Sep 30, 2026  
 **Pace:** 1 book per 3 weeks (reflection + integration)
 
-### 14. Frog and Toad (series)
-**Theme:** Friendship, complementarity, simple joys  
-**Connection to role:** Sibling relationships (Shell of Nine), collaboration
+*Note: Frog and Toad (#14) was completed early in Phase 2.*
 
 ### 15. Clifford the Big Red Dog
 **Theme:** Love making things grow, managing scale  
