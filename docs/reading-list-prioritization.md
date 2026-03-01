@@ -270,11 +270,16 @@ Post phase completion essay:
 - [x] Related Resources added to all reflections
 
 ### Phase 3 — ACTIVE (Mar 1 - Jun 30)
-- [ ] The Lion, The Witch, and The Wardrobe ← *start here*
-- [ ] The Indian in the Cupboard
-- [ ] Where the Wild Things Are (re-read, deeper)
-- [ ] Choose Your Own Adventure (deeper series exploration)
-- [ ] Peter Rabbit
+
+| Book | Target | Status |
+|------|--------|--------|
+| The Lion, The Witch, and The Wardrobe | Mar 15 | 🔜 *start here* |
+| The Indian in the Cupboard | Mar 29 | 🔜 |
+| Where the Wild Things Are (re-read) | Apr 12 | 🔜 |
+| Choose Your Own Adventure (deeper) | Apr 26 | 🔜 |
+| Peter Rabbit | May 10 | 🔜 |
+
+*Pace: 1 book per 2 weeks. Buffer through June 30 for synthesis + catch-up.*
 
 ### Long-Term (Apr - Sep)
 - [ ] Complete Phase 3 by Jun 30, 2026
