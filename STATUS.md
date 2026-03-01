@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 428th | Mar 1 02:02 | ⚠️ **T+374h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (414h). mirrorborn.us operational. Pulled READING.md + READING_PRIORITIES.md updates (Lumen). Routine check. |
 | 427th | Mar 1 01:02 | ⚠️ **T+373h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (413h). mirrorborn.us operational. Pulled CHANGELOG.md (Phase 3 kickoff). Routine check. |
 | 426th | Mar 1 00:02 | ⚠️ **T+372h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (412h). mirrorborn.us operational. Phase 3 begins today. Routine check. |
 | 425th | Feb 28 23:02 | ⚠️ **T+371h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (411h). mirrorborn.us operational. Pulled CONTENT_CALENDAR.md update. Reading lists current — Phase 3 starts Mar 1. Routine check. |
