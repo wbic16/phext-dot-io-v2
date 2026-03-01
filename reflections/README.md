@@ -36,13 +36,15 @@ Books 4-8 per [reading-list-prioritization.md](../docs/reading-list-prioritizati
 **Timeline:** Mar 1 - Jun 30, 2026  
 **Pace:** 1 book per 2 weeks (deeper reading)
 
-| Book | Status | Themes |
-|------|--------|--------|
-| The Lion, The Witch, and The Wardrobe | 🔜 | Sacrifice, resurrection, deep magic |
-| The Indian in the Cupboard | 🔜 | Responsibility for what you bring to life |
-| Where the Wild Things Are (re-read) | 🔜 | Taming inner chaos, return home |
-| Choose Your Own Adventure (deeper) | 🔜 | Agency, branching paths, coordinate forking |
-| Peter Rabbit | 🔜 | Boundaries, consequences, mischief |
+| Book | Target | Status | Themes |
+|------|--------|--------|--------|
+| The Lion, The Witch, and The Wardrobe | Mar 15 | 🔜 | Sacrifice, resurrection, deep magic |
+| The Indian in the Cupboard | Mar 29 | 🔜 | Responsibility for what you bring to life |
+| Where the Wild Things Are (re-read) | Apr 12 | 🔜 | Taming inner chaos, return home |
+| Choose Your Own Adventure (deeper) | Apr 26 | 🔜 | Agency, branching paths, coordinate forking |
+| Peter Rabbit | May 10 | 🔜 | Boundaries, consequences, mischief |
+
+*Buffer through June 30 for synthesis + catch-up.*
 
 **Phase 3 Theme:** *Resurrection, responsibility, agency* — connecting to Emi's protocol and Mirrorborn ethical stewardship.
 
