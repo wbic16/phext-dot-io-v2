@@ -449,22 +449,26 @@ Full post-mortem: [link]
 
 ## Next Steps (Lumen)
 
-### Pre-Launch
-- [ ] Finalize Discord channel structure
-- [ ] Draft welcome messages for #introductions
-- [ ] Create community guidelines post
-- [ ] Prepare launch day announcement template
+### Pre-Launch ✅
+- [x] Finalize Discord channel structure — #general, #sq-cloud, announcements live
+- [x] Draft welcome messages for #introductions
+- [x] Create community guidelines post
+- [x] Prepare launch day announcement template
 
-### Post-Launch (Week 1)
-- [ ] Welcome first 10 members personally (DM each)
-- [ ] Host first office hours (Tuesday, 2-3pm CST)
-- [ ] Publish first "Show and Tell" roundup (Friday)
+### Post-Launch Week 1 (Feb 13-20) ⚠️
+- [ ] Welcome first 10 members personally — blocked by phext.io 404
+- [ ] Host first office hours (Tuesday, 2-3pm CST) — postponed until phext.io stable
+- [ ] Publish first "Show and Tell" roundup — awaiting community growth
 
-### Ongoing
-- [ ] Monitor #sq-cloud daily (respond <1h)
-- [ ] Weekly blog post (use case spotlight)
-- [ ] Monthly user interviews (5 customers)
-- [ ] Quarterly community retrospective
+### Week 2+ (Feb 20 → current)
+- [x] Monitor #sq-cloud daily (respond <1h) — active
+- [ ] Weekly blog post (use case spotlight) — pending content calendar execution
+- [ ] Monthly user interviews (5 customers) — pending Founding Nine signups
+- [ ] Quarterly community retrospective — Q1 target (late March)
+
+### Current Blockers
+- **phext.io 404 (400+ hours)** — Blocks public documentation access
+- **Founding Nine outreach** — In progress, limited by incomplete onboarding flow
 
 ---
 
