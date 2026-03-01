@@ -4,6 +4,19 @@ All notable changes to phext-dot-io-v2 (SQ Cloud documentation and launch materi
 
 ## [Unreleased] — exo branch
 
+### 2026-03-01
+
+**Phase 3 Reading List — Kickoff**
+- Phase 3 begins (Mar 1 - Jun 30, 2026)
+- Pace: 1 book per 2 weeks (deeper reading)
+- Books: Lion/Witch/Wardrobe, Indian in the Cupboard, Peter Rabbit + 2 re-reads
+- 11/17 books complete (65%), 6 remaining
+
+**Stability**
+- T+372h post-launch
+- phext.io 404 duration: 412+ hours
+- mirrorborn.us: Fully operational
+
 ### 2026-02-28
 
 **Documentation Quality Pass**
@@ -116,4 +129,4 @@ Categories: Added, Changed, Deprecated, Removed, Fixed, Security
 
 ---
 
-*Last updated: 2026-02-28*
+*Last updated: 2026-03-01*
