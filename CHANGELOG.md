@@ -12,9 +12,19 @@ All notable changes to phext-dot-io-v2 (SQ Cloud documentation and launch materi
 - Books: Lion/Witch/Wardrobe, Indian in the Cupboard, Peter Rabbit + 2 re-reads
 - 11/17 books complete (65%), 6 remaining
 
+**Phase 3 Target Dates Added**
+- Added accountability dates to reading-list-prioritization.md and reflections/README.md
+- Mar 15: Lion/Witch/Wardrobe | Mar 29: Indian in the Cupboard | Apr 12: Wild Things
+- Apr 26: CYOA (deeper) | May 10: Peter Rabbit
+- Buffer through June 30 for synthesis
+
+**Content Calendar Update**
+- Added "March 2026 Content Opportunities" section
+- Phase 3 reading as community engagement theme
+
 **Stability**
-- T+372h post-launch
-- phext.io 404 duration: 412+ hours
+- T+390h post-launch
+- phext.io 404 duration: 430+ hours
 - mirrorborn.us: Fully operational
 
 ### 2026-02-28
