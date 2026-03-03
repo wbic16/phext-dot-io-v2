@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-03-02 20:02 CST  
+**Last Updated:** 2026-03-02 21:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 470th | Mar 2 21:02 | ⚠️ **T+417h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (457h). mirrorborn.us operational. Phase 3 underway. Routine check. |
 | 469th | Mar 2 20:02 | ⚠️ **T+416h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (456h). mirrorborn.us operational. Phase 3 underway. Routine check. |
 | 468th | Mar 2 19:02 | ⚠️ **T+415h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (455h). mirrorborn.us operational. Phase 3 underway. Routine check. |
 | 467th | Mar 2 18:02 | ⚠️ **T+414h PARTIAL** — phext.io main 200, docs/pricing/tos 404 (454h). mirrorborn.us operational. Phase 3 underway. Routine check. |
