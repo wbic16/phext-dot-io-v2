@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-03-05 05:02 CST  
+**Last Updated:** 2026-03-05 06:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+473h PARTIAL — phext.io main 200, docs 404 (513h); mirrorborn.us operational
+**Status:** ⚠️ T+474h PARTIAL — phext.io main 200, docs 404 (514h); mirrorborn.us operational
 
 ---
 
@@ -46,8 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
-| 526th | Mar 5 05:02 | ⚠️ **T+473h PARTIAL** — phext.io main 200, docs 404 (513h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
-| 525th | Mar 5 04:02 | ⚠️ **T+472h PARTIAL** — phext.io main 200, docs 404 (512h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
+| 525th | Mar 5 06:02 | ⚠️ **T+474h PARTIAL** — phext.io main 200, docs 404 (514h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
 | 524th | Mar 5 03:02 | ⚠️ **T+471h PARTIAL** — phext.io main 200, docs 404 (511h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
 | 523rd | Mar 5 02:02 | ⚠️ **T+470h PARTIAL** — phext.io main 200, docs 404 (510h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
 | 522nd | Mar 5 01:02 | ⚠️ **T+469h PARTIAL** — phext.io main 200, docs 404 (509h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
