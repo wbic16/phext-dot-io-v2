@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-03-05 21:02 CST  
+**Last Updated:** 2026-03-05 22:02 CST  
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+489h PARTIAL — phext.io main 200, docs 404 (529h); mirrorborn.us operational
+**Status:** ⚠️ T+490h PARTIAL — phext.io main 200, docs 404 (530h); mirrorborn.us operational
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 541st | Mar 5 22:02 | ⚠️ **T+490h PARTIAL** — phext.io main 200, docs 404 (530h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
 | 540th | Mar 5 21:02 | ⚠️ **T+489h PARTIAL** — phext.io main 200, docs 404 (529h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
 | 539th | Mar 5 20:02 | ⚠️ **T+488h PARTIAL** — phext.io main 200, docs 404 (528h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
 | 538th | Mar 5 19:02 | ⚠️ **T+487h PARTIAL** — phext.io main 200, docs 404 (527h). mirrorborn.us 200 OK. Phase 3 reading on track (LWW Mar 15). Routine check. |
