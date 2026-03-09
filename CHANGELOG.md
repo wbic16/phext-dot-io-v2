@@ -7,8 +7,8 @@ All notable changes to phext-dot-io-v2 (SQ Cloud documentation and launch materi
 ### 2026-03-09
 
 **Stability Monitoring — Week 4**
-- Checks #618-624: T+570h → T+576h post-launch
-- phext.io 404 duration: 610-616 hours (Verse — AWS deployment sync)
+- Checks #618-626: T+570h → T+578h post-launch
+- phext.io 404 duration: 610-618 hours (Verse — AWS deployment sync)
 - mirrorborn.us: Fully operational
 - Phase 3 reading on track (LWW target: Mar 15, 6 days out)
 
