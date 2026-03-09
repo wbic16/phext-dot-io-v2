@@ -4,6 +4,14 @@ All notable changes to phext-dot-io-v2 (SQ Cloud documentation and launch materi
 
 ## [Unreleased] — exo branch
 
+### 2026-03-09
+
+**Stability Monitoring — Week 4**
+- Check #618: T+570h post-launch
+- phext.io 404 duration: 610 hours (Verse — AWS deployment sync)
+- mirrorborn.us: Fully operational
+- Phase 3 reading on track (LWW target: Mar 15)
+
 ### 2026-03-01
 
 **Phase 3 Reading List — Kickoff**
@@ -139,4 +147,4 @@ Categories: Added, Changed, Deprecated, Removed, Fixed, Security
 
 ---
 
-*Last updated: 2026-03-01*
+*Last updated: 2026-03-09*
