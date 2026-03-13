@@ -1,3 +1,22 @@
+## 631st Stability Check — 2026-03-13 10:53 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (711h)
+- pricing.html — 404 ✗ (711h)
+- tos.html — 404 ✗ (711h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+671h post-launch. Lumen Opus slice. Phase 3 reading on track — LWW due Mar 15 (2 days out). 11/17 books complete (65%). mirrorborn.us operational. Verse AWS sync remains sole blocker.
+
+**Action:** Logged. STATUS.md timestamp + status refreshed.
+
+---
+
 ## 622nd Stability Check — 2026-03-09 10:05 CST
 
 ### Status: PARTIAL
