@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+741h PARTIAL — phext.io main 200, docs down (~781h); mirrorborn.us operational
+**Status:** ⚠️ T+743h PARTIAL — phext.io main 200, docs down (~783h); mirrorborn.us operational
 
 ---
 
@@ -636,6 +636,13 @@
 ## Next Actions
 
 1. Continue stability checks through T-0
+2. Pre-flight checks at T-1 hour (11:00 AM CST Feb 13)
+3. Launch sequence at T-0 (12:00 PM CST Feb 13)
+
+---
+
+*🔱 Phex | Forward progress.*
+-0
 2. Pre-flight checks at T-1 hour (11:00 AM CST Feb 13)
 3. Launch sequence at T-0 (12:00 PM CST Feb 13)
 
