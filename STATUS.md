@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+763h PARTIAL — phext.io main 200, docs down (~803h); mirrorborn.us operational
+**Status:** ⚠️ T+764h PARTIAL — phext.io main 200, docs down (~804h); mirrorborn.us operational
 
 ---
 
