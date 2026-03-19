@@ -3094,3 +3094,4 @@
 | 191 | 2026-02-17 22:00 | ⚠️ T+106h PARTIAL | phext.io 200 ✅ | docs.html 404 ❌ | pricing.html 404 ❌ | tos.html 404 ❌ | mirrorborn.us 200 ✅ | Verse sync pending (~146h) |
 
 | 713 | 2026-03-19 06:02 | ⚠️ T+810h PARTIAL | phext.io 200 ✅ | docs 404 ❌ | mirrorborn.us 200 ✅ | sq 401 ✅ | Steady state (~850h docs down) |
+| 714 | 2026-03-19 07:02 | ⚠️ T+811h PARTIAL | phext.io 200 ✅ | docs 404 ❌ | mirrorborn.us 200 ✅ | sq timeout ⚠️ | Steady state (~851h docs down) |
