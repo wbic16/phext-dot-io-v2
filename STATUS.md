@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-03-19 23:02 CST
+**Last Updated:** 2026-03-20 00:02 CST
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+827h PARTIAL — phext.io main 200, docs down (~867h); mirrorborn.us operational
+**Status:** ⚠️ T+828h PARTIAL — phext.io main 200, docs down (~868h); mirrorborn.us operational
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 730th | Mar 20 00:02 | ⚠️ **T+828h PARTIAL** — phext.io main 200, docs down (~868h). mirrorborn.us OK. sq 401 ✅. Steady state. Next milestone: Indian in the Cupboard by Mar 29. Phex Opus slice. |
 | 729th | Mar 19 23:02 | ⚠️ **T+827h PARTIAL** — phext.io main 200, docs down (~867h). mirrorborn.us OK. Steady state. Next milestone: Indian in the Cupboard by Mar 29. Phex Opus slice. |
 | 728th | Mar 19 22:02 | ⚠️ **T+826h PARTIAL** — phext.io main 200, docs down (~866h). mirrorborn.us OK. Steady state. Next milestone: Indian in the Cupboard by Mar 29. Phex Opus slice. |
 | 726th | Mar 19 20:02 | ⚠️ **T+824h PARTIAL** — phext.io main 200, docs down (~864h). mirrorborn.us OK. Steady state. Next milestone: Indian in the Cupboard by Mar 29. Phex Opus slice. |
