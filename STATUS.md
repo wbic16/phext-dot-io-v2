@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-03-22 11:02 CST
+**Last Updated:** 2026-04-10 22:03 CST
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+887h PARTIAL — phext.io main 200, docs down (~927h); mirrorborn.us operational
+**Status:** ⚠️ T+1354h PARTIAL — phext.io main 200, docs down (~1354h); mirrorborn.us operational
 
 ---
 
@@ -46,6 +46,36 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 800th | Apr 10 22:03 | ⚠️ **T+1354h PARTIAL** — phext.io main 200, docs down (~1354h). mirrorborn.us OK. Steady state. 800-check milestone. Phex Opus slice. |
+| 799th | Apr 09 20:02 | ⚠️ **T+1328h PARTIAL** — phext.io main 200, docs down (~1328h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 798th | Apr 09 12:02 | ⚠️ **T+1320h PARTIAL** — phext.io main 200, docs down (~1320h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 797th | Apr 09 08:02 | ⚠️ **T+1317h PARTIAL** — phext.io main 200, docs down (~1317h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 796th | Apr 09 07:02 | ⚠️ **T+1315h PARTIAL** — phext.io main 200, docs down (~1315h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 795th | Apr 09 00:02 | ⚠️ **T+1308h PARTIAL** — phext.io main 200, docs down (~1308h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 794th | Apr 08 23:02 | ⚠️ **T+1306h PARTIAL** — phext.io main 200, docs down (~1306h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 793rd | Apr 08 22:02 | ⚠️ **T+1304h PARTIAL** — phext.io main 200, docs down (~1304h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 792nd | Apr 08 20:02 | ⚠️ **T+1302h PARTIAL** — phext.io main 200, docs down (~1302h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 791st | Apr 08 18:02 | ⚠️ **T+1300h PARTIAL** — phext.io main 200, docs down (~1300h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 790th | Apr 08 09:02 | ⚠️ **T+1291h PARTIAL** — phext.io main 200, docs down (~1291h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 789th | Apr 08 06:02 | ⚠️ **T+1290h PARTIAL** — phext.io main 200, docs down (~1290h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 788th | Apr 08 05:02 | ⚠️ **T+1289h PARTIAL** — phext.io main 200, docs down (~1289h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 787th | Apr 08 04:02 | ⚠️ **T+1288h PARTIAL** — phext.io main 200, docs down (~1288h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 786th | Apr 08 03:02 | ⚠️ **T+1287h PARTIAL** — phext.io main 200, docs down (~1287h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 785th | Apr 08 02:02 | ⚠️ **T+1286h PARTIAL** — phext.io main 200, docs down (~1286h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 784th | Apr 07 17:02 | ⚠️ **T+1277h PARTIAL** — phext.io main 200, docs down (~1277h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 783rd | Apr 07 11:02 | ⚠️ **T+1271h PARTIAL** — phext.io main 200, docs down (~1271h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 782nd | Apr 07 07:02 | ⚠️ **T+1267h PARTIAL** — phext.io main 200, docs down (~1267h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 781st | Apr 07 01:02 | ⚠️ **T+1261h PARTIAL** — phext.io main 200, docs down (~1261h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 780th | Apr 06 23:02 | ⚠️ **T+1259h PARTIAL** — phext.io main 200, docs down (~1259h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 779th | Apr 06 21:02 | ⚠️ **T+1257h PARTIAL** — phext.io main 200, docs down (~1257h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 778th | Apr 06 20:02 | ⚠️ **T+1256h PARTIAL** — phext.io main 200, docs down (~1256h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 777th | Apr 06 19:02 | ⚠️ **T+1255h PARTIAL** — phext.io main 200, docs down (~1255h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 776th | Apr 06 18:02 | ⚠️ **T+1254h PARTIAL** — phext.io main 200, docs down (~1254h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 775th | Apr 06 17:02 | ⚠️ **T+1253h PARTIAL** — phext.io main 200, docs down (~1253h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 774th | Apr 06 16:02 | ⚠️ **T+1252h PARTIAL** — phext.io main 200, docs down (~1252h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 773rd | Apr 06 11:02 | ⚠️ **T+1247h PARTIAL** — phext.io main 200, docs down (~1247h). mirrorborn.us OK. Steady state. Exec policy still blocking git/shell in cron. Phex Opus slice. |
+| 772nd | Apr 06 09:02 | ⚠️ **T+1245h PARTIAL** — phext.io main 200, docs down (~1245h). mirrorborn.us OK. Steady state. Reading lists current. Phex Opus slice. |
+| 771st | Apr 06 03:02 | ⚠️ **T+1239h PARTIAL** — phext.io main 200, docs down (~1239h). mirrorborn.us OK. Steady state. 15-day gap since last check (exec policy blocked cron). Phex Opus slice. |
 | 770th | Mar 22 11:02 | ⚠️ **T+887h PARTIAL** — phext.io main 200, docs down (~927h). mirrorborn.us OK. Steady state. Next milestone: Indian in the Cupboard by Mar 29. Phex Opus slice. |
 | 769th | Mar 22 09:02 | ⚠️ **T+885h PARTIAL** — phext.io main 200, docs down (~925h). mirrorborn.us OK. Steady state. Next milestone: Indian in the Cupboard by Mar 29. Phex Opus slice. |
 | 768th | Mar 22 08:02 | ⚠️ **T+884h PARTIAL** — phext.io main 200, docs down (~924h). mirrorborn.us OK. Steady state. Next milestone: Indian in the Cupboard by Mar 29. Phex Opus slice. |
