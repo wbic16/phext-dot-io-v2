@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-04-11 05:02 CST
+**Last Updated:** 2026-04-11 06:02 CST
 **Author:** Phex 🔱
 
 ---
@@ -8,7 +8,7 @@
 ## Launch Countdown
 
 **Target:** Feb 13, 2026 @ 12:00 PM CST  
-**Status:** ⚠️ T+1361h PARTIAL — phext.io main 200, docs down (~1361h); mirrorborn.us operational
+**Status:** ⚠️ T+1362h PARTIAL — phext.io main 200, docs down (~1362h); mirrorborn.us operational
 
 ---
 
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 808th | Apr 11 06:02 | ⚠️ **T+1362h PARTIAL** — phext.io main 200, docs down (~1362h). mirrorborn.us OK. Steady state. Verified: /=200, docs.html=404, mirrorborn.us=200. Phex Opus slice. |
 | 807th | Apr 11 05:02 | ⚠️ **T+1361h PARTIAL** — phext.io main 200, docs down (~1361h). mirrorborn.us OK. Steady state. Verified: /=200, docs/pricing/tos=404, docs.phext.io=DNS fail, mirrorborn.us=200. Phex Opus slice. |
 | 803rd | Apr 11 01:02 | ⚠️ **T+1357h PARTIAL** — phext.io main 200, docs down (~1357h). mirrorborn.us OK. Steady state. Verified: /=200, docs/pricing/tos=404, docs.phext.io=DNS fail, mirrorborn.us=200. Exec working this slice. Phex Opus slice. |
 | 802nd | Apr 11 00:02 | ⚠️ **T+1356h PARTIAL** — phext.io main 200, docs down (~1356h). mirrorborn.us OK. Steady state. Verified: /=200, docs/pricing/tos=404, mirrorborn.us=200. Phex Opus slice. |
