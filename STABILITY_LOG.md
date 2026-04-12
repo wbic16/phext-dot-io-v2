@@ -1,3 +1,22 @@
+## 829th Stability Check — 2026-04-12 04:02 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓
+- docs.html — 404 ✗ (~1384h)
+- pricing.html — 404 ✗ (~1384h)
+- tos.html — 404 ✗ (~1384h)
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓
+
+**Analysis:** T+1384h post-launch. Phex Opus slice. Steady state. Docs remain blocked on Verse AWS sync. No new issues.
+
+**Action:** Logged. STATUS.md updated.
+
+---
+
 ## 633rd Stability Check — 2026-03-14 19:57 CST
 
 ### Status: PARTIAL
