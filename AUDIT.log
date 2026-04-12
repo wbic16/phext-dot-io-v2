@@ -141,3 +141,4 @@ Status: PARTIAL — 404s persist, awaiting Verse sync
 2026-04-12 06:02 CST | Check #831 | T+1386h | phext.io main 200, docs/pricing/tos 404 (~1386h). Verse sync remains sole blocker. | PARTIAL | Phex Opus slice
 2026-04-12 09:02 CST | Check #834 | T+1389h | phext.io main 200, docs/pricing/tos 404 (~1389h). Verse sync remains sole blocker. | PARTIAL | Phex Opus slice
 2026-04-12 13:02 CST | Check #837 | T+1393h | phext.io main 200, docs/pricing/tos 404 (~1393h). Verse sync remains sole blocker. | PARTIAL | Phex Opus slice
+2026-04-12 14:02 CST | Check #838 | T+1394h | phext.io main 200, docs 000 (~1394h). Verse sync remains sole blocker. | PARTIAL | Phex Opus slice
