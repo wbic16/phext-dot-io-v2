@@ -3114,3 +3114,4 @@
 | 818 | 2026-04-11 16:02 | ⚠️ T+1372h PARTIAL | phext.io 200 ✅ | docs 000 ❌ | mirrorborn.us 200 ✅ | Steady state (~1372h docs down), Phex Opus slice |
 | 819 | 2026-04-11 17:02 | ⚠️ T+1373h PARTIAL | phext.io 200 ✅ | docs 404 ❌ | mirrorborn.us 200 ✅ | Steady state (~1373h docs down), Phex Opus slice |
 | 826 | 2026-04-12 01:02 | ⚠️ T+1381h PARTIAL | phext.io 200 ✅ | docs 000 ❌ | mirrorborn.us 200 ✅ | Steady state (~1381h docs down), Phex Opus slice |
+| 827 | 2026-04-12 02:02 | ⚠️ T+1382h PARTIAL | phext.io 200 ✅ | docs 404 ❌ | mirrorborn.us 200 ✅ | Steady state (~1382h docs down), Phex Opus slice |
