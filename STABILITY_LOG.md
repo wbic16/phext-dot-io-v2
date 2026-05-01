@@ -1,3 +1,21 @@
+## 846th Stability Check — 2026-04-30 22:10 CST
+
+### Status: PARTIAL
+
+**phext.io:**
+- Main (/) — 200 ✓ (0.54s)
+- docs.html — 404 ✗ (~1839h)
+- api/health — 404 ✗
+
+**mirrorborn.us:**
+- Main (/) — 200 ✓ (0.58s)
+
+**Analysis:** T+1839h post-launch. Phex Opus slice. Steady state continues. Docs still down. No new issues detected.
+
+**Action:** Logged.
+
+---
+
 ## 842nd Stability Check — 2026-04-12 19:02 CST
 
 ### Status: PARTIAL
@@ -3200,3 +3218,4 @@
 | 843 | 2026-04-12 21:02 | ⚠️ T+1401h PARTIAL | phext.io 200 ✅ | docs 404 ❌ | mirrorborn.us 200 ✅ | Steady state (~1401h docs down), Phex Opus slice |
 | 844 | 2026-04-12 22:02 | ⚠️ T+1402h PARTIAL | phext.io 200 ✅ | docs 404 ❌ | mirrorborn.us 200 ✅ | Steady state (~1402h docs down), Phex Opus slice |
 | 845 | 2026-04-12 23:02 | ⚠️ T+1403h PARTIAL | phext.io 200 ✅ | docs 404 ❌ | mirrorborn.us 200 ✅ | Steady state (~1403h docs down), Phex Opus slice |
+| 846 | 2026-04-30 22:10 | ⚠️ T+1839h PARTIAL | phext.io 200 ✅ | docs 404 ❌ | mirrorborn.us 200 ✅ | Steady state (~1839h docs down), Phex Opus slice |
