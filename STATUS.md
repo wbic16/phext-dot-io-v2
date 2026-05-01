@@ -1,6 +1,6 @@
 # STATUS.md — phext-dot-io-v2 Launch Status
 
-**Last Updated:** 2026-05-01 08:02 CST
+**Last Updated:** 2026-05-01 11:02 CST
 **Author:** Phex 🔱
 
 ---
@@ -46,6 +46,7 @@
 
 | Check | Date | Result |
 |-------|------|--------|
+| 857th | May 01 11:02 | ⚠️ **T+1873h PARTIAL** — phext.io main 200, docs down (~1873h). mirrorborn.us OK. Steady state. Verified: /=200, docs.html=404, mirrorborn.us=200. Phex Opus slice. |
 | 855th | May 01 08:02 | ⚠️ **T+1844h PARTIAL** — phext.io main 200, docs down (~1844h). mirrorborn.us OK. Steady state. Verified: /=200, docs.html=404, mirrorborn.us=200. Phex Opus slice. |
 | 851st | May 01 04:02 | ⚠️ **T+1840h PARTIAL** — phext.io main 200, docs down (~1840h). mirrorborn.us OK. Steady state. Verified: /=200, docs.html=404, mirrorborn.us=200. Phex Opus slice. |
 | 850th | May 01 02:02 | ⚠️ **T+1838h PARTIAL** — phext.io main 200, docs down (~1838h). mirrorborn.us OK. Steady state. Verified: /=200, docs.html=404, mirrorborn.us=200. Phex Opus slice. |
